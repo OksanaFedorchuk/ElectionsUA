@@ -8,17 +8,105 @@
 
 /* Begin PBXBuildFile section */
 		101A3A7C28108BFC008D72B1 /* ElectionsUAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3A7B28108BFC008D72B1 /* ElectionsUAApp.swift */; };
-		101A3A7E28108BFC008D72B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3A7D28108BFC008D72B1 /* ContentView.swift */; };
 		101A3A8028108BFE008D72B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 101A3A7F28108BFE008D72B1 /* Assets.xcassets */; };
 		101A3A8328108BFE008D72B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 101A3A8228108BFE008D72B1 /* Preview Assets.xcassets */; };
+		101A3A8A28108C65008D72B1 /* StateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3A8928108C65008D72B1 /* StateManager.swift */; };
+		101A3A9728108D8A008D72B1 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 101A3A9628108D8A008D72B1 /* Realm */; };
+		101A3A9928108D8A008D72B1 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 101A3A9828108D8A008D72B1 /* RealmSwift */; };
+		101A3AFD28109E43008D72B1 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3ABE28109E42008D72B1 /* K.swift */; };
+		101A3AFE28109E43008D72B1 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3ABF28109E42008D72B1 /* ViewExtensions.swift */; };
+		101A3AFF28109E43008D72B1 /* VyboryFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AC028109E42008D72B1 /* VyboryFonts.swift */; };
+		101A3B0028109E43008D72B1 /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AC128109E42008D72B1 /* RoundedCorners.swift */; };
+		101A3B0128109E43008D72B1 /* PartiesLaw.realm in Resources */ = {isa = PBXBuildFile; fileRef = 101A3AC328109E43008D72B1 /* PartiesLaw.realm */; };
+		101A3B0228109E43008D72B1 /* ElectoralCode.realm in Resources */ = {isa = PBXBuildFile; fileRef = 101A3AC428109E43008D72B1 /* ElectoralCode.realm */; };
+		101A3B0328109E43008D72B1 /* NardepyLaw.realm in Resources */ = {isa = PBXBuildFile; fileRef = 101A3AC528109E43008D72B1 /* NardepyLaw.realm */; };
+		101A3B0428109E43008D72B1 /* ReferendumLaw.realm in Resources */ = {isa = PBXBuildFile; fileRef = 101A3AC628109E43008D72B1 /* ReferendumLaw.realm */; };
+		101A3B0528109E43008D72B1 /* DBCopyAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AC828109E43008D72B1 /* DBCopyAssistant.swift */; };
+		101A3B0628109E43008D72B1 /* NardepyDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3ACA28109E43008D72B1 /* NardepyDB.swift */; };
+		101A3B0728109E43008D72B1 /* ReferendumDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3ACB28109E43008D72B1 /* ReferendumDB.swift */; };
+		101A3B0828109E43008D72B1 /* PartiesDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3ACC28109E43008D72B1 /* PartiesDB.swift */; };
+		101A3B0928109E43008D72B1 /* CodeDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3ACD28109E43008D72B1 /* CodeDB.swift */; };
+		101A3B0A28109E43008D72B1 /* DBProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3ACE28109E43008D72B1 /* DBProtocols.swift */; };
+		101A3B0B28109E43008D72B1 /* code.db-wal in Resources */ = {isa = PBXBuildFile; fileRef = 101A3AD028109E43008D72B1 /* code.db-wal */; };
+		101A3B0C28109E43008D72B1 /* code.db-shm in Resources */ = {isa = PBXBuildFile; fileRef = 101A3AD128109E43008D72B1 /* code.db-shm */; };
+		101A3B0D28109E43008D72B1 /* SearchTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AD428109E43008D72B1 /* SearchTab.swift */; };
+		101A3B0E28109E43008D72B1 /* SavedTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AD628109E43008D72B1 /* SavedTab.swift */; };
+		101A3B0F28109E43008D72B1 /* LawsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AD828109E43008D72B1 /* LawsView.swift */; };
+		101A3B1028109E43008D72B1 /* ChaptersListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3ADB28109E43008D72B1 /* ChaptersListVM.swift */; };
+		101A3B1128109E43008D72B1 /* ChaptersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3ADC28109E43008D72B1 /* ChaptersListView.swift */; };
+		101A3B1228109E43008D72B1 /* ArticlesListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3ADE28109E43008D72B1 /* ArticlesListVM.swift */; };
+		101A3B1328109E43008D72B1 /* ArticlesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3ADF28109E43008D72B1 /* ArticlesListView.swift */; };
+		101A3B1428109E43008D72B1 /* BooksListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AE128109E43008D72B1 /* BooksListView.swift */; };
+		101A3B1528109E43008D72B1 /* BooksListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AE228109E43008D72B1 /* BooksListVM.swift */; };
+		101A3B1628109E43008D72B1 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AE428109E43008D72B1 /* ArticleView.swift */; };
+		101A3B1728109E43008D72B1 /* ArticleVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AE528109E43008D72B1 /* ArticleVM.swift */; };
+		101A3B1828109E43008D72B1 /* LawsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AE628109E43008D72B1 /* LawsVM.swift */; };
+		101A3B1928109E43008D72B1 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AE828109E43008D72B1 /* CustomTabView.swift */; };
+		101A3B1A28109E43008D72B1 /* HomeTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AE928109E43008D72B1 /* HomeTab.swift */; };
+		101A3B1B28109E43008D72B1 /* ProtocolsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AEB28109E43008D72B1 /* ProtocolsTab.swift */; };
+		101A3B1C28109E43008D72B1 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AEE28109E43008D72B1 /* ListItem.swift */; };
+		101A3B1D28109E43008D72B1 /* BindedListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AEF28109E43008D72B1 /* BindedListItem.swift */; };
+		101A3B1E28109E43008D72B1 /* MyDashLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AF128109E43008D72B1 /* MyDashLine.swift */; };
+		101A3B1F28109E43008D72B1 /* MyBottomNavLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AF228109E43008D72B1 /* MyBottomNavLine.swift */; };
+		101A3B2028109E43008D72B1 /* BackGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AF328109E43008D72B1 /* BackGradient.swift */; };
+		101A3B2128109E43008D72B1 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AF628109E43008D72B1 /* Chapter.swift */; };
+		101A3B2228109E43008D72B1 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AF728109E43008D72B1 /* Article.swift */; };
+		101A3B2328109E43008D72B1 /* ElectoralCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AF928109E43008D72B1 /* ElectoralCode.swift */; };
+		101A3B2428109E43008D72B1 /* NardepyLaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AFA28109E43008D72B1 /* NardepyLaw.swift */; };
+		101A3B2528109E43008D72B1 /* PartiesLaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AFB28109E43008D72B1 /* PartiesLaw.swift */; };
+		101A3B2628109E43008D72B1 /* ReferendumLaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AFC28109E43008D72B1 /* ReferendumLaw.swift */; };
+		101A3B2828109E6A008D72B1 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3B2728109E6A008D72B1 /* Book.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		101A3A7828108BFC008D72B1 /* ElectionsUA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElectionsUA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		101A3A7B28108BFC008D72B1 /* ElectionsUAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectionsUAApp.swift; sourceTree = "<group>"; };
-		101A3A7D28108BFC008D72B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		101A3A7F28108BFE008D72B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		101A3A8228108BFE008D72B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		101A3A8928108C65008D72B1 /* StateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateManager.swift; sourceTree = "<group>"; };
+		101A3ABE28109E42008D72B1 /* K.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
+		101A3ABF28109E42008D72B1 /* ViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		101A3AC028109E42008D72B1 /* VyboryFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VyboryFonts.swift; sourceTree = "<group>"; };
+		101A3AC128109E42008D72B1 /* RoundedCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
+		101A3AC328109E43008D72B1 /* PartiesLaw.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = PartiesLaw.realm; sourceTree = "<group>"; };
+		101A3AC428109E43008D72B1 /* ElectoralCode.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = ElectoralCode.realm; sourceTree = "<group>"; };
+		101A3AC528109E43008D72B1 /* NardepyLaw.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = NardepyLaw.realm; sourceTree = "<group>"; };
+		101A3AC628109E43008D72B1 /* ReferendumLaw.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = ReferendumLaw.realm; sourceTree = "<group>"; };
+		101A3AC828109E43008D72B1 /* DBCopyAssistant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBCopyAssistant.swift; sourceTree = "<group>"; };
+		101A3ACA28109E43008D72B1 /* NardepyDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NardepyDB.swift; sourceTree = "<group>"; };
+		101A3ACB28109E43008D72B1 /* ReferendumDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferendumDB.swift; sourceTree = "<group>"; };
+		101A3ACC28109E43008D72B1 /* PartiesDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartiesDB.swift; sourceTree = "<group>"; };
+		101A3ACD28109E43008D72B1 /* CodeDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeDB.swift; sourceTree = "<group>"; };
+		101A3ACE28109E43008D72B1 /* DBProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBProtocols.swift; sourceTree = "<group>"; };
+		101A3AD028109E43008D72B1 /* code.db-wal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "code.db-wal"; sourceTree = "<group>"; };
+		101A3AD128109E43008D72B1 /* code.db-shm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "code.db-shm"; sourceTree = "<group>"; };
+		101A3AD428109E43008D72B1 /* SearchTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTab.swift; sourceTree = "<group>"; };
+		101A3AD628109E43008D72B1 /* SavedTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedTab.swift; sourceTree = "<group>"; };
+		101A3AD828109E43008D72B1 /* LawsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LawsView.swift; sourceTree = "<group>"; };
+		101A3ADB28109E43008D72B1 /* ChaptersListVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaptersListVM.swift; sourceTree = "<group>"; };
+		101A3ADC28109E43008D72B1 /* ChaptersListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaptersListView.swift; sourceTree = "<group>"; };
+		101A3ADE28109E43008D72B1 /* ArticlesListVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesListVM.swift; sourceTree = "<group>"; };
+		101A3ADF28109E43008D72B1 /* ArticlesListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesListView.swift; sourceTree = "<group>"; };
+		101A3AE128109E43008D72B1 /* BooksListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksListView.swift; sourceTree = "<group>"; };
+		101A3AE228109E43008D72B1 /* BooksListVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksListVM.swift; sourceTree = "<group>"; };
+		101A3AE428109E43008D72B1 /* ArticleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
+		101A3AE528109E43008D72B1 /* ArticleVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleVM.swift; sourceTree = "<group>"; };
+		101A3AE628109E43008D72B1 /* LawsVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LawsVM.swift; sourceTree = "<group>"; };
+		101A3AE828109E43008D72B1 /* CustomTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		101A3AE928109E43008D72B1 /* HomeTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTab.swift; sourceTree = "<group>"; };
+		101A3AEB28109E43008D72B1 /* ProtocolsTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolsTab.swift; sourceTree = "<group>"; };
+		101A3AEE28109E43008D72B1 /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		101A3AEF28109E43008D72B1 /* BindedListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindedListItem.swift; sourceTree = "<group>"; };
+		101A3AF128109E43008D72B1 /* MyDashLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDashLine.swift; sourceTree = "<group>"; };
+		101A3AF228109E43008D72B1 /* MyBottomNavLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyBottomNavLine.swift; sourceTree = "<group>"; };
+		101A3AF328109E43008D72B1 /* BackGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackGradient.swift; sourceTree = "<group>"; };
+		101A3AF628109E43008D72B1 /* Chapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
+		101A3AF728109E43008D72B1 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		101A3AF928109E43008D72B1 /* ElectoralCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElectoralCode.swift; sourceTree = "<group>"; };
+		101A3AFA28109E43008D72B1 /* NardepyLaw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NardepyLaw.swift; sourceTree = "<group>"; };
+		101A3AFB28109E43008D72B1 /* PartiesLaw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartiesLaw.swift; sourceTree = "<group>"; };
+		101A3AFC28109E43008D72B1 /* ReferendumLaw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferendumLaw.swift; sourceTree = "<group>"; };
+		101A3B2728109E6A008D72B1 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +114,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				101A3A9928108D8A008D72B1 /* RealmSwift in Frameworks */,
+				101A3A9728108D8A008D72B1 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +142,12 @@
 			isa = PBXGroup;
 			children = (
 				101A3A7B28108BFC008D72B1 /* ElectionsUAApp.swift */,
-				101A3A7D28108BFC008D72B1 /* ContentView.swift */,
+				101A3A8928108C65008D72B1 /* StateManager.swift */,
+				101A3AC228109E43008D72B1 /* Database Files */,
+				101A3AC728109E43008D72B1 /* DB persistence */,
+				101A3ABD28109E42008D72B1 /* Helpers */,
+				101A3AF428109E43008D72B1 /* Model */,
+				101A3AD228109E43008D72B1 /* View */,
 				101A3A7F28108BFE008D72B1 /* Assets.xcassets */,
 				101A3A8128108BFE008D72B1 /* Preview Content */,
 			);
@@ -65,6 +160,220 @@
 				101A3A8228108BFE008D72B1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		101A3ABD28109E42008D72B1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				101A3ABE28109E42008D72B1 /* K.swift */,
+				101A3ABF28109E42008D72B1 /* ViewExtensions.swift */,
+				101A3AC028109E42008D72B1 /* VyboryFonts.swift */,
+				101A3AC128109E42008D72B1 /* RoundedCorners.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		101A3AC228109E43008D72B1 /* Database Files */ = {
+			isa = PBXGroup;
+			children = (
+				101A3AC328109E43008D72B1 /* PartiesLaw.realm */,
+				101A3AC428109E43008D72B1 /* ElectoralCode.realm */,
+				101A3AC528109E43008D72B1 /* NardepyLaw.realm */,
+				101A3AC628109E43008D72B1 /* ReferendumLaw.realm */,
+			);
+			path = "Database Files";
+			sourceTree = "<group>";
+		};
+		101A3AC728109E43008D72B1 /* DB persistence */ = {
+			isa = PBXGroup;
+			children = (
+				101A3AC828109E43008D72B1 /* DBCopyAssistant.swift */,
+				101A3AC928109E43008D72B1 /* DB Managers */,
+				101A3ACE28109E43008D72B1 /* DBProtocols.swift */,
+				101A3ACF28109E43008D72B1 /* Kodeks Database */,
+			);
+			path = "DB persistence";
+			sourceTree = "<group>";
+		};
+		101A3AC928109E43008D72B1 /* DB Managers */ = {
+			isa = PBXGroup;
+			children = (
+				101A3ACA28109E43008D72B1 /* NardepyDB.swift */,
+				101A3ACB28109E43008D72B1 /* ReferendumDB.swift */,
+				101A3ACC28109E43008D72B1 /* PartiesDB.swift */,
+				101A3ACD28109E43008D72B1 /* CodeDB.swift */,
+			);
+			path = "DB Managers";
+			sourceTree = "<group>";
+		};
+		101A3ACF28109E43008D72B1 /* Kodeks Database */ = {
+			isa = PBXGroup;
+			children = (
+				101A3AD028109E43008D72B1 /* code.db-wal */,
+				101A3AD128109E43008D72B1 /* code.db-shm */,
+			);
+			path = "Kodeks Database";
+			sourceTree = "<group>";
+		};
+		101A3AD228109E43008D72B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				101A3AD328109E43008D72B1 /* Search Tab */,
+				101A3AD528109E43008D72B1 /* Saved Tab */,
+				101A3AD728109E43008D72B1 /* Laws Tab */,
+				101A3AE728109E43008D72B1 /* TabBar */,
+				101A3AEA28109E43008D72B1 /* Protocols Tab */,
+				101A3AEC28109E43008D72B1 /* Reusable Views */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		101A3AD328109E43008D72B1 /* Search Tab */ = {
+			isa = PBXGroup;
+			children = (
+				101A3AD428109E43008D72B1 /* SearchTab.swift */,
+			);
+			path = "Search Tab";
+			sourceTree = "<group>";
+		};
+		101A3AD528109E43008D72B1 /* Saved Tab */ = {
+			isa = PBXGroup;
+			children = (
+				101A3AD628109E43008D72B1 /* SavedTab.swift */,
+			);
+			path = "Saved Tab";
+			sourceTree = "<group>";
+		};
+		101A3AD728109E43008D72B1 /* Laws Tab */ = {
+			isa = PBXGroup;
+			children = (
+				101A3AD828109E43008D72B1 /* LawsView.swift */,
+				101A3AD928109E43008D72B1 /* Laws Stack */,
+				101A3AE628109E43008D72B1 /* LawsVM.swift */,
+			);
+			path = "Laws Tab";
+			sourceTree = "<group>";
+		};
+		101A3AD928109E43008D72B1 /* Laws Stack */ = {
+			isa = PBXGroup;
+			children = (
+				101A3ADA28109E43008D72B1 /* Chapters */,
+				101A3ADD28109E43008D72B1 /* Articles */,
+				101A3AE028109E43008D72B1 /* Books */,
+				101A3AE328109E43008D72B1 /* Article */,
+			);
+			path = "Laws Stack";
+			sourceTree = "<group>";
+		};
+		101A3ADA28109E43008D72B1 /* Chapters */ = {
+			isa = PBXGroup;
+			children = (
+				101A3ADB28109E43008D72B1 /* ChaptersListVM.swift */,
+				101A3ADC28109E43008D72B1 /* ChaptersListView.swift */,
+			);
+			path = Chapters;
+			sourceTree = "<group>";
+		};
+		101A3ADD28109E43008D72B1 /* Articles */ = {
+			isa = PBXGroup;
+			children = (
+				101A3ADE28109E43008D72B1 /* ArticlesListVM.swift */,
+				101A3ADF28109E43008D72B1 /* ArticlesListView.swift */,
+			);
+			path = Articles;
+			sourceTree = "<group>";
+		};
+		101A3AE028109E43008D72B1 /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				101A3AE128109E43008D72B1 /* BooksListView.swift */,
+				101A3AE228109E43008D72B1 /* BooksListVM.swift */,
+			);
+			path = Books;
+			sourceTree = "<group>";
+		};
+		101A3AE328109E43008D72B1 /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				101A3AE428109E43008D72B1 /* ArticleView.swift */,
+				101A3AE528109E43008D72B1 /* ArticleVM.swift */,
+			);
+			path = Article;
+			sourceTree = "<group>";
+		};
+		101A3AE728109E43008D72B1 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				101A3AE828109E43008D72B1 /* CustomTabView.swift */,
+				101A3AE928109E43008D72B1 /* HomeTab.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		101A3AEA28109E43008D72B1 /* Protocols Tab */ = {
+			isa = PBXGroup;
+			children = (
+				101A3AEB28109E43008D72B1 /* ProtocolsTab.swift */,
+			);
+			path = "Protocols Tab";
+			sourceTree = "<group>";
+		};
+		101A3AEC28109E43008D72B1 /* Reusable Views */ = {
+			isa = PBXGroup;
+			children = (
+				101A3AED28109E43008D72B1 /* Cells */,
+				101A3AF028109E43008D72B1 /* UI Elements */,
+			);
+			path = "Reusable Views";
+			sourceTree = "<group>";
+		};
+		101A3AED28109E43008D72B1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				101A3AEE28109E43008D72B1 /* ListItem.swift */,
+				101A3AEF28109E43008D72B1 /* BindedListItem.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		101A3AF028109E43008D72B1 /* UI Elements */ = {
+			isa = PBXGroup;
+			children = (
+				101A3AF128109E43008D72B1 /* MyDashLine.swift */,
+				101A3AF228109E43008D72B1 /* MyBottomNavLine.swift */,
+				101A3AF328109E43008D72B1 /* BackGradient.swift */,
+			);
+			path = "UI Elements";
+			sourceTree = "<group>";
+		};
+		101A3AF428109E43008D72B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				101A3AF528109E43008D72B1 /* Law Models */,
+				101A3AF828109E43008D72B1 /* DB models */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		101A3AF528109E43008D72B1 /* Law Models */ = {
+			isa = PBXGroup;
+			children = (
+				101A3B2728109E6A008D72B1 /* Book.swift */,
+				101A3AF628109E43008D72B1 /* Chapter.swift */,
+				101A3AF728109E43008D72B1 /* Article.swift */,
+			);
+			path = "Law Models";
+			sourceTree = "<group>";
+		};
+		101A3AF828109E43008D72B1 /* DB models */ = {
+			isa = PBXGroup;
+			children = (
+				101A3AF928109E43008D72B1 /* ElectoralCode.swift */,
+				101A3AFA28109E43008D72B1 /* NardepyLaw.swift */,
+				101A3AFB28109E43008D72B1 /* PartiesLaw.swift */,
+				101A3AFC28109E43008D72B1 /* ReferendumLaw.swift */,
+			);
+			path = "DB models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +392,10 @@
 			dependencies = (
 			);
 			name = ElectionsUA;
+			packageProductDependencies = (
+				101A3A9628108D8A008D72B1 /* Realm */,
+				101A3A9828108D8A008D72B1 /* RealmSwift */,
+			);
 			productName = ElectionsUA;
 			productReference = 101A3A7828108BFC008D72B1 /* ElectionsUA.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +424,9 @@
 				Base,
 			);
 			mainGroup = 101A3A6F28108BFC008D72B1;
+			packageReferences = (
+				101A3A9528108D8A008D72B1 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 101A3A7928108BFC008D72B1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,8 +441,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				101A3B0328109E43008D72B1 /* NardepyLaw.realm in Resources */,
+				101A3B0228109E43008D72B1 /* ElectoralCode.realm in Resources */,
 				101A3A8328108BFE008D72B1 /* Preview Assets.xcassets in Resources */,
+				101A3B0B28109E43008D72B1 /* code.db-wal in Resources */,
+				101A3B0128109E43008D72B1 /* PartiesLaw.realm in Resources */,
 				101A3A8028108BFE008D72B1 /* Assets.xcassets in Resources */,
+				101A3B0428109E43008D72B1 /* ReferendumLaw.realm in Resources */,
+				101A3B0C28109E43008D72B1 /* code.db-shm in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +459,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				101A3A7E28108BFC008D72B1 /* ContentView.swift in Sources */,
+				101A3B0928109E43008D72B1 /* CodeDB.swift in Sources */,
+				101A3B2128109E43008D72B1 /* Chapter.swift in Sources */,
+				101A3B1228109E43008D72B1 /* ArticlesListVM.swift in Sources */,
+				101A3B1428109E43008D72B1 /* BooksListView.swift in Sources */,
+				101A3B0628109E43008D72B1 /* NardepyDB.swift in Sources */,
+				101A3A8A28108C65008D72B1 /* StateManager.swift in Sources */,
+				101A3B1928109E43008D72B1 /* CustomTabView.swift in Sources */,
+				101A3B1A28109E43008D72B1 /* HomeTab.swift in Sources */,
+				101A3B2828109E6A008D72B1 /* Book.swift in Sources */,
+				101A3B1628109E43008D72B1 /* ArticleView.swift in Sources */,
+				101A3B2528109E43008D72B1 /* PartiesLaw.swift in Sources */,
+				101A3B1028109E43008D72B1 /* ChaptersListVM.swift in Sources */,
+				101A3B0A28109E43008D72B1 /* DBProtocols.swift in Sources */,
+				101A3B1C28109E43008D72B1 /* ListItem.swift in Sources */,
+				101A3B1528109E43008D72B1 /* BooksListVM.swift in Sources */,
+				101A3AFD28109E43008D72B1 /* K.swift in Sources */,
+				101A3B2228109E43008D72B1 /* Article.swift in Sources */,
+				101A3B1128109E43008D72B1 /* ChaptersListView.swift in Sources */,
+				101A3B2428109E43008D72B1 /* NardepyLaw.swift in Sources */,
+				101A3B1E28109E43008D72B1 /* MyDashLine.swift in Sources */,
+				101A3B0E28109E43008D72B1 /* SavedTab.swift in Sources */,
+				101A3B0528109E43008D72B1 /* DBCopyAssistant.swift in Sources */,
+				101A3AFE28109E43008D72B1 /* ViewExtensions.swift in Sources */,
+				101A3B0828109E43008D72B1 /* PartiesDB.swift in Sources */,
 				101A3A7C28108BFC008D72B1 /* ElectionsUAApp.swift in Sources */,
+				101A3B1728109E43008D72B1 /* ArticleVM.swift in Sources */,
+				101A3B0F28109E43008D72B1 /* LawsView.swift in Sources */,
+				101A3B1D28109E43008D72B1 /* BindedListItem.swift in Sources */,
+				101A3B1F28109E43008D72B1 /* MyBottomNavLine.swift in Sources */,
+				101A3B2028109E43008D72B1 /* BackGradient.swift in Sources */,
+				101A3B2328109E43008D72B1 /* ElectoralCode.swift in Sources */,
+				101A3B1B28109E43008D72B1 /* ProtocolsTab.swift in Sources */,
+				101A3B2628109E43008D72B1 /* ReferendumLaw.swift in Sources */,
+				101A3AFF28109E43008D72B1 /* VyboryFonts.swift in Sources */,
+				101A3B0728109E43008D72B1 /* ReferendumDB.swift in Sources */,
+				101A3B1828109E43008D72B1 /* LawsVM.swift in Sources */,
+				101A3B0028109E43008D72B1 /* RoundedCorners.swift in Sources */,
+				101A3B0D28109E43008D72B1 /* SearchTab.swift in Sources */,
+				101A3B1328109E43008D72B1 /* ArticlesListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +633,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,6 +662,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -337,6 +698,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		101A3A9528108D8A008D72B1 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		101A3A9628108D8A008D72B1 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 101A3A9528108D8A008D72B1 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		101A3A9828108D8A008D72B1 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 101A3A9528108D8A008D72B1 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 101A3A7028108BFC008D72B1 /* Project object */;
 }

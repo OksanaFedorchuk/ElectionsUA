@@ -11,7 +11,10 @@ import SwiftUI
 struct ElectionsUAApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeTab()
+                .onAppear {
+                    DBCopyAssistant.shared.copyDBsToFilemanager()
+                }
         }
     }
 }

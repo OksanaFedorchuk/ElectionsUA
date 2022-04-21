@@ -11,16 +11,16 @@ enum Tab {
     case laws, protocols, saved, search
 }
 
-///Tab view for custom design containing four tabs: laws, protocols, saved, search
+/// Tab view for custom design containing four tabs: laws, protocols, saved, search
 struct CustomTabView: View {
-    
+
     @Environment(\.colorScheme) var colorScheme
     @Binding var tabIndex: Tab
-    
+
     var body: some View {
         ZStack {
-            ///Background color for dark/light scheme,
-            ///made separately to ignore safe area on bottom behind the custom tab bar
+            /// Background color for dark/light scheme,
+            /// made separately to ignore safe area on bottom behind the custom tab bar
             LinearGradient(colors: colorScheme == .light
                            ? [K.Colors.tabGradientStart, K.Colors.tabGradientEnd]
                            : [.white],
@@ -31,8 +31,8 @@ struct CustomTabView: View {
             HStack {
                 Group {
                     Spacer()
-                    
-                    Button (action: {
+
+                    Button(action: {
                         self.tabIndex = .laws
                     }) {
                         VStack {
@@ -44,9 +44,9 @@ struct CustomTabView: View {
                     .foregroundColor(self.tabIndex == .laws
                                      ? K.Colors.myYellow
                                      : (colorScheme == .light ? .white.opacity(0.8) : .yellow))
-                    
+
                     Spacer()
-                    Button (action: {
+                    Button(action: {
                         self.tabIndex = .protocols
                     }) {
                         VStack {
@@ -58,9 +58,9 @@ struct CustomTabView: View {
                     .foregroundColor(self.tabIndex == .protocols
                                      ? K.Colors.myYellow
                                      : (colorScheme == .light ? .white.opacity(0.8) : .yellow))
-                    
+
                     Spacer()
-                    Button (action: {
+                    Button(action: {
                         self.tabIndex = .saved
                     }) {
                         VStack {
@@ -95,16 +95,16 @@ struct CustomTabView: View {
     }
 }
 
-//MARK: - Previews
+// MARK: - Previews
 
-struct CustomTabView_Light: PreviewProvider {
+struct CustomTabViewLight: PreviewProvider {
     static var previews: some View {
         CustomTabView(tabIndex: .constant(.laws))
             .preferredColorScheme(.light)
     }
 }
 
-struct CustomTabView_Dark: PreviewProvider {
+struct CustomTabViewDark: PreviewProvider {
     static var previews: some View {
         CustomTabView(tabIndex: .constant(.laws))
             .preferredColorScheme(.dark)

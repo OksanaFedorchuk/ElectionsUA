@@ -22,7 +22,7 @@ protocol UniversalDBModel {
 }
 
 class NardepyLaw: Object, ObjectKeyIdentifiable, UniversalDBModel {
-    
+
     @Persisted(primaryKey: true) var articleID: Int = 0
     @Persisted var number = ""
     @Persisted var title = ""

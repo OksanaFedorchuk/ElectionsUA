@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ListItem: View {
-    
+
     @Environment(\.colorScheme) var colorScheme
     @State var textMain: String
     @State var textSecondary: String
@@ -30,12 +30,5 @@ struct ListItem: View {
             MyDashLine(colorScheme: colorScheme, isHorisontal: true)
                 .padding(.horizontal, 15)
         }
-    }
-}
-
-struct ListItem_Previews: PreviewProvider {
-    static var previews: some View {
-        ListItem(textMain: "The main text The main text The main text The main text The main text The main text The main text The main text",
-                 textSecondary: "The very long secondary text The very long secondary text The very long secondary text secondary text secondary text secondary text")
     }
 }

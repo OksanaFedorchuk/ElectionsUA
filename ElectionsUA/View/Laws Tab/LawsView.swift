@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct LawsView: View {
-    
+
     @EnvironmentObject var stateManager: StateManager
     @Environment(\.colorScheme) var colorScheme
-//    @State var selection: String? = nil
-    
+// @State var selection: String? = nil
+
     var body: some View {
         GeometryReader { proxy in
             VStack {
@@ -20,7 +20,7 @@ struct LawsView: View {
                 HStack(alignment: .top) {
                     Spacer()
                     NavigationLink(tag: "1", selection: $stateManager.selection) {
-                        //show first law
+                        // show first law
                         BooksListView(vm: BooksListVM(db: CodeDB()))
                             .environmentObject(stateManager)
                     } label: {
@@ -33,12 +33,12 @@ struct LawsView: View {
                             .frame(width: proxy.size.width / 2.5)
                     }
                     .isDetailLink(false)
-                    
+
                     MyDashLine(colorScheme: colorScheme, isHorisontal: false)
                     Spacer()
-                    
+
                     NavigationLink(tag: "2", selection: $stateManager.selection) {
-                        //show second law
+                        // show second law
                         ChaptersListView(vm: ChaptersListVM(db: NardepyDB(), book: nil))
                             .environmentObject(stateManager)
                     } label: {
@@ -53,14 +53,14 @@ struct LawsView: View {
                     .isDetailLink(false)
                     Spacer()
                 }
-                
+
                 MyDashLine(colorScheme: colorScheme, isHorisontal: true)
                 Spacer()
-                
+
                 HStack(alignment: .top) {
                     Spacer()
                     NavigationLink(tag: "3", selection: $stateManager.selection) {
-                        //show third law
+                        // show third law
                         ChaptersListView(vm: ChaptersListVM(db: ReferendumDB(), book: nil))
                             .environmentObject(stateManager)
                     } label: {
@@ -73,12 +73,12 @@ struct LawsView: View {
                             .frame(width: proxy.size.width / 2.5)
                     }
                     .isDetailLink(false)
-                    
+
                     MyDashLine(colorScheme: colorScheme, isHorisontal: false)
                     Spacer()
-                    
+
                     NavigationLink(tag: "4", selection: $stateManager.selection) {
-                        //show fourth law
+                        // show fourth law
                         ChaptersListView(vm: ChaptersListVM(db: PartiesDB(), book: nil))
                             .environmentObject(stateManager)
                     } label: {
@@ -117,7 +117,7 @@ struct LawGridItem: View {
     var imageStr: String
     var textMain: String
     var textSecondary: String
-    
+
     var body: some View {
         VStack(alignment: .leading) {
             Image(imageStr)

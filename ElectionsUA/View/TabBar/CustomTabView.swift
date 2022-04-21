@@ -19,74 +19,32 @@ struct CustomTabView: View {
 
     var body: some View {
         ZStack {
-            /// Background color for dark/light scheme,
-            /// made separately to ignore safe area on bottom behind the custom tab bar
-            LinearGradient(colors: colorScheme == .light
-                           ? [Color(R.color.tabGradientStart() ?? .gray),
-                              Color(R.color.tabGradientEnd() ?? .gray)]
-                           : [.white],
-                           startPoint: .leading,
-                           endPoint: .trailing)
-            .ignoresSafeArea(edges: .bottom)
-            .cornerRadius(30, corners: [.topRight, .topLeft])
+
+            TabGradient()
+
             HStack {
                 Group {
                     Spacer()
 
-                    Button {
+                    TabButton(tabIndexParent: $tabIndex, tabType: .laws) {
                         self.tabIndex = .laws
-                    } label: {
-                        VStack {
-                            Image(uiImage: R.image.lawTab()!)
-                            Text(R.string.lawsTab.laws())
-                                .font(.system(size: 14))
-                        }
                     }
-                    .foregroundColor(self.tabIndex == .laws
-                                     ? Color(R.color.myYellow() ?? .gray)
-                                     : (colorScheme == .light ? .white.opacity(0.8) : .yellow))
 
                     Spacer()
-                    Button {
+                    TabButton(tabIndexParent: $tabIndex, tabType: .protocols) {
                         self.tabIndex = .protocols
-                    } label: {
-                        VStack {
-                            Image(uiImage: R.image.protocolTab()!)
-                            Text(R.string.lawsTab.protocol())
-                                .font(.system(size: 14))
-                        }
                     }
-                    .foregroundColor(self.tabIndex == .protocols
-                                     ? Color(R.color.myYellow() ?? .gray)
-                                     : (colorScheme == .light ? .white.opacity(0.8) : .yellow))
 
                     Spacer()
-                    Button {
+                    TabButton(tabIndexParent: $tabIndex, tabType: .saved) {
                         self.tabIndex = .saved
-                    } label: {
-                        VStack {
-                            Image(uiImage: R.image.flagTab()!)
-                            Text(R.string.lawsTab.favourite())
-                                .font(.system(size: 14))
-                        }
                     }
-                    .foregroundColor(self.tabIndex == .saved
-                                     ? Color(R.color.myYellow() ?? .gray)
-                                     : (colorScheme == .light ? .white.opacity(0.8) : .yellow))
+
                     Spacer()
-                    
-                    Button(action: {
+                    TabButton(tabIndexParent: $tabIndex, tabType: .search) {
                         self.tabIndex = .search
-                    }, label: {
-                        VStack {
-                            Image(uiImage: R.image.searchTab()!)
-                            Text(R.string.lawsTab.search())
-                                .font(.system(size: 14))
-                        }
-                    })
-                    .foregroundColor(self.tabIndex == .search
-                                     ? Color(R.color.myYellow() ?? .gray)
-                                     : (colorScheme == .light ? .white.opacity(0.8) : .yellow))
+                    }
+
                     Spacer()
                 }
             }

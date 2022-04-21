@@ -13,7 +13,7 @@ struct MyBottomNavLine: View {
         Rectangle()
             .frame(height: 0.6)
             .foregroundColor(colorScheme == .light
-                             ? K.Colors.tabGradientStart.opacity(0.3)
+                             ? Color(R.color.tabGradientStart() ?? .gray).opacity(0.3)
                              : .white.opacity(0.3))
     }
 }

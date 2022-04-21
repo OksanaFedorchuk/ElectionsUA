@@ -25,11 +25,11 @@ final class CodeDB: DBReadableWriteable {
     // MARK: - Open DB
 
     private func openElectoralCode() {
-        let realmPath: String = "\(path)/ElectoralCode.realm"
+        let realmPath: String = "\(path)/\(R.string.lawsTab.electoralCodeRealm())"
         do {
-            let config = Realm.Configuration(fileURL: URL(string: realmPath), schemaVersion: 1)
+            let config = Realm.Configuration(fileURL: URL(string: realmPath), schemaVersion: 2)
             codeRealm = try Realm(configuration: config)
-            print("MYDEBUG: opened ElectoralCode db type")
+            print("MYDEBUG: selected ElectoralCode db type")
         } catch {
             print("MYDEBUG: Error opening ElectoralCode realm database: \(error.localizedDescription)")
         }
@@ -61,7 +61,7 @@ extension CodeDB: DBReadable {
     func getObjectsFiltered(by columnValue: String) -> [UniversalDBModel] {
         var objects = [ElectoralCode]()
         if let localRealm = codeRealm {
-            let predicate = NSPredicate.init(format: "chapterNum == %@", "\(columnValue)")
+            let predicate = NSPredicate(format: K.Format.chapterNum, "\(columnValue)")
             // Get all objects from db
             let results = localRealm.objects(ElectoralCode.self).filter(predicate)
             print("MYDEBUG: received code chapterNum filtered objects: \(results.count)")
@@ -88,7 +88,7 @@ extension CodeDB: DBReadable {
 
 extension CodeDB: DBWriteable {
     func toggleSaved(for articleNumber: String, currentState: Int) {
-        let predicat = NSPredicate.init(format: "number == %@", "\(articleNumber)")
+        let predicat = NSPredicate(format: K.Format.number, "\(articleNumber)")
 
         if let localRealm = codeRealm {
             do {

@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct SavedTab: View {
+    
     var body: some View {
         VStack {
             Spacer()
-            Text("Saved tab")
+            Text(R.string.lawsTab.savedTabTitle())
             Spacer()
         }
     }

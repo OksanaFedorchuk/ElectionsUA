@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct SearchTab: View {
+
     var body: some View {
         VStack {
             Spacer()
-            Text("Search tab")
+            Text(R.string.lawsTab.searchTabTitle())
             Spacer()
         }
     }

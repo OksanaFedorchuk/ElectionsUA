@@ -18,12 +18,12 @@ struct HomeTab: View {
     init() {
         // prevent Nav Bar color change on scroll view push behind NavBar
         let standardAppearence = UINavigationBarAppearance()
-        standardAppearence.titleTextAttributes = [.foregroundColor: K.Colors.navBarColorUI]
-        standardAppearence.largeTitleTextAttributes = [.foregroundColor: K.Colors.navBarColorUI]
+        standardAppearence.titleTextAttributes = [.foregroundColor: R.color.navBarColor()!]
+        standardAppearence.largeTitleTextAttributes = [.foregroundColor: R.color.navBarColor()!]
         UINavigationBar.appearance().standardAppearance = standardAppearence
 
-        UINavigationBar.appearance().barTintColor = K.Colors.navBarColorUI
-        UINavigationBar.appearance().tintColor = K.Colors.navBarColorUI
+        UINavigationBar.appearance().barTintColor = R.color.navBarColor()!
+        UINavigationBar.appearance().tintColor = R.color.navBarColor()!
     }
 
     var body: some View {
@@ -48,22 +48,23 @@ struct HomeTab: View {
                 CustomTabView(tabIndex: $tabIndex)
             }
             .ignoresSafeArea(edges: .bottom)
-            .navigationTitle("Закони")
+            .navigationTitle(R.string.lawsTab.laws())
             .toolbar {
                 Button {
                     // opens info view
                 } label: {
-                    Image(K.IconsNavBar.info)
+                    Image(uiImage: R.image.info()!)
                         .resizable()
                 }
             }
             // set backgound: blue gradient for dark mode and white color for light mode
             .background(LinearGradient(colors: colorScheme == .dark
-                                       ? [K.Colors.tabGradientStart, K.Colors.tabGradientEnd]
+                                       ? [Color(R.color.tabGradientStart() ?? .gray),
+                                          Color(R.color.tabGradientEnd() ?? .gray)]
                                        : [.white],
                                        startPoint: .leading,
                                        endPoint: .trailing)
-                            .ignoresSafeArea(edges: .top))
+                .ignoresSafeArea(edges: .top))
             .onAppear {
                 print("LIFE: Main on appear")
                 stateManager.currentBook = nil

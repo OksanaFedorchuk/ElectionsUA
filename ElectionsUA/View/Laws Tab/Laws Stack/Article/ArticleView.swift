@@ -20,7 +20,7 @@ struct ArticleView: View {
     var body: some View {
         // drag gesture to navigate between articles
         let dragGesture = DragGesture()
-            .updating($translation) { (value, state, _) in
+            .updating($translation) { value, state, _ in
                 state = value.translation
             }
             .onEnded { value in
@@ -48,7 +48,7 @@ struct ArticleView: View {
                     }
                 }
             }
-
+        
         ScrollView {
             VStack {
                 BindedListItem(textMain: $vm.article.title, textSecondary: $vm.article.content)
@@ -69,7 +69,7 @@ struct ArticleView: View {
                     // toggles the given article's saved state in db
                     vm.isSaved.toggle()
                 } label: {
-                    Image(vm.isSaved ? K.IconsNavBar.flagSelected : K.IconsNavBar.flag)
+                    Image(uiImage: vm.isSaved ? R.image.flagSelected()! : R.image.flag()!)
                 }
             }
         }

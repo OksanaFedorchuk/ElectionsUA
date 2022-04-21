@@ -33,8 +33,9 @@ struct ChaptersListView: View {
                 // present the list of articles
                 ArticlesListView(vm: ArticlesListVM(db: vm.db, chapter: stateManager.currentChapter ?? ""))
                     .environmentObject(stateManager)
-            } label: {}
-                .isDetailLink(false)
+            } label: {
+            }
+            .isDetailLink(false)
         }
         // set backgound: blue gradient for dark mode and white color for light mode
         .background(BackGradient(colorScheme: colorScheme))

@@ -24,24 +24,25 @@ struct BooksListView: View {
                 ForEach(vm.books, id: \.self) { book in
                     ListItem(textMain: "\(book.number)",
                              textSecondary: "\(book.title)")
-                        .onTapGesture {
-                            // go to chapters in book
-                            stateManager.currentBook = book.number
-                            stateManager.showingChapter = true
-                        }
+                    .onTapGesture {
+                        // go to chapters in book
+                        stateManager.currentBook = book.number
+                        stateManager.showingChapter = true
+                    }
                 }
             }
             NavigationLink(isActive: $stateManager.showingChapter) {
                 ChaptersListView(vm: ChaptersListVM(db: vm.db, book: stateManager.currentBook))
                     .environmentObject(stateManager)
-            } label: {}
+            } label: {
+            }
             .isDetailLink(false)
         }
         // set backgound: blue gradient for dark mode and white color for light mode
         .background(BackGradient(colorScheme: colorScheme))
         .navigationViewStyle(.stack)
         .navigationBarTitleDisplayMode(.inline)
-        .navigationTitle("Кодекс")
+        .navigationTitle(R.string.lawsTab.code())
         .onAppear {
             print("LIFE: Books onappear")
         }

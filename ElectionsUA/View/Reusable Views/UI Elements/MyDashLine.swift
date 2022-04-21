@@ -10,6 +10,7 @@ import SwiftUI
 struct MyDashLine: View {
     var colorScheme: ColorScheme
     var isHorisontal: Bool
+
     var body: some View {
         Line(isHorisontal: isHorisontal)
             .stroke(style: StrokeStyle(lineWidth: 1, dash: [5]))
@@ -17,7 +18,7 @@ struct MyDashLine: View {
             .frame(height: isHorisontal ? 1 : nil)
             .foregroundColor(colorScheme == .dark
                              ? .white.opacity(0.3)
-                             : K.Colors.tabGradientStart.opacity(0.3))
+                             : Color(R.color.tabGradientStart() ?? .gray).opacity(0.3))
     }
 }
 
@@ -29,7 +30,9 @@ struct MyDashLine_Previews: PreviewProvider {
 
 struct Line: Shape {
     var isHorisontal: Bool
+
     func path(in rect: CGRect) -> Path {
+
         var path = Path()
         path.move(to: CGPoint(x: 0, y: 0))
         path.addLine(to: isHorisontal

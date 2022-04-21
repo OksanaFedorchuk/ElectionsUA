@@ -11,6 +11,7 @@ protocol DBReadableWriteable: DBReadable, DBWriteable, DBSerchable {}
 
 protocol DBReadable {
     var name: String? { get }
+
     func getAllObjects() -> [UniversalDBModel]
     func getObjectsFiltered(by columnValue: String) -> [UniversalDBModel]
     func getObject(with id: Int) -> UniversalDBModel
@@ -21,5 +22,4 @@ protocol DBWriteable {
 }
 
 protocol DBSerchable {
-
 }

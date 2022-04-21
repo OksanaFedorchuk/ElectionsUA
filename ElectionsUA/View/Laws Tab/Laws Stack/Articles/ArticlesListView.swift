@@ -22,18 +22,20 @@ struct ArticlesListView: View {
                 ForEach(vm.articles, id: \.self) { article in
                     ListItem(textMain: "\(article.number)",
                              textSecondary: "\(article.title)")
-                        .onTapGesture {
-                            // go to artcile details for the selected article
-                            stateManager.currentArticle = article.id
-                            stateManager.showingArticle = true
-                        }
+                    .onTapGesture {
+                        // go to artcile details for the selected article
+                        stateManager.currentArticle = article.id
+                        stateManager.showingArticle = true
+                    }
                 }
             }
             NavigationLink(isActive: $stateManager.showingArticle) {
                 ArticleView(vm: ArticleVM(db: vm.db as! DBReadableWriteable,
                                           articleSelected: stateManager.currentArticle))
-                    .environmentObject(stateManager)
-            } label: {}
+                .environmentObject(stateManager)
+            } label: {
+                
+            }
             .isDetailLink(false)
         }
         // set backgound: blue gradient for dark mode and white color for light mode

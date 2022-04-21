@@ -12,6 +12,7 @@ struct ListItem: View {
     @Environment(\.colorScheme) var colorScheme
     @State var textMain: String
     @State var textSecondary: String
+    
     var body: some View {
         VStack(alignment: .leading) {
             VStack(alignment: .leading) {

@@ -9,7 +9,7 @@ import Foundation
 import RealmSwift
 
 class ReferendumLaw: Object, ObjectKeyIdentifiable, UniversalDBModel {
-
+    
     @Persisted(primaryKey: true) var articleID: Int = 0
     @Persisted var number = ""
     @Persisted var title = ""

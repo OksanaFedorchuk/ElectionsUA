@@ -15,7 +15,6 @@
 		101A3A9928108D8A008D72B1 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 101A3A9828108D8A008D72B1 /* RealmSwift */; };
 		101A3AFD28109E43008D72B1 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3ABE28109E42008D72B1 /* K.swift */; };
 		101A3AFE28109E43008D72B1 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3ABF28109E42008D72B1 /* ViewExtensions.swift */; };
-		101A3AFF28109E43008D72B1 /* VyboryFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AC028109E42008D72B1 /* VyboryFonts.swift */; };
 		101A3B0028109E43008D72B1 /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AC128109E42008D72B1 /* RoundedCorners.swift */; };
 		101A3B0128109E43008D72B1 /* PartiesLaw.realm in Resources */ = {isa = PBXBuildFile; fileRef = 101A3AC328109E43008D72B1 /* PartiesLaw.realm */; };
 		101A3B0328109E43008D72B1 /* NardepyLaw.realm in Resources */ = {isa = PBXBuildFile; fileRef = 101A3AC528109E43008D72B1 /* NardepyLaw.realm */; };
@@ -58,6 +57,15 @@
 		101A3B342812105C008D72B1 /* TabGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3B332812105C008D72B1 /* TabGradient.swift */; };
 		101A3B3628121081008D72B1 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3B3528121081008D72B1 /* TabButton.swift */; };
 		101A3B3828132DA5008D72B1 /* ElectoralCode.realm in Resources */ = {isa = PBXBuildFile; fileRef = 101A3B3728132DA5008D72B1 /* ElectoralCode.realm */; };
+		101A3B3B28134D9D008D72B1 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3B3A28134D9D008D72B1 /* InfoView.swift */; };
+		101A3B53281357EE008D72B1 /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 101A3B3F281357EE008D72B1 /* Gilroy-Medium.ttf */; };
+		101A3B5B281357EE008D72B1 /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 101A3B47281357EE008D72B1 /* Gilroy-Regular.ttf */; };
+		101A3B63281357EE008D72B1 /* Gilroy-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 101A3B4F281357EE008D72B1 /* Gilroy-SemiBold.ttf */; };
+		101A3B64281357EE008D72B1 /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 101A3B50281357EE008D72B1 /* Gilroy-Bold.ttf */; };
+		101A3B88281357F9008D72B1 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 101A3B76281357F9008D72B1 /* Roboto-Bold.ttf */; };
+		10BD8B2628135D8D00A38F20 /* MediaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BD8B2528135D8D00A38F20 /* MediaButton.swift */; };
+		10BD8B292813635D00A38F20 /* AboutOporaText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BD8B282813635D00A38F20 /* AboutOporaText.swift */; };
+		10BD8B2B281363B100A38F20 /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BD8B2A281363B100A38F20 /* FontExtensions.swift */; };
 		9AD90AC5991E1A1DBF977626 /* Pods_ElectionsUA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E9F66AEE9206B782BCD35A /* Pods_ElectionsUA.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,7 +77,6 @@
 		101A3A8928108C65008D72B1 /* StateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateManager.swift; sourceTree = "<group>"; };
 		101A3ABE28109E42008D72B1 /* K.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
 		101A3ABF28109E42008D72B1 /* ViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
-		101A3AC028109E42008D72B1 /* VyboryFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VyboryFonts.swift; sourceTree = "<group>"; };
 		101A3AC128109E42008D72B1 /* RoundedCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
 		101A3AC328109E43008D72B1 /* PartiesLaw.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = PartiesLaw.realm; sourceTree = "<group>"; };
 		101A3AC528109E43008D72B1 /* NardepyLaw.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = NardepyLaw.realm; sourceTree = "<group>"; };
@@ -112,6 +119,16 @@
 		101A3B332812105C008D72B1 /* TabGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabGradient.swift; sourceTree = "<group>"; };
 		101A3B3528121081008D72B1 /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
 		101A3B3728132DA5008D72B1 /* ElectoralCode.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = ElectoralCode.realm; sourceTree = "<group>"; };
+		101A3B3A28134D9D008D72B1 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		101A3B3F281357EE008D72B1 /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.ttf"; sourceTree = "<group>"; };
+		101A3B47281357EE008D72B1 /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
+		101A3B4F281357EE008D72B1 /* Gilroy-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-SemiBold.ttf"; sourceTree = "<group>"; };
+		101A3B50281357EE008D72B1 /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
+		101A3B76281357F9008D72B1 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		10BD8B2428135B3900A38F20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		10BD8B2528135D8D00A38F20 /* MediaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaButton.swift; sourceTree = "<group>"; };
+		10BD8B282813635D00A38F20 /* AboutOporaText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutOporaText.swift; sourceTree = "<group>"; };
+		10BD8B2A281363B100A38F20 /* FontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
 		2B364FF6B4A5D3626246E4E2 /* Pods-ElectionsUA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElectionsUA.release.xcconfig"; path = "Target Support Files/Pods-ElectionsUA/Pods-ElectionsUA.release.xcconfig"; sourceTree = "<group>"; };
 		4B363CCD891EDAFF5C28343A /* Pods-ElectionsUA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElectionsUA.debug.xcconfig"; path = "Target Support Files/Pods-ElectionsUA/Pods-ElectionsUA.debug.xcconfig"; sourceTree = "<group>"; };
 		73E9F66AEE9206B782BCD35A /* Pods_ElectionsUA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElectionsUA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,14 +169,16 @@
 		101A3A7A28108BFC008D72B1 /* ElectionsUA */ = {
 			isa = PBXGroup;
 			children = (
+				10BD8B2428135B3900A38F20 /* Info.plist */,
 				101A3A7B28108BFC008D72B1 /* ElectionsUAApp.swift */,
 				101A3A8928108C65008D72B1 /* StateManager.swift */,
 				101A3AF428109E43008D72B1 /* Model */,
 				101A3AD228109E43008D72B1 /* View */,
 				101A3AC728109E43008D72B1 /* DB persistence */,
 				101A3ABD28109E42008D72B1 /* Helpers */,
-				101A3AC228109E43008D72B1 /* Database Files */,
 				101A3A7F28108BFE008D72B1 /* Assets.xcassets */,
+				101A3AC228109E43008D72B1 /* Database Files */,
+				101A3B3C2813577E008D72B1 /* Fonts */,
 				101A3A8128108BFE008D72B1 /* Preview Content */,
 			);
 			path = ElectionsUA;
@@ -176,11 +195,9 @@
 		101A3ABD28109E42008D72B1 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				10BD8B2D281363EC00A38F20 /* Shapes */,
+				10BD8B2C281363C000A38F20 /* Extensions */,
 				101A3B2A281160B2008D72B1 /* Strings */,
-				101A3ABE28109E42008D72B1 /* K.swift */,
-				101A3ABF28109E42008D72B1 /* ViewExtensions.swift */,
-				101A3AC028109E42008D72B1 /* VyboryFonts.swift */,
-				101A3AC128109E42008D72B1 /* RoundedCorners.swift */,
 				101A3B2E2811671B008D72B1 /* R.generated.swift */,
 			);
 			path = Helpers;
@@ -221,6 +238,7 @@
 		101A3AD228109E43008D72B1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				101A3B3928134D88008D72B1 /* Info */,
 				101A3AD328109E43008D72B1 /* Search Tab */,
 				101A3AD528109E43008D72B1 /* Saved Tab */,
 				101A3AD728109E43008D72B1 /* Laws Tab */,
@@ -383,6 +401,7 @@
 		101A3B2A281160B2008D72B1 /* Strings */ = {
 			isa = PBXGroup;
 			children = (
+				101A3ABE28109E42008D72B1 /* K.swift */,
 				101A3B2B281160ED008D72B1 /* LawsTab.strings */,
 			);
 			path = Strings;
@@ -395,6 +414,69 @@
 				101A3B3528121081008D72B1 /* TabButton.swift */,
 			);
 			path = "TabBar subviews";
+			sourceTree = "<group>";
+		};
+		101A3B3928134D88008D72B1 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				101A3B3A28134D9D008D72B1 /* InfoView.swift */,
+				10BD8B272813634600A38F20 /* Info subviews */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		101A3B3C2813577E008D72B1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				101A3B66281357F9008D72B1 /* Roboto */,
+				101A3B3D281357EE008D72B1 /* Gilroy */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		101A3B3D281357EE008D72B1 /* Gilroy */ = {
+			isa = PBXGroup;
+			children = (
+				101A3B3F281357EE008D72B1 /* Gilroy-Medium.ttf */,
+				101A3B47281357EE008D72B1 /* Gilroy-Regular.ttf */,
+				101A3B4F281357EE008D72B1 /* Gilroy-SemiBold.ttf */,
+				101A3B50281357EE008D72B1 /* Gilroy-Bold.ttf */,
+			);
+			path = Gilroy;
+			sourceTree = "<group>";
+		};
+		101A3B66281357F9008D72B1 /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				101A3B76281357F9008D72B1 /* Roboto-Bold.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+		10BD8B272813634600A38F20 /* Info subviews */ = {
+			isa = PBXGroup;
+			children = (
+				10BD8B282813635D00A38F20 /* AboutOporaText.swift */,
+				10BD8B2528135D8D00A38F20 /* MediaButton.swift */,
+			);
+			path = "Info subviews";
+			sourceTree = "<group>";
+		};
+		10BD8B2C281363C000A38F20 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				101A3ABF28109E42008D72B1 /* ViewExtensions.swift */,
+				10BD8B2A281363B100A38F20 /* FontExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		10BD8B2D281363EC00A38F20 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				101A3AC128109E42008D72B1 /* RoundedCorners.swift */,
+			);
+			path = Shapes;
 			sourceTree = "<group>";
 		};
 		6E9DF30C639BE30AB84DA610 /* Pods */ = {
@@ -483,12 +565,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				101A3B88281357F9008D72B1 /* Roboto-Bold.ttf in Resources */,
+				101A3B5B281357EE008D72B1 /* Gilroy-Regular.ttf in Resources */,
+				101A3B63281357EE008D72B1 /* Gilroy-SemiBold.ttf in Resources */,
 				101A3B0328109E43008D72B1 /* NardepyLaw.realm in Resources */,
 				101A3B3828132DA5008D72B1 /* ElectoralCode.realm in Resources */,
 				101A3A8328108BFE008D72B1 /* Preview Assets.xcassets in Resources */,
+				101A3B64281357EE008D72B1 /* Gilroy-Bold.ttf in Resources */,
 				101A3B0128109E43008D72B1 /* PartiesLaw.realm in Resources */,
 				101A3A8028108BFE008D72B1 /* Assets.xcassets in Resources */,
 				101A3B2C281160ED008D72B1 /* LawsTab.strings in Resources */,
+				101A3B53281357EE008D72B1 /* Gilroy-Medium.ttf in Resources */,
 				101A3B0428109E43008D72B1 /* ReferendumLaw.realm in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -589,6 +676,7 @@
 				101A3B1928109E43008D72B1 /* CustomTabView.swift in Sources */,
 				101A3B1A28109E43008D72B1 /* HomeTab.swift in Sources */,
 				101A3B2828109E6A008D72B1 /* Book.swift in Sources */,
+				10BD8B292813635D00A38F20 /* AboutOporaText.swift in Sources */,
 				101A3B1628109E43008D72B1 /* ArticleView.swift in Sources */,
 				101A3B2528109E43008D72B1 /* PartiesLaw.swift in Sources */,
 				101A3B1028109E43008D72B1 /* ChaptersListVM.swift in Sources */,
@@ -604,8 +692,10 @@
 				101A3B0528109E43008D72B1 /* DBCopyAssistant.swift in Sources */,
 				101A3AFE28109E43008D72B1 /* ViewExtensions.swift in Sources */,
 				101A3B0828109E43008D72B1 /* PartiesDB.swift in Sources */,
+				10BD8B2628135D8D00A38F20 /* MediaButton.swift in Sources */,
 				101A3A7C28108BFC008D72B1 /* ElectionsUAApp.swift in Sources */,
 				101A3B1728109E43008D72B1 /* ArticleVM.swift in Sources */,
+				101A3B3B28134D9D008D72B1 /* InfoView.swift in Sources */,
 				101A3B0F28109E43008D72B1 /* LawsView.swift in Sources */,
 				101A3B3628121081008D72B1 /* TabButton.swift in Sources */,
 				101A3B2F2811671B008D72B1 /* R.generated.swift in Sources */,
@@ -616,11 +706,11 @@
 				101A3B342812105C008D72B1 /* TabGradient.swift in Sources */,
 				101A3B1B28109E43008D72B1 /* ProtocolsTab.swift in Sources */,
 				101A3B2628109E43008D72B1 /* ReferendumLaw.swift in Sources */,
-				101A3AFF28109E43008D72B1 /* VyboryFonts.swift in Sources */,
 				101A3B0728109E43008D72B1 /* ReferendumDB.swift in Sources */,
 				101A3B1828109E43008D72B1 /* LawsVM.swift in Sources */,
 				101A3B0028109E43008D72B1 /* RoundedCorners.swift in Sources */,
 				101A3B0D28109E43008D72B1 /* SearchTab.swift in Sources */,
+				10BD8B2B281363B100A38F20 /* FontExtensions.swift in Sources */,
 				101A3B1328109E43008D72B1 /* ArticlesListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -753,6 +843,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ElectionsUA/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ElectionsUA/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -783,6 +874,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ElectionsUA/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ElectionsUA/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

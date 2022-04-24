@@ -30,6 +30,13 @@ struct HomeTab: View {
 
         NavigationView {
             VStack {
+                NavigationLink(isActive: $stateManager.showingInfo) {
+                    InfoView()
+                        .environmentObject(stateManager)
+                } label: {
+                }
+                .isDetailLink(false)
+
                 MyBottomNavLine(colorScheme: colorScheme)
 
                 // main View above tab bar
@@ -51,7 +58,7 @@ struct HomeTab: View {
             .navigationTitle(R.string.lawsTab.laws())
             .toolbar {
                 Button {
-                    // opens info view
+                    stateManager.showingInfo = true
                 } label: {
                     Image(uiImage: R.image.info()!)
                         .resizable()

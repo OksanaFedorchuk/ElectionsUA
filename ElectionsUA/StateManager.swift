@@ -11,6 +11,7 @@ class StateManager: ObservableObject {
 
     // home tab
     @Published var selection: String?
+    @Published var showingInfo: Bool = false
 
     // books
     @Published var currentBook: String?

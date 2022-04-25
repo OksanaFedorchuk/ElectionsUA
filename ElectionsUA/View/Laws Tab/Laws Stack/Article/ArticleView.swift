@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct ArticleView: View {
-
+    
     @EnvironmentObject var stateManager: StateManager
     @Environment(\.colorScheme) var colorScheme
     @ObservedObject var vm: ArticleVM
-
+    
     @GestureState var translation: CGSize = .zero
     @State var isAnimated: Bool = false
     let threshold: CGFloat = 0.5
-
+    
     var body: some View {
         // drag gesture to navigate between articles
         let dragGesture = DragGesture()
@@ -48,11 +48,8 @@ struct ArticleView: View {
                     }
                 }
             }
-        
-        ScrollView {
-            VStack {
-                BindedListItem(textMain: $vm.article.title, textSecondary: $vm.article.content)
-            }
+        VStack {
+            BindedListItem(vm: BindedListItemVM(textMain: vm.article.title, textSecondary: vm.article.content))
         }
         .offset(x: translation.width,
                 y: 0)
@@ -81,19 +78,3 @@ struct ArticleView: View {
         }
     }
 }
-
-// MARK: - Previews
-
-// struct KodeksArticleDetails_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ArticleView(vm: ArticleVM(articleSelected: "Стаття"))
-//            .preferredColorScheme(.light)
-//    }
-// }
-//
-// struct KodeksArticleDetails1_Previews: PreviewProvider {
-//    static var previews: some View {
-//        KodeksArticleDetails(vm: KodeksArticleDetailsVM(articleSelected: "Стаття"))
-//            .preferredColorScheme(.dark)
-//    }
-// }

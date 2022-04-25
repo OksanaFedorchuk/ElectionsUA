@@ -10,28 +10,16 @@ import SwiftUI
 struct BindedListItem: View {
     
     @Environment(\.colorScheme) var colorScheme
-    @Binding var textMain: String
-    @Binding var textSecondary: String
-
+    @ObservedObject var vm: BindedListItemVM
+    
     var body: some View {
         VStack(alignment: .leading) {
-            VStack(alignment: .leading) {
-                Text(textMain)
-                    .font(Font(uiFont: R.font.gilroyBold(size: 20)
-                               ?? .systemFont(ofSize: 20)))
-                    .foregroundColor(.primary)
-                    .lineSpacing(8)
-                    .padding(.bottom, 2)
-                Text(textSecondary)
-                    .font(Font(uiFont: R.font.gilroyRegular(size: 18)
-                               ?? .systemFont(ofSize: 18)))
-                    .foregroundColor(.secondary)
-                    .lineSpacing(10)
-            }
-            .padding([.leading, .trailing], 15)
-            .multilineTextAlignment(.leading)
-            MyDashLine(colorScheme: colorScheme, isHorisontal: true)
-                .padding(.horizontal, 15)
+            TextViewRepresentable(text: $vm.fullText)
+                .foregroundColor(.primary)
+                .lineSpacing(8)
+                .padding(.bottom, 2)
         }
+        .padding([.leading, .trailing], 15)
+        .multilineTextAlignment(.leading)
     }
 }

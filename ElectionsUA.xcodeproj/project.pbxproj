@@ -65,6 +65,8 @@
 		101A3B88281357F9008D72B1 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 101A3B76281357F9008D72B1 /* Roboto-Bold.ttf */; };
 		103B88A62815C7CB0046EB3B /* MediaButtonText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103B88A52815C7CB0046EB3B /* MediaButtonText.swift */; };
 		103B88A82815C7E40046EB3B /* MediaButtonImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103B88A72815C7E40046EB3B /* MediaButtonImg.swift */; };
+		103B88AB2815F8600046EB3B /* TextViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103B88AA2815F8600046EB3B /* TextViewRepresentable.swift */; };
+		103B88AD2816F8DD0046EB3B /* BindedListItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103B88AC2816F8DD0046EB3B /* BindedListItemVM.swift */; };
 		10BD8B2628135D8D00A38F20 /* MediaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BD8B2528135D8D00A38F20 /* MediaButton.swift */; };
 		10BD8B292813635D00A38F20 /* AboutOporaText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BD8B282813635D00A38F20 /* AboutOporaText.swift */; };
 		10BD8B2B281363B100A38F20 /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BD8B2A281363B100A38F20 /* FontExtensions.swift */; };
@@ -129,6 +131,8 @@
 		101A3B76281357F9008D72B1 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		103B88A52815C7CB0046EB3B /* MediaButtonText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaButtonText.swift; sourceTree = "<group>"; };
 		103B88A72815C7E40046EB3B /* MediaButtonImg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaButtonImg.swift; sourceTree = "<group>"; };
+		103B88AA2815F8600046EB3B /* TextViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewRepresentable.swift; sourceTree = "<group>"; };
+		103B88AC2816F8DD0046EB3B /* BindedListItemVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindedListItemVM.swift; sourceTree = "<group>"; };
 		10BD8B2428135B3900A38F20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		10BD8B2528135D8D00A38F20 /* MediaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaButton.swift; sourceTree = "<group>"; };
 		10BD8B282813635D00A38F20 /* AboutOporaText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutOporaText.swift; sourceTree = "<group>"; };
@@ -347,6 +351,7 @@
 		101A3AEC28109E43008D72B1 /* Reusable Views */ = {
 			isa = PBXGroup;
 			children = (
+				103B88A92815F8310046EB3B /* View Representables */,
 				101A3AED28109E43008D72B1 /* Cells */,
 				101A3AF028109E43008D72B1 /* UI Elements */,
 			);
@@ -358,6 +363,7 @@
 			children = (
 				101A3AEE28109E43008D72B1 /* ListItem.swift */,
 				101A3AEF28109E43008D72B1 /* BindedListItem.swift */,
+				103B88AC2816F8DD0046EB3B /* BindedListItemVM.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -455,6 +461,14 @@
 				101A3B76281357F9008D72B1 /* Roboto-Bold.ttf */,
 			);
 			path = Roboto;
+			sourceTree = "<group>";
+		};
+		103B88A92815F8310046EB3B /* View Representables */ = {
+			isa = PBXGroup;
+			children = (
+				103B88AA2815F8600046EB3B /* TextViewRepresentable.swift */,
+			);
+			path = "View Representables";
 			sourceTree = "<group>";
 		};
 		10BD8B272813634600A38F20 /* Info subviews */ = {
@@ -673,6 +687,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				103B88AD2816F8DD0046EB3B /* BindedListItemVM.swift in Sources */,
 				101A3B0928109E43008D72B1 /* CodeDB.swift in Sources */,
 				101A3B2128109E43008D72B1 /* Chapter.swift in Sources */,
 				101A3B1228109E43008D72B1 /* ArticlesListVM.swift in Sources */,
@@ -701,6 +716,7 @@
 				10BD8B2628135D8D00A38F20 /* MediaButton.swift in Sources */,
 				101A3A7C28108BFC008D72B1 /* ElectionsUAApp.swift in Sources */,
 				101A3B1728109E43008D72B1 /* ArticleVM.swift in Sources */,
+				103B88AB2815F8600046EB3B /* TextViewRepresentable.swift in Sources */,
 				101A3B3B28134D9D008D72B1 /* InfoView.swift in Sources */,
 				101A3B0F28109E43008D72B1 /* LawsView.swift in Sources */,
 				101A3B3628121081008D72B1 /* TabButton.swift in Sources */,
@@ -849,6 +865,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ElectionsUA/Preview Content\"";
+				DEVELOPMENT_TEAM = DS5NH9FZJZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ElectionsUA/Info.plist;
@@ -880,6 +897,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ElectionsUA/Preview Content\"";
+				DEVELOPMENT_TEAM = DS5NH9FZJZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ElectionsUA/Info.plist;

@@ -1,5 +1,5 @@
 //
-//  BindedListItemVM.swift
+//  ArticleDetailsVM.swift
 //  ElectionsUA
 //
 //  Created by Oksana Fedorchuk on 25.04.2022.
@@ -8,7 +8,7 @@
 import SwiftUI
 import Combine
 
-class BindedListItemVM: ObservableObject {
+class ArticleDetailsVM: ObservableObject {
     
     @Published var textMain: String
     @Published var textSecondary: String

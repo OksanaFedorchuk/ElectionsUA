@@ -49,7 +49,7 @@ struct ArticleView: View {
                 }
             }
         VStack {
-            BindedListItem(vm: BindedListItemVM(textMain: vm.article.title, textSecondary: vm.article.content))
+            ArticleDetailsView(vm: ArticleDetailsVM(textMain: vm.article.title, textSecondary: vm.article.content))
         }
         .offset(x: translation.width,
                 y: 0)

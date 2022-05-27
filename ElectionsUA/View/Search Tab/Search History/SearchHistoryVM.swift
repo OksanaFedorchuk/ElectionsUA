@@ -5,6 +5,10 @@
 //  Created by Oksana Fedorchuk on 26.05.2022.
 //
 
-import Foundation
+import SwiftUI
 
-// TODO: inject state of search and update it with .hasHistory if needed
+class SearchHistoryVM: ObservableObject {
+
+    @Published var searchedItems: [String] = ["Вибори", "Вибори депутатів", "Референдум"]
+
+}

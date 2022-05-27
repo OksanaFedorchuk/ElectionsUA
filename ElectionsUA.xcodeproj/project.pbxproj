@@ -81,7 +81,8 @@
 		10F53531283FB05A0061D6FE /* PopularSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F53530283FB05A0061D6FE /* PopularSearchView.swift */; };
 		10F53533283FB15B0061D6FE /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F53532283FB15B0061D6FE /* UserData.swift */; };
 		10F53535283FBFF60061D6FE /* SearchHistoryVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F53534283FBFF60061D6FE /* SearchHistoryVM.swift */; };
-		10F53537284100910061D6FE /* SearchListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F53536284100910061D6FE /* SearchListItem.swift */; };
+		10F53539284119D80061D6FE /* SearchListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F53538284119D80061D6FE /* SearchListItem.swift */; };
+		10F5353B284125CA0061D6FE /* HighlitedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F5353A284125CA0061D6FE /* HighlitedText.swift */; };
 		9AD90AC5991E1A1DBF977626 /* Pods_ElectionsUA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E9F66AEE9206B782BCD35A /* Pods_ElectionsUA.framework */; };
 /* End PBXBuildFile section */
 
@@ -160,7 +161,8 @@
 		10F53530283FB05A0061D6FE /* PopularSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularSearchView.swift; sourceTree = "<group>"; };
 		10F53532283FB15B0061D6FE /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		10F53534283FBFF60061D6FE /* SearchHistoryVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryVM.swift; sourceTree = "<group>"; };
-		10F53536284100910061D6FE /* SearchListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListItem.swift; sourceTree = "<group>"; };
+		10F53538284119D80061D6FE /* SearchListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchListItem.swift; sourceTree = "<group>"; };
+		10F5353A284125CA0061D6FE /* HighlitedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlitedText.swift; sourceTree = "<group>"; };
 		2B364FF6B4A5D3626246E4E2 /* Pods-ElectionsUA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElectionsUA.release.xcconfig"; path = "Target Support Files/Pods-ElectionsUA/Pods-ElectionsUA.release.xcconfig"; sourceTree = "<group>"; };
 		4B363CCD891EDAFF5C28343A /* Pods-ElectionsUA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElectionsUA.debug.xcconfig"; path = "Target Support Files/Pods-ElectionsUA/Pods-ElectionsUA.debug.xcconfig"; sourceTree = "<group>"; };
 		73E9F66AEE9206B782BCD35A /* Pods_ElectionsUA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElectionsUA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -394,7 +396,7 @@
 			isa = PBXGroup;
 			children = (
 				101A3AEE28109E43008D72B1 /* ListItem.swift */,
-				10F53536284100910061D6FE /* SearchListItem.swift */,
+				10F53538284119D80061D6FE /* SearchListItem.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -405,6 +407,7 @@
 				101A3AF128109E43008D72B1 /* MyDashLine.swift */,
 				101A3AF228109E43008D72B1 /* MyBottomNavLine.swift */,
 				101A3AF328109E43008D72B1 /* BackGradient.swift */,
+				10F5353A284125CA0061D6FE /* HighlitedText.swift */,
 			);
 			path = "UI Elements";
 			sourceTree = "<group>";
@@ -780,8 +783,9 @@
 				101A3B1028109E43008D72B1 /* ChaptersListVM.swift in Sources */,
 				101A3B0A28109E43008D72B1 /* DBProtocols.swift in Sources */,
 				101A3B1C28109E43008D72B1 /* ListItem.swift in Sources */,
-				10F53537284100910061D6FE /* SearchListItem.swift in Sources */,
+				10F53539284119D80061D6FE /* SearchListItem.swift in Sources */,
 				101A3B1528109E43008D72B1 /* BooksListVM.swift in Sources */,
+				10F5353B284125CA0061D6FE /* HighlitedText.swift in Sources */,
 				10F53533283FB15B0061D6FE /* UserData.swift in Sources */,
 				10F53531283FB05A0061D6FE /* PopularSearchView.swift in Sources */,
 				101A3AFD28109E43008D72B1 /* K.swift in Sources */,

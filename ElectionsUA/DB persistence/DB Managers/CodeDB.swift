@@ -39,6 +39,10 @@ final class CodeDB: DBReadableWriteable {
 // MARK: - READ
 // MARK: - DBReadable
 extension CodeDB: DBReadable {
+    func getObjectsSearched(by text: String) -> [UniversalDBModel] {
+        return [UniversalDBModel]()
+    }
+
     var name: String? {
         return nil
     }

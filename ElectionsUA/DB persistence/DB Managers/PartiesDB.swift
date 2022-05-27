@@ -40,6 +40,10 @@ final class PartiesDB: DBReadableWriteable {
 // MARK: - DBReadable
 
 extension PartiesDB: DBReadable {
+    func getObjectsSearched(by text: String) -> [UniversalDBModel] {
+        return [UniversalDBModel]()
+    }
+
     
     var name: String? {
         return R.string.lawsTab.parties()

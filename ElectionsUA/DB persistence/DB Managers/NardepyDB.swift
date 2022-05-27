@@ -87,6 +87,25 @@ extension NardepyDB: DBReadable {
         }
         return article
     }
+
+    func getObjectsSearched(by text: String) -> [UniversalDBModel] {
+        var objects = [NardepyLaw]()
+//        let predicate = NSPredicate(format: "tagName MATCHES[c] %@", pattern)
+        if let localRealm = nardepyRealm {
+            // Get all objects from db
+            let results = localRealm.objects(NardepyLaw.self)
+                .where{ $0.content.contains(text, options: .caseInsensitive)
+                    || $0.title.contains(text, options: .caseInsensitive)
+                }
+            print("MYDEBUG: received searched deputies objects objects: \(results.count)")
+
+            // transform results to objects
+            results.forEach { result in
+                objects.append(result)
+            }
+        }
+        return objects
+    }
 }
 
 // MARK: - UPDATE

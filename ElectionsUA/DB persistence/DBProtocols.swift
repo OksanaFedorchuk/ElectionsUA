@@ -15,6 +15,7 @@ protocol DBReadable {
     func getAllObjects() -> [UniversalDBModel]
     func getObjectsFiltered(by columnValue: String) -> [UniversalDBModel]
     func getObject(with id: Int) -> UniversalDBModel
+    func getObjectsSearched(by text: String) -> [UniversalDBModel] 
 }
 
 protocol DBWriteable {

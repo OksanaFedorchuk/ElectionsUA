@@ -1,5 +1,5 @@
 //
-//  ViewExtensions.swift
+//  View+CornerRadius.swift
 //  ВибориUA
 //
 //  Created by Administrator on 18.01.2022.

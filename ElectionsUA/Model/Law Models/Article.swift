@@ -57,3 +57,6 @@ class Article: Hashable {
         return lhs.number == rhs.number && lhs.title == rhs.title
     }
 }
+
+extension Article: Identifiable {
+}

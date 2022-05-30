@@ -122,10 +122,12 @@ struct LawGridItem: View {
         VStack(alignment: .leading) {
             Image(uiImage: image)
             Text(textMain)
-                .font(VyboryFonts.gilroyRegular.of(size: 22))
+                .font(Font(uiFont: R.font.gilroyRegular(size: 22)
+                           ?? .systemFont(ofSize: 22)))
                 .foregroundColor(.primary)
             Text(textSecondary)
-                .font(VyboryFonts.gilroyRegular.of(size: 14))
+                .font(Font(uiFont: R.font.gilroyRegular(size: 14)
+                           ?? .systemFont(ofSize: 14)))
                 .foregroundColor(.secondary)
         }
         .multilineTextAlignment(.leading)

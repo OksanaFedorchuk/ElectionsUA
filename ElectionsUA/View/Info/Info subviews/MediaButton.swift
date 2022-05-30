@@ -50,7 +50,7 @@ struct MediaButton: View {
 
 struct MediaButton_Previews: PreviewProvider {
     static var previews: some View {
-        MediaButton(mediaType: .telegram, action: {
-        })
+        MediaButton(mediaType: .telegram) {
+        }
     }
 }

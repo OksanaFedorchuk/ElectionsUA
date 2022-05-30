@@ -83,6 +83,8 @@
 		10F53535283FBFF60061D6FE /* SearchHistoryVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F53534283FBFF60061D6FE /* SearchHistoryVM.swift */; };
 		10F53539284119D80061D6FE /* SearchListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F53538284119D80061D6FE /* SearchListItem.swift */; };
 		10F5353B284125CA0061D6FE /* HighlitedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F5353A284125CA0061D6FE /* HighlitedText.swift */; };
+		10F5353D28413BBE0061D6FE /* SearchHistoryListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F5353C28413BBE0061D6FE /* SearchHistoryListItem.swift */; };
+		10F5354028413C5E0061D6FE /* LawGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F5353F28413C5E0061D6FE /* LawGridItem.swift */; };
 		9AD90AC5991E1A1DBF977626 /* Pods_ElectionsUA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E9F66AEE9206B782BCD35A /* Pods_ElectionsUA.framework */; };
 /* End PBXBuildFile section */
 
@@ -163,6 +165,8 @@
 		10F53534283FBFF60061D6FE /* SearchHistoryVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryVM.swift; sourceTree = "<group>"; };
 		10F53538284119D80061D6FE /* SearchListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchListItem.swift; sourceTree = "<group>"; };
 		10F5353A284125CA0061D6FE /* HighlitedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlitedText.swift; sourceTree = "<group>"; };
+		10F5353C28413BBE0061D6FE /* SearchHistoryListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryListItem.swift; sourceTree = "<group>"; };
+		10F5353F28413C5E0061D6FE /* LawGridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawGridItem.swift; sourceTree = "<group>"; };
 		2B364FF6B4A5D3626246E4E2 /* Pods-ElectionsUA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElectionsUA.release.xcconfig"; path = "Target Support Files/Pods-ElectionsUA/Pods-ElectionsUA.release.xcconfig"; sourceTree = "<group>"; };
 		4B363CCD891EDAFF5C28343A /* Pods-ElectionsUA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElectionsUA.debug.xcconfig"; path = "Target Support Files/Pods-ElectionsUA/Pods-ElectionsUA.debug.xcconfig"; sourceTree = "<group>"; };
 		73E9F66AEE9206B782BCD35A /* Pods_ElectionsUA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElectionsUA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -310,6 +314,7 @@
 			children = (
 				101A3AD828109E43008D72B1 /* LawsView.swift */,
 				101A3AE628109E43008D72B1 /* LawsVM.swift */,
+				10F5354128413C7A0061D6FE /* Laws subviews */,
 				101A3AD928109E43008D72B1 /* Laws Stack */,
 			);
 			path = "Laws Tab";
@@ -510,6 +515,7 @@
 			children = (
 				10F5352E283FB03C0061D6FE /* SearchHistoryView.swift */,
 				10F53534283FBFF60061D6FE /* SearchHistoryVM.swift */,
+				10F5353E28413C000061D6FE /* History subviews */,
 			);
 			path = "Search History";
 			sourceTree = "<group>";
@@ -576,6 +582,22 @@
 				101A3AC128109E42008D72B1 /* RoundedCorners.swift */,
 			);
 			path = Shapes;
+			sourceTree = "<group>";
+		};
+		10F5353E28413C000061D6FE /* History subviews */ = {
+			isa = PBXGroup;
+			children = (
+				10F5353C28413BBE0061D6FE /* SearchHistoryListItem.swift */,
+			);
+			path = "History subviews";
+			sourceTree = "<group>";
+		};
+		10F5354128413C7A0061D6FE /* Laws subviews */ = {
+			isa = PBXGroup;
+			children = (
+				10F5353F28413C5E0061D6FE /* LawGridItem.swift */,
+			);
+			path = "Laws subviews";
 			sourceTree = "<group>";
 		};
 		6E9DF30C639BE30AB84DA610 /* Pods */ = {
@@ -771,6 +793,7 @@
 				101A3B2128109E43008D72B1 /* Chapter.swift in Sources */,
 				101A3B1228109E43008D72B1 /* ArticlesListVM.swift in Sources */,
 				101A3B1428109E43008D72B1 /* BooksListView.swift in Sources */,
+				10F5353D28413BBE0061D6FE /* SearchHistoryListItem.swift in Sources */,
 				103B88B228195CFF0046EB3B /* CustomSearchTextField.swift in Sources */,
 				101A3B0628109E43008D72B1 /* NardepyDB.swift in Sources */,
 				101A3A8A28108C65008D72B1 /* StateManager.swift in Sources */,
@@ -802,6 +825,7 @@
 				103B88BA28199D870046EB3B /* View+Placeholder.swift in Sources */,
 				101A3B0828109E43008D72B1 /* PartiesDB.swift in Sources */,
 				10BD8B2628135D8D00A38F20 /* MediaButton.swift in Sources */,
+				10F5354028413C5E0061D6FE /* LawGridItem.swift in Sources */,
 				101A3A7C28108BFC008D72B1 /* ElectionsUAApp.swift in Sources */,
 				101A3B1728109E43008D72B1 /* ArticleVM.swift in Sources */,
 				103B88AB2815F8600046EB3B /* TextViewRepresentable.swift in Sources */,

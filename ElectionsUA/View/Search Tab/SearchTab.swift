@@ -51,5 +51,13 @@ struct SearchTab: View {
 struct SearchTab_Previews: PreviewProvider {
     static var previews: some View {
         SearchTab(vm: SearchTabVM(db: NardepyDB()))
+            .preferredColorScheme(.light)
+    }
+}
+
+struct SearchTab_Previews_Dark: PreviewProvider {
+    static var previews: some View {
+        SearchTab(vm: SearchTabVM(db: NardepyDB()))
+            .preferredColorScheme(.dark)
     }
 }

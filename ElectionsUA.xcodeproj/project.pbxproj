@@ -85,6 +85,10 @@
 		10F5353B284125CA0061D6FE /* HighlitedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F5353A284125CA0061D6FE /* HighlitedText.swift */; };
 		10F5353D28413BBE0061D6FE /* SearchHistoryListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F5353C28413BBE0061D6FE /* SearchHistoryListItem.swift */; };
 		10F5354028413C5E0061D6FE /* LawGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F5353F28413C5E0061D6FE /* LawGridItem.swift */; };
+		10F5354328413F7E0061D6FE /* TagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F5354228413F7E0061D6FE /* TagsView.swift */; };
+		10F53546284230100061D6FE /* TagItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F53545284230100061D6FE /* TagItemView.swift */; };
+		10F535482842312A0061D6FE /* View+readSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F535472842312A0061D6FE /* View+readSize.swift */; };
+		10F5354A284237750061D6FE /* PopularSearchVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F53549284237750061D6FE /* PopularSearchVM.swift */; };
 		9AD90AC5991E1A1DBF977626 /* Pods_ElectionsUA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E9F66AEE9206B782BCD35A /* Pods_ElectionsUA.framework */; };
 /* End PBXBuildFile section */
 
@@ -167,6 +171,10 @@
 		10F5353A284125CA0061D6FE /* HighlitedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlitedText.swift; sourceTree = "<group>"; };
 		10F5353C28413BBE0061D6FE /* SearchHistoryListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryListItem.swift; sourceTree = "<group>"; };
 		10F5353F28413C5E0061D6FE /* LawGridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawGridItem.swift; sourceTree = "<group>"; };
+		10F5354228413F7E0061D6FE /* TagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsView.swift; sourceTree = "<group>"; };
+		10F53545284230100061D6FE /* TagItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagItemView.swift; sourceTree = "<group>"; };
+		10F535472842312A0061D6FE /* View+readSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+readSize.swift"; sourceTree = "<group>"; };
+		10F53549284237750061D6FE /* PopularSearchVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularSearchVM.swift; sourceTree = "<group>"; };
 		2B364FF6B4A5D3626246E4E2 /* Pods-ElectionsUA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElectionsUA.release.xcconfig"; path = "Target Support Files/Pods-ElectionsUA/Pods-ElectionsUA.release.xcconfig"; sourceTree = "<group>"; };
 		4B363CCD891EDAFF5C28343A /* Pods-ElectionsUA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElectionsUA.debug.xcconfig"; path = "Target Support Files/Pods-ElectionsUA/Pods-ElectionsUA.debug.xcconfig"; sourceTree = "<group>"; };
 		73E9F66AEE9206B782BCD35A /* Pods_ElectionsUA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElectionsUA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -524,6 +532,8 @@
 			isa = PBXGroup;
 			children = (
 				10F53530283FB05A0061D6FE /* PopularSearchView.swift */,
+				10F53549284237750061D6FE /* PopularSearchVM.swift */,
+				10F5354428422FF60061D6FE /* Popular search subviews */,
 			);
 			path = "Popular Search";
 			sourceTree = "<group>";
@@ -552,6 +562,7 @@
 			children = (
 				101A3ABF28109E42008D72B1 /* View+CornerRadius.swift */,
 				103B88B928199D870046EB3B /* View+Placeholder.swift */,
+				10F535472842312A0061D6FE /* View+readSize.swift */,
 			);
 			path = "View Extensions";
 			sourceTree = "<group>";
@@ -598,6 +609,15 @@
 				10F5353F28413C5E0061D6FE /* LawGridItem.swift */,
 			);
 			path = "Laws subviews";
+			sourceTree = "<group>";
+		};
+		10F5354428422FF60061D6FE /* Popular search subviews */ = {
+			isa = PBXGroup;
+			children = (
+				10F5354228413F7E0061D6FE /* TagsView.swift */,
+				10F53545284230100061D6FE /* TagItemView.swift */,
+			);
+			path = "Popular search subviews";
 			sourceTree = "<group>";
 		};
 		6E9DF30C639BE30AB84DA610 /* Pods */ = {
@@ -794,11 +814,13 @@
 				101A3B1228109E43008D72B1 /* ArticlesListVM.swift in Sources */,
 				101A3B1428109E43008D72B1 /* BooksListView.swift in Sources */,
 				10F5353D28413BBE0061D6FE /* SearchHistoryListItem.swift in Sources */,
+				10F5354328413F7E0061D6FE /* TagsView.swift in Sources */,
 				103B88B228195CFF0046EB3B /* CustomSearchTextField.swift in Sources */,
 				101A3B0628109E43008D72B1 /* NardepyDB.swift in Sources */,
 				101A3A8A28108C65008D72B1 /* StateManager.swift in Sources */,
 				101A3B1928109E43008D72B1 /* CustomTabView.swift in Sources */,
 				101A3B1A28109E43008D72B1 /* HomeTab.swift in Sources */,
+				10F5354A284237750061D6FE /* PopularSearchVM.swift in Sources */,
 				101A3B2828109E6A008D72B1 /* Book.swift in Sources */,
 				10BD8B292813635D00A38F20 /* AboutOporaText.swift in Sources */,
 				101A3B1628109E43008D72B1 /* ArticleView.swift in Sources */,
@@ -847,10 +869,12 @@
 				103B88BC2819A2AA0046EB3B /* ClearButtonModifier.swift in Sources */,
 				101A3B0728109E43008D72B1 /* ReferendumDB.swift in Sources */,
 				103B88B728199D4D0046EB3B /* SearchTextFieldModifier.swift in Sources */,
+				10F53546284230100061D6FE /* TagItemView.swift in Sources */,
 				101A3B1828109E43008D72B1 /* LawsVM.swift in Sources */,
 				101A3B0028109E43008D72B1 /* RoundedCorners.swift in Sources */,
 				101A3B0D28109E43008D72B1 /* SearchTab.swift in Sources */,
 				10BD8B2B281363B100A38F20 /* FontExtensions.swift in Sources */,
+				10F535482842312A0061D6FE /* View+readSize.swift in Sources */,
 				101A3B1328109E43008D72B1 /* ArticlesListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

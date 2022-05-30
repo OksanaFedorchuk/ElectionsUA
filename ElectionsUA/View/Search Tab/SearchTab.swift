@@ -36,12 +36,12 @@ struct SearchTab: View {
                                            searchText: $vm.searchText)
                         }
                     }
+                    Spacer()
                     
                 case .noResults:
-                    // TODO: Show placeholder
-                    Text("No results")
+                    SearchPlaceholder()
+                        .offset(y: UIScreen.main.bounds.width / 2)
                 }
-                Spacer()
             }
             .padding(.horizontal, 24)
         }

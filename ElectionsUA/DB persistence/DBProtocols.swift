@@ -21,5 +21,5 @@ protocol DBWriteable {
 }
 
 protocol DBSerchable {
-    
+
 }

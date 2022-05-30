@@ -8,22 +8,22 @@
 import SwiftUI
 
 class StateManager: ObservableObject {
-    
-    //home tab
-    @Published var selection: String? = nil
-    
-    //books
+
+    // home tab
+    @Published var selection: String?
+
+    // books
     @Published var currentBook: String?
     @Published var showingChapter: Bool = false
-    
-    //chapters
-    @Published var currentChapter: String? = nil
+
+    // chapters
+    @Published var currentChapter: String?
     @Published var showingArticles: Bool = false
-    
-    //articles
+
+    // articles
     @Published var currentArticle: Int?
     @Published var showingArticle: Bool = false
-    
-    //article
+
+    // article
     //    @Published var currentID: Int?
 }

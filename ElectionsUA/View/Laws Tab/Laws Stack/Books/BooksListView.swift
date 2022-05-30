@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct BooksListView: View {
-    
+
     @EnvironmentObject var stateManager: StateManager
     @Environment(\.colorScheme) var colorScheme
     @ObservedObject var vm: BooksListVM
-    
+
     init(vm: BooksListVM) {
         self.vm = vm
     }
-    
+
     var body: some View {
         ScrollView {
             MyBottomNavLine(colorScheme: colorScheme)
@@ -25,7 +25,7 @@ struct BooksListView: View {
                     ListItem(textMain: "\(book.number)",
                              textSecondary: "\(book.title)")
                         .onTapGesture {
-                            //go to chapters in book
+                            // go to chapters in book
                             stateManager.currentBook = book.number
                             stateManager.showingChapter = true
                         }
@@ -37,7 +37,7 @@ struct BooksListView: View {
             } label: {}
             .isDetailLink(false)
         }
-        //set backgound: blue gradient for dark mode and white color for light mode
+        // set backgound: blue gradient for dark mode and white color for light mode
         .background(BackGradient(colorScheme: colorScheme))
         .navigationViewStyle(.stack)
         .navigationBarTitleDisplayMode(.inline)
@@ -51,18 +51,18 @@ struct BooksListView: View {
     }
 }
 
-////MARK: - Previews
+// MARK: - Previews
 //
-//struct KodeksCollection_Previews: PreviewProvider {
+// struct KodeksCollection_Previews: PreviewProvider {
 //    static var previews: some View {
 //        BooksListView()
 //            .preferredColorScheme(.light)
 //    }
-//}
+// }
 //
-//struct KodeksCollection1_Previews: PreviewProvider {
+// struct KodeksCollection1_Previews: PreviewProvider {
 //    static var previews: some View {
 //        BooksListView()
 //            .preferredColorScheme(.dark)
 //    }
-//}
+// }

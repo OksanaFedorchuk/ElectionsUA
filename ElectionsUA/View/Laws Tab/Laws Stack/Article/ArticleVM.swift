@@ -9,25 +9,25 @@ import Foundation
 import Combine
 
 class ArticleVM: ObservableObject {
-    
-    //MARK: - Published Properties
-    
+
+    // MARK: - Published Properties
+
     @Published var currentID: Int?
     @Published var article = Article()
     @Published var isSaved: Bool = false
     @Published var maxArticles: Int = 0
-    
-    //MARK: - Private Properties
-    
+
+    // MARK: - Private Properties
+
     private let db: DBReadableWriteable
     private var cancellables = Set<AnyCancellable>()
-    
-    //MARK: - Initialization
-    
+
+    // MARK: - Initialization
+
     init(db: DBReadableWriteable,
          articleSelected: Int?) {
         self.db = db
-        //receiving the selected article from the database
+        // receiving the selected article from the database
         if let id = articleSelected {
             currentID = id
         }
@@ -37,9 +37,9 @@ class ArticleVM: ObservableObject {
         self.getMax()
         print("MYDEBUG: maxArticles: \(maxArticles)")
     }
-    
-    //MARK: - subscriptions
-    
+
+    // MARK: - subscriptions
+
     private func subscribeID() {
         $currentID.sink { id in
             guard let strongID = id else {return}
@@ -47,8 +47,8 @@ class ArticleVM: ObservableObject {
         }
         .store(in: &cancellables)
     }
-    
-    //function subscribing the isSaved property to the favorite state of the given article
+
+    // function subscribing the isSaved property to the favorite state of the given article
     private func subscribeIsSaved() {
         $article
             .map { $0.favourite }
@@ -66,11 +66,11 @@ class ArticleVM: ObservableObject {
             .assign(to: \.isSaved, on: self)
             .store(in: &cancellables)
     }
-    
+
     //    subscription to the isSaved property, changing the favorite state of the given article in database
     func subscribeSaving() {
         $isSaved
-        //dropping the first value received from db, before the property is toggled by button
+        // dropping the first value received from db, before the property is toggled by button
             .dropFirst()
             .sink { [weak self] saved in
                 switch saved {
@@ -82,26 +82,26 @@ class ArticleVM: ObservableObject {
             }
             .store(in: &cancellables)
     }
-    
-    //MARK: - Private methods
-    
+
+    // MARK: - Private methods
+
     private func getArticle(with id: Int) {
         let object = db.getObject(with: id)
         article = Article(with: object)
     }
-    
+
     private func getMax() {
         let objects = db.getAllObjects()
         maxArticles = objects.count
     }
-    
+
     internal func setNext() {
         guard let currentID = self.currentID else {return}
         if currentID < maxArticles {
             self.currentID! += 1
         }
     }
-    
+
     internal func setPrevious() {
         guard let currentID = self.currentID else {return}
         if currentID <= maxArticles && currentID > 0 {

@@ -8,7 +8,7 @@
 import Foundation
 
 class Article: Hashable {
-    
+
     var id: Int
     var number: String
     var title: String
@@ -16,7 +16,7 @@ class Article: Hashable {
     var favourite: Int
     var bookNum: String
     var chapterNumber: String
-    
+
     init() {
         self.id = 0
         self.number = ""
@@ -26,7 +26,7 @@ class Article: Hashable {
         self.bookNum = ""
         self.chapterNumber = ""
     }
-    
+
     init(with model: UniversalDBModel) {
         self.id = model.articleID
         self.number = model.number
@@ -36,8 +36,10 @@ class Article: Hashable {
         self.bookNum = model.bookNum
         self.chapterNumber = model.chapterNum
     }
-    
-    init(id: Int, number: String, title: String, content: String, favourite: Int, chapterNumber: String, bookNum: String) {
+
+    init(id: Int, number: String, title: String,
+         content: String, favourite: Int,
+         chapterNumber: String, bookNum: String) {
         self.id = id
         self.number = number
         self.title = title
@@ -46,11 +48,11 @@ class Article: Hashable {
         self.bookNum = bookNum
         self.chapterNumber = chapterNumber
     }
-    
+
     func hash(into hasher: inout Hasher) {
         hasher.combine(number)
     }
-    
+
     static func == (lhs: Article, rhs: Article) -> Bool {
         return lhs.number == rhs.number && lhs.title == rhs.title
     }

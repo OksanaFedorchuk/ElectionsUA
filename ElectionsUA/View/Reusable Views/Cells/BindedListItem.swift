@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct BindedListItem: View {
-    
+
     @Environment(\.colorScheme) var colorScheme
     @Binding var textMain: String
     @Binding var textSecondary: String

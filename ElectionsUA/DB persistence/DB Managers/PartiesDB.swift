@@ -10,22 +10,22 @@ import Realm
 import RealmSwift
 
 final class PartiesDB: DBReadableWriteable {
-
+    
     // MARK: - Properties
-
+    
     private(set) var partiesRealm: Realm?
     private let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first! as String
-
+    
     // MARK: - Initialization
-
+    
     init() {
         openReferendumLaw()
     }
-
+    
     // MARK: - Open DB
-
+    
     private func openReferendumLaw() {
-        let realmPath: String = "\(path)/PartiesLaw.realm"
+        let realmPath: String = "\(path)/\(R.string.lawsTab.partiesLawRealm())"
         do {
             let config = Realm.Configuration(fileURL: URL(string: realmPath), schemaVersion: 2)
             partiesRealm = try Realm(configuration: config)
@@ -40,18 +40,18 @@ final class PartiesDB: DBReadableWriteable {
 // MARK: - DBReadable
 
 extension PartiesDB: DBReadable {
-
+    
     var name: String? {
-        return "Партії"
+        return R.string.lawsTab.parties()
     }
-
+    
     func getAllObjects() -> [UniversalDBModel] {
         var objects = [PartiesLaw]()
         if let localRealm = partiesRealm {
             // Get all objects from db
             let results = localRealm.objects(PartiesLaw.self)
             print("MYDEBUG: received all president objects: \(results.count)")
-
+            
             // transform results to objects
             results.forEach { result in
                 objects.append(result)
@@ -59,15 +59,15 @@ extension PartiesDB: DBReadable {
         }
         return objects
     }
-
+    
     func getObjectsFiltered(by columnValue: String) -> [UniversalDBModel] {
         var objects = [PartiesLaw]()
         if let localRealm = partiesRealm {
-            let predicate = NSPredicate.init(format: "chapterNum == %@", "\(columnValue)")
+            let predicate = NSPredicate(format: K.Format.chapterNum, "\(columnValue)")
             // Get all objects from db
             let results = localRealm.objects(PartiesLaw.self).filter(predicate)
             print("MYDEBUG: received chapterNum filtered president objects: \(results.count)")
-
+            
             // transform results to objects
             results.forEach { result in
                 objects.append(result)
@@ -75,7 +75,7 @@ extension PartiesDB: DBReadable {
         }
         return objects
     }
-
+    
     func getObject(with id: Int) -> UniversalDBModel {
         var article = PartiesLaw()
         if let localRealm = partiesRealm {
@@ -90,8 +90,8 @@ extension PartiesDB: DBReadable {
 
 extension PartiesDB: DBWriteable {
     func toggleSaved(for articleNumber: String, currentState: Int) {
-        let predicat = NSPredicate.init(format: "number == %@", "\(articleNumber)")
-
+        let predicat = NSPredicate(format: K.Format.number, "\(articleNumber)")
+        
         if let localRealm = partiesRealm {
             do {
                 let result = localRealm.objects(PartiesLaw.self).filter(predicat)

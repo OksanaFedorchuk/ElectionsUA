@@ -9,12 +9,14 @@ import SwiftUI
 
 struct BackGradient: View {
     var colorScheme: ColorScheme
+
     var body: some View {
         LinearGradient(colors: colorScheme == .dark
-                       ? [K.Colors.tabGradientStart, K.Colors.tabGradientEnd]
+                       ? [Color(R.color.tabGradientStart() ?? .gray),
+                          Color(R.color.tabGradientEnd() ?? .gray)]
                        : [.white],
                        startPoint: .leading,
                        endPoint: .trailing)
-            .ignoresSafeArea(edges: [.top, .bottom])
+        .ignoresSafeArea(edges: [.top, .bottom])
     }
 }

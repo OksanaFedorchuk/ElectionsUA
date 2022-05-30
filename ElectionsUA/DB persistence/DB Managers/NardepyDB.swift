@@ -10,7 +10,7 @@ import Realm
 import RealmSwift
 
 class NardepyDB: DBReadableWriteable {
-
+    
     // MARK: - Properties
 
     private(set) var nardepyRealm: Realm?
@@ -25,7 +25,7 @@ class NardepyDB: DBReadableWriteable {
     // MARK: - Open DB
 
     private func openNardepyLaw() {
-        let realmPath: String = "\(path)/NardepyLaw.realm"
+        let realmPath: String = "\(path)/\(R.string.lawsTab.nardepyLawRealm())"
         do {
             let config = Realm.Configuration(fileURL: URL(string: realmPath), schemaVersion: 1)
             nardepyRealm = try Realm(configuration: config)
@@ -41,7 +41,7 @@ class NardepyDB: DBReadableWriteable {
 
 extension NardepyDB: DBReadable {
     var name: String? {
-        return "Депутати"
+        return R.string.lawsTab.deputies()
     }
 
     // MARK: - get all objects
@@ -65,7 +65,7 @@ extension NardepyDB: DBReadable {
     func getObjectsFiltered(by columnValue: String) -> [UniversalDBModel] {
         var objects = [NardepyLaw]()
         if let localRealm = nardepyRealm {
-            let predicate = NSPredicate.init(format: "chapterNum == %@", "\(columnValue)")
+            let predicate = NSPredicate(format: K.Format.chapterNum, "\(columnValue)")
             // Get all objects from db
             let results = localRealm.objects(NardepyLaw.self).filter(predicate)
             print("MYDEBUG: received all chapterNum filtered deputies objects: \(results.count)")
@@ -94,7 +94,7 @@ extension NardepyDB: DBReadable {
 
 extension NardepyDB: DBWriteable {
     func toggleSaved(for articleNumber: String, currentState: Int) {
-        let predicat = NSPredicate.init(format: "number == %@", "\(articleNumber)")
+        let predicat = NSPredicate(format: K.Format.number, "\(articleNumber)")
 
         if let localRealm = nardepyRealm {
             do {

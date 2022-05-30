@@ -1,0 +1,71 @@
+/* 
+  LawsTab.strings
+  ElectionsUA
+
+  Created by Oksana Fedorchuk on 21.04.2022.
+  
+*/
+
+// Mark: - Tab titles
+
+"Search.Tab.Title" = "Search tab";
+"Saved.Tab.Title" = "Saved tab";
+"Laws" = "Закони";
+"Protocol" = "Протокол";
+"Favourite" = "Обране";
+"Search" = "Пошук";
+
+// Mark: - Strings
+
+"Electoral" = "Виборчий";
+"Code.Of.Ukraine" = "Кодекс України";
+"Law.Of.Ukraine" = "Закон України";
+"On.Deputies" = "Про вибори народних депутатів України";
+"On.Referendum" = "Про всеукраїнський референдум";
+"On.Parties" = "Про політичні партії";
+
+// Mark: - Navigation Titles
+
+"Code" = "Кодекс";
+"Deputies" = "Депутати";
+"Referendum" = "Референдум";
+"Parties" = "Партії";
+
+// Mark: - DB titles
+
+"ElectoralCode.Realm" = "ElectoralCode.realm";
+"NardepyLaw.Realm" = "NardepyLaw.realm";
+"ReferendumLaw.Realm" = "ReferendumLaw.realm";
+"PartiesLaw.Realm" = "PartiesLaw.realm";
+
+"ElectoralCode" = "ElectoralCode";
+"NardepyLaw" = "NardepyLaw";
+"ReferendumLaw" = "ReferendumLaw";
+"PartiesLaw" = "PartiesLaw";
+"realm" = "realm";
+
+// Mark: - Placeholder texts
+
+"Find.Something" = "ЩОСЬ ЗНАЙТИ?";
+"Nothing.Found" = "НІЧОГО НЕ ЗНАЙДЕНО";
+
+// Mark: - About OPORA
+
+"Facebook" = "https://www.facebook.com/cn.opora";
+"Twitter" = "https://twitter.com/opora";
+"Telegram" = "https://t.me/opora_news";
+"Instagram" = "https://www.instagram.com/cn.opora/";
+"YouTube" = "https://www.youtube.com/user/oporavideo";
+"Website" = "https://oporaua.org/";
+"Map" = "https://oporaua.org/map-reports";
+"Dani" = "https://danivyboriv.net/";
+"Analizator" = "https://fb.oporaua.org/";
+
+"WebsiteLinkString" = "Вебсайт \n";
+"MapLinkString" = "Мапа порушень \n";
+"DaniLinkString" = "Все про виборчі дані та соцмережі \n";
+"AnalizatorLinkString" = "Аналізатор політичної реклами \n \n";
+
+"About.OPORA.Text" = "Громадянська мережа ОПОРА – одна з провідних неурядових та позапартійних всеукраїнських організацій громадського контролю у сфері виборів. З 2007 року ОПОРА аналізує виборчий процес, проводить спостереження за всіма його етапами, працює над удосконаленням виборчого законодавства відповідно до міжнародних стандартів. Загалом за цей час до моніторингу виборів було залучено понад 20 тисяч кваліфікованих спостерігачів. Для своїх спостерігачів, та усіх інших учасників виборчого процесу ми розробили цей мобільний додаток із виборчим кодексом та верифікатором протоколу, який знадобиться вам у ніч підрахунку голосів. Тепер виборчий кодекс буде завжди із вами, а зручний пошук дозволить швидко знайти необхідну статтю. Отримати усю оперативну інформацію про перебіг виборів в Україні Ви можете тут: \n \n";
+
+"About.OPORA.Text.End" = "І не забувайте стежити за нами в соціальних мережах:";

@@ -18,7 +18,6 @@
 		101A3AFF28109E43008D72B1 /* VyboryFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AC028109E42008D72B1 /* VyboryFonts.swift */; };
 		101A3B0028109E43008D72B1 /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AC128109E42008D72B1 /* RoundedCorners.swift */; };
 		101A3B0128109E43008D72B1 /* PartiesLaw.realm in Resources */ = {isa = PBXBuildFile; fileRef = 101A3AC328109E43008D72B1 /* PartiesLaw.realm */; };
-		101A3B0228109E43008D72B1 /* ElectoralCode.realm in Resources */ = {isa = PBXBuildFile; fileRef = 101A3AC428109E43008D72B1 /* ElectoralCode.realm */; };
 		101A3B0328109E43008D72B1 /* NardepyLaw.realm in Resources */ = {isa = PBXBuildFile; fileRef = 101A3AC528109E43008D72B1 /* NardepyLaw.realm */; };
 		101A3B0428109E43008D72B1 /* ReferendumLaw.realm in Resources */ = {isa = PBXBuildFile; fileRef = 101A3AC628109E43008D72B1 /* ReferendumLaw.realm */; };
 		101A3B0528109E43008D72B1 /* DBCopyAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AC828109E43008D72B1 /* DBCopyAssistant.swift */; };
@@ -56,6 +55,9 @@
 		101A3B2528109E43008D72B1 /* PartiesLaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AFB28109E43008D72B1 /* PartiesLaw.swift */; };
 		101A3B2628109E43008D72B1 /* ReferendumLaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AFC28109E43008D72B1 /* ReferendumLaw.swift */; };
 		101A3B2828109E6A008D72B1 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3B2728109E6A008D72B1 /* Book.swift */; };
+		101A3B2C281160ED008D72B1 /* LawsTab.strings in Resources */ = {isa = PBXBuildFile; fileRef = 101A3B2B281160ED008D72B1 /* LawsTab.strings */; };
+		101A3B2F2811671B008D72B1 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3B2E2811671B008D72B1 /* R.generated.swift */; };
+		101A3B3128118C8E008D72B1 /* ElectoralCode.realm in Resources */ = {isa = PBXBuildFile; fileRef = 101A3B3028118C8E008D72B1 /* ElectoralCode.realm */; };
 		9AD90AC5991E1A1DBF977626 /* Pods_ElectionsUA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E9F66AEE9206B782BCD35A /* Pods_ElectionsUA.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,7 +72,6 @@
 		101A3AC028109E42008D72B1 /* VyboryFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VyboryFonts.swift; sourceTree = "<group>"; };
 		101A3AC128109E42008D72B1 /* RoundedCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
 		101A3AC328109E43008D72B1 /* PartiesLaw.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = PartiesLaw.realm; sourceTree = "<group>"; };
-		101A3AC428109E43008D72B1 /* ElectoralCode.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = ElectoralCode.realm; sourceTree = "<group>"; };
 		101A3AC528109E43008D72B1 /* NardepyLaw.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = NardepyLaw.realm; sourceTree = "<group>"; };
 		101A3AC628109E43008D72B1 /* ReferendumLaw.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = ReferendumLaw.realm; sourceTree = "<group>"; };
 		101A3AC828109E43008D72B1 /* DBCopyAssistant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBCopyAssistant.swift; sourceTree = "<group>"; };
@@ -108,6 +109,9 @@
 		101A3AFB28109E43008D72B1 /* PartiesLaw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartiesLaw.swift; sourceTree = "<group>"; };
 		101A3AFC28109E43008D72B1 /* ReferendumLaw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferendumLaw.swift; sourceTree = "<group>"; };
 		101A3B2728109E6A008D72B1 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		101A3B2B281160ED008D72B1 /* LawsTab.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = LawsTab.strings; sourceTree = "<group>"; };
+		101A3B2E2811671B008D72B1 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		101A3B3028118C8E008D72B1 /* ElectoralCode.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = ElectoralCode.realm; sourceTree = "<group>"; };
 		2B364FF6B4A5D3626246E4E2 /* Pods-ElectionsUA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElectionsUA.release.xcconfig"; path = "Target Support Files/Pods-ElectionsUA/Pods-ElectionsUA.release.xcconfig"; sourceTree = "<group>"; };
 		4B363CCD891EDAFF5C28343A /* Pods-ElectionsUA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElectionsUA.debug.xcconfig"; path = "Target Support Files/Pods-ElectionsUA/Pods-ElectionsUA.debug.xcconfig"; sourceTree = "<group>"; };
 		73E9F66AEE9206B782BCD35A /* Pods_ElectionsUA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElectionsUA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,11 +154,11 @@
 			children = (
 				101A3A7B28108BFC008D72B1 /* ElectionsUAApp.swift */,
 				101A3A8928108C65008D72B1 /* StateManager.swift */,
-				101A3AC228109E43008D72B1 /* Database Files */,
-				101A3AC728109E43008D72B1 /* DB persistence */,
-				101A3ABD28109E42008D72B1 /* Helpers */,
 				101A3AF428109E43008D72B1 /* Model */,
 				101A3AD228109E43008D72B1 /* View */,
+				101A3AC728109E43008D72B1 /* DB persistence */,
+				101A3ABD28109E42008D72B1 /* Helpers */,
+				101A3AC228109E43008D72B1 /* Database Files */,
 				101A3A7F28108BFE008D72B1 /* Assets.xcassets */,
 				101A3A8128108BFE008D72B1 /* Preview Content */,
 			);
@@ -172,10 +176,12 @@
 		101A3ABD28109E42008D72B1 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				101A3B2A281160B2008D72B1 /* Strings */,
 				101A3ABE28109E42008D72B1 /* K.swift */,
 				101A3ABF28109E42008D72B1 /* ViewExtensions.swift */,
 				101A3AC028109E42008D72B1 /* VyboryFonts.swift */,
 				101A3AC128109E42008D72B1 /* RoundedCorners.swift */,
+				101A3B2E2811671B008D72B1 /* R.generated.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -183,8 +189,8 @@
 		101A3AC228109E43008D72B1 /* Database Files */ = {
 			isa = PBXGroup;
 			children = (
+				101A3B3028118C8E008D72B1 /* ElectoralCode.realm */,
 				101A3AC328109E43008D72B1 /* PartiesLaw.realm */,
-				101A3AC428109E43008D72B1 /* ElectoralCode.realm */,
 				101A3AC528109E43008D72B1 /* NardepyLaw.realm */,
 				101A3AC628109E43008D72B1 /* ReferendumLaw.realm */,
 			);
@@ -383,6 +389,14 @@
 			path = "DB models";
 			sourceTree = "<group>";
 		};
+		101A3B2A281160B2008D72B1 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				101A3B2B281160ED008D72B1 /* LawsTab.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
 		6E9DF30C639BE30AB84DA610 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -412,7 +426,8 @@
 				101A3A7528108BFC008D72B1 /* Frameworks */,
 				101A3A7628108BFC008D72B1 /* Resources */,
 				00961B51278F5968CBF59E0A /* [CP] Embed Pods Frameworks */,
-				101A3B292810A656008D72B1 /* ShellScript */,
+				101A3B292810A656008D72B1 /* SwiftLint */,
+				101A3B2D28116426008D72B1 /* RSwift */,
 			);
 			buildRules = (
 			);
@@ -469,12 +484,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				101A3B0328109E43008D72B1 /* NardepyLaw.realm in Resources */,
-				101A3B0228109E43008D72B1 /* ElectoralCode.realm in Resources */,
 				101A3A8328108BFE008D72B1 /* Preview Assets.xcassets in Resources */,
 				101A3B0B28109E43008D72B1 /* code.db-wal in Resources */,
 				101A3B0128109E43008D72B1 /* PartiesLaw.realm in Resources */,
 				101A3A8028108BFE008D72B1 /* Assets.xcassets in Resources */,
+				101A3B2C281160ED008D72B1 /* LawsTab.strings in Resources */,
 				101A3B0428109E43008D72B1 /* ReferendumLaw.realm in Resources */,
+				101A3B3128118C8E008D72B1 /* ElectoralCode.realm in Resources */,
 				101A3B0C28109E43008D72B1 /* code.db-shm in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,7 +515,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ElectionsUA/Pods-ElectionsUA-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		101A3B292810A656008D72B1 /* ShellScript */ = {
+		101A3B292810A656008D72B1 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -508,6 +524,7 @@
 			);
 			inputPaths = (
 			);
+			name = SwiftLint;
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -515,6 +532,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		101A3B2D28116426008D72B1 /* RSwift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = RSwift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$SRCROOT/ElectionsUA/Helpers/R.generated.swift\"",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/ElectionsUA/Helpers/R.generated.swift\"\n";
 		};
 		6DEBEFD92EAC65AD16E14109 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -572,6 +609,7 @@
 				101A3A7C28108BFC008D72B1 /* ElectionsUAApp.swift in Sources */,
 				101A3B1728109E43008D72B1 /* ArticleVM.swift in Sources */,
 				101A3B0F28109E43008D72B1 /* LawsView.swift in Sources */,
+				101A3B2F2811671B008D72B1 /* R.generated.swift in Sources */,
 				101A3B1D28109E43008D72B1 /* BindedListItem.swift in Sources */,
 				101A3B1F28109E43008D72B1 /* MyBottomNavLine.swift in Sources */,
 				101A3B2028109E43008D72B1 /* BackGradient.swift in Sources */,

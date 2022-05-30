@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct BindedListItem: View {
-
+    
     @Environment(\.colorScheme) var colorScheme
     @Binding var textMain: String
     @Binding var textSecondary: String
+
     var body: some View {
         VStack(alignment: .leading) {
             VStack(alignment: .leading) {

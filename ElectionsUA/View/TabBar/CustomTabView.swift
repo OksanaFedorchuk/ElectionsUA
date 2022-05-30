@@ -22,55 +22,56 @@ struct CustomTabView: View {
             /// Background color for dark/light scheme,
             /// made separately to ignore safe area on bottom behind the custom tab bar
             LinearGradient(colors: colorScheme == .light
-                           ? [K.Colors.tabGradientStart, K.Colors.tabGradientEnd]
+                           ? [Color(R.color.tabGradientStart() ?? .gray),
+                              Color(R.color.tabGradientEnd() ?? .gray)]
                            : [.white],
                            startPoint: .leading,
                            endPoint: .trailing)
-                .ignoresSafeArea(edges: .bottom)
-                .cornerRadius(30, corners: [.topRight, .topLeft])
+            .ignoresSafeArea(edges: .bottom)
+            .cornerRadius(30, corners: [.topRight, .topLeft])
             HStack {
                 Group {
                     Spacer()
 
-                    Button(action: {
+                    Button {
                         self.tabIndex = .laws
-                    }) {
+                    } label: {
                         VStack {
-                            Image(K.IconsTabBar.lawTab)
-                            Text("Закони")
+                            Image(uiImage: R.image.lawTab()!)
+                            Text(R.string.lawsTab.laws())
                                 .font(.system(size: 14))
                         }
                     }
                     .foregroundColor(self.tabIndex == .laws
-                                     ? K.Colors.myYellow
+                                     ? Color(R.color.myYellow() ?? .gray)
                                      : (colorScheme == .light ? .white.opacity(0.8) : .yellow))
 
                     Spacer()
-                    Button(action: {
+                    Button {
                         self.tabIndex = .protocols
-                    }) {
+                    } label: {
                         VStack {
-                            Image(K.IconsTabBar.protocolTab)
-                            Text("Протокол")
+                            Image(uiImage: R.image.protocolTab()!)
+                            Text(R.string.lawsTab.protocol())
                                 .font(.system(size: 14))
                         }
                     }
                     .foregroundColor(self.tabIndex == .protocols
-                                     ? K.Colors.myYellow
+                                     ? Color(R.color.myYellow() ?? .gray)
                                      : (colorScheme == .light ? .white.opacity(0.8) : .yellow))
 
                     Spacer()
-                    Button(action: {
+                    Button {
                         self.tabIndex = .saved
-                    }) {
+                    } label: {
                         VStack {
-                            Image(K.IconsTabBar.savedTab)
-                            Text("Обране")
+                            Image(uiImage: R.image.flagTab()!)
+                            Text(R.string.lawsTab.favourite())
                                 .font(.system(size: 14))
                         }
                     }
                     .foregroundColor(self.tabIndex == .saved
-                                     ? K.Colors.myYellow
+                                     ? Color(R.color.myYellow() ?? .gray)
                                      : (colorScheme == .light ? .white.opacity(0.8) : .yellow))
                     Spacer()
                     
@@ -78,14 +79,14 @@ struct CustomTabView: View {
                         self.tabIndex = .search
                     }, label: {
                         VStack {
-                            Image(K.IconsTabBar.searchTab)
-                            Text("Пошук")
+                            Image(uiImage: R.image.searchTab()!)
+                            Text(R.string.lawsTab.search())
                                 .font(.system(size: 14))
                         }
                     })
-                        .foregroundColor(self.tabIndex == .search
-                                         ? K.Colors.myYellow
-                                         : (colorScheme == .light ? .white.opacity(0.8) : .yellow))
+                    .foregroundColor(self.tabIndex == .search
+                                     ? Color(R.color.myYellow() ?? .gray)
+                                     : (colorScheme == .light ? .white.opacity(0.8) : .yellow))
                     Spacer()
                 }
             }

@@ -16,7 +16,6 @@ class ChaptersListVM: ObservableObject {
 
     init(db: DBReadable, book: String?) {
         self.db = db
-
         getChapters(for: book)
     }
 
@@ -29,7 +28,9 @@ class ChaptersListVM: ObservableObject {
                 chaptersFiltered.append(chapter)
             }
         }
-        guard let bookStrong = book else { return chapters = chaptersFiltered }
+        guard let bookStrong = book else {
+            return chapters = chaptersFiltered
+        }
         chapters = chaptersFiltered.filter { $0.bookNumber == "\(bookStrong)" }
     }
 }

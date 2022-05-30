@@ -42,7 +42,9 @@ class ArticleVM: ObservableObject {
 
     private func subscribeID() {
         $currentID.sink { id in
-            guard let strongID = id else {return}
+            guard let strongID = id else {
+                return
+            }
             self.getArticle(with: strongID)
         }
         .store(in: &cancellables)
@@ -96,14 +98,18 @@ class ArticleVM: ObservableObject {
     }
 
     internal func setNext() {
-        guard let currentID = self.currentID else {return}
+        guard let currentID = self.currentID else {
+            return
+        }
         if currentID < maxArticles {
             self.currentID! += 1
         }
     }
 
     internal func setPrevious() {
-        guard let currentID = self.currentID else {return}
+        guard let currentID = self.currentID else {
+            return
+        }
         if currentID <= maxArticles && currentID > 0 {
             self.currentID! -= 1
         }

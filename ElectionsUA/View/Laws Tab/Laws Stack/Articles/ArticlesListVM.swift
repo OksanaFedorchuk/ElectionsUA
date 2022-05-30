@@ -15,14 +15,13 @@ class ArticlesListVM: ObservableObject {
 
     init(db: DBReadable, chapter: String) {
         self.db = db
-
         getArticlesFiltered(by: chapter)
     }
 
     private func getArticlesFiltered(by chapter: String) {
         let objects = db.getObjectsFiltered(by: chapter)
-        for n in 0..<objects.count {
-            let article = Article(with: objects[n])
+        for num in 0..<objects.count {
+            let article = Article(with: objects[num])
             articles.append(article)
         }
     }

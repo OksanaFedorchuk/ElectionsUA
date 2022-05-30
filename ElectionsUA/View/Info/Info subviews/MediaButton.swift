@@ -24,7 +24,7 @@ struct MediaButton: View {
         Button {
             action()
         } label: {
-            //stack of image+text for button
+            // stack of image+text for button
             VStack(spacing: 15) {
                 switch mediaType {
                 case .twitter:

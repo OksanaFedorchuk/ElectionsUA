@@ -40,6 +40,10 @@ final class ReferendumDB: DBReadableWriteable {
 // MARK: - DBReadable
 
 extension ReferendumDB: DBReadable {
+    func getObjectsSearched(by text: String) -> [UniversalDBModel] {
+        return [UniversalDBModel]()
+    }
+
     var name: String? {
         return R.string.lawsTab.referendum()
     }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-//View providing information about the OPORA organization and links to its social media
+// View providing information about the OPORA organization and links to its social media
 struct InfoView: View {
     
     @Environment(\.colorScheme) var colorScheme
@@ -18,12 +18,12 @@ struct InfoView: View {
         ScrollView {
             
             VStack {
-                //Text about opora
+                // Text about opora
                 AboutOporaText()
                 
                 MyDashLine(colorScheme: colorScheme,
                            isHorisontal: true)
-                //scrollview with media buttons opening social media
+                // scrollview with media buttons opening social media
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 20) {
                         MediaButton(mediaType: .facebook) {

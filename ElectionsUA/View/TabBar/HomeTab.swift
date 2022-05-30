@@ -49,7 +49,7 @@ struct HomeTab: View {
                 case .saved:
                     SavedTab()
                 case .search:
-                    SearchTab()
+                    SearchTab(vm: SearchTabVM(db: NardepyDB()))
                 }
 
                 CustomTabView(tabIndex: $tabIndex)

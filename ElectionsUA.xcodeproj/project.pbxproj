@@ -26,8 +26,6 @@
 		101A3B0828109E43008D72B1 /* PartiesDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3ACC28109E43008D72B1 /* PartiesDB.swift */; };
 		101A3B0928109E43008D72B1 /* CodeDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3ACD28109E43008D72B1 /* CodeDB.swift */; };
 		101A3B0A28109E43008D72B1 /* DBProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3ACE28109E43008D72B1 /* DBProtocols.swift */; };
-		101A3B0B28109E43008D72B1 /* code.db-wal in Resources */ = {isa = PBXBuildFile; fileRef = 101A3AD028109E43008D72B1 /* code.db-wal */; };
-		101A3B0C28109E43008D72B1 /* code.db-shm in Resources */ = {isa = PBXBuildFile; fileRef = 101A3AD128109E43008D72B1 /* code.db-shm */; };
 		101A3B0D28109E43008D72B1 /* SearchTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AD428109E43008D72B1 /* SearchTab.swift */; };
 		101A3B0E28109E43008D72B1 /* SavedTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AD628109E43008D72B1 /* SavedTab.swift */; };
 		101A3B0F28109E43008D72B1 /* LawsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3AD828109E43008D72B1 /* LawsView.swift */; };
@@ -57,9 +55,9 @@
 		101A3B2828109E6A008D72B1 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3B2728109E6A008D72B1 /* Book.swift */; };
 		101A3B2C281160ED008D72B1 /* LawsTab.strings in Resources */ = {isa = PBXBuildFile; fileRef = 101A3B2B281160ED008D72B1 /* LawsTab.strings */; };
 		101A3B2F2811671B008D72B1 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3B2E2811671B008D72B1 /* R.generated.swift */; };
-		101A3B3128118C8E008D72B1 /* ElectoralCode.realm in Resources */ = {isa = PBXBuildFile; fileRef = 101A3B3028118C8E008D72B1 /* ElectoralCode.realm */; };
 		101A3B342812105C008D72B1 /* TabGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3B332812105C008D72B1 /* TabGradient.swift */; };
 		101A3B3628121081008D72B1 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3B3528121081008D72B1 /* TabButton.swift */; };
+		101A3B3828132DA5008D72B1 /* ElectoralCode.realm in Resources */ = {isa = PBXBuildFile; fileRef = 101A3B3728132DA5008D72B1 /* ElectoralCode.realm */; };
 		9AD90AC5991E1A1DBF977626 /* Pods_ElectionsUA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E9F66AEE9206B782BCD35A /* Pods_ElectionsUA.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,8 +80,6 @@
 		101A3ACC28109E43008D72B1 /* PartiesDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartiesDB.swift; sourceTree = "<group>"; };
 		101A3ACD28109E43008D72B1 /* CodeDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeDB.swift; sourceTree = "<group>"; };
 		101A3ACE28109E43008D72B1 /* DBProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBProtocols.swift; sourceTree = "<group>"; };
-		101A3AD028109E43008D72B1 /* code.db-wal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "code.db-wal"; sourceTree = "<group>"; };
-		101A3AD128109E43008D72B1 /* code.db-shm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "code.db-shm"; sourceTree = "<group>"; };
 		101A3AD428109E43008D72B1 /* SearchTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTab.swift; sourceTree = "<group>"; };
 		101A3AD628109E43008D72B1 /* SavedTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedTab.swift; sourceTree = "<group>"; };
 		101A3AD828109E43008D72B1 /* LawsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LawsView.swift; sourceTree = "<group>"; };
@@ -113,9 +109,9 @@
 		101A3B2728109E6A008D72B1 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		101A3B2B281160ED008D72B1 /* LawsTab.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = LawsTab.strings; sourceTree = "<group>"; };
 		101A3B2E2811671B008D72B1 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
-		101A3B3028118C8E008D72B1 /* ElectoralCode.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = ElectoralCode.realm; sourceTree = "<group>"; };
 		101A3B332812105C008D72B1 /* TabGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabGradient.swift; sourceTree = "<group>"; };
 		101A3B3528121081008D72B1 /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
+		101A3B3728132DA5008D72B1 /* ElectoralCode.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = ElectoralCode.realm; sourceTree = "<group>"; };
 		2B364FF6B4A5D3626246E4E2 /* Pods-ElectionsUA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElectionsUA.release.xcconfig"; path = "Target Support Files/Pods-ElectionsUA/Pods-ElectionsUA.release.xcconfig"; sourceTree = "<group>"; };
 		4B363CCD891EDAFF5C28343A /* Pods-ElectionsUA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElectionsUA.debug.xcconfig"; path = "Target Support Files/Pods-ElectionsUA/Pods-ElectionsUA.debug.xcconfig"; sourceTree = "<group>"; };
 		73E9F66AEE9206B782BCD35A /* Pods_ElectionsUA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElectionsUA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,7 +189,7 @@
 		101A3AC228109E43008D72B1 /* Database Files */ = {
 			isa = PBXGroup;
 			children = (
-				101A3B3028118C8E008D72B1 /* ElectoralCode.realm */,
+				101A3B3728132DA5008D72B1 /* ElectoralCode.realm */,
 				101A3AC328109E43008D72B1 /* PartiesLaw.realm */,
 				101A3AC528109E43008D72B1 /* NardepyLaw.realm */,
 				101A3AC628109E43008D72B1 /* ReferendumLaw.realm */,
@@ -207,7 +203,6 @@
 				101A3AC828109E43008D72B1 /* DBCopyAssistant.swift */,
 				101A3AC928109E43008D72B1 /* DB Managers */,
 				101A3ACE28109E43008D72B1 /* DBProtocols.swift */,
-				101A3ACF28109E43008D72B1 /* Kodeks Database */,
 			);
 			path = "DB persistence";
 			sourceTree = "<group>";
@@ -221,15 +216,6 @@
 				101A3ACD28109E43008D72B1 /* CodeDB.swift */,
 			);
 			path = "DB Managers";
-			sourceTree = "<group>";
-		};
-		101A3ACF28109E43008D72B1 /* Kodeks Database */ = {
-			isa = PBXGroup;
-			children = (
-				101A3AD028109E43008D72B1 /* code.db-wal */,
-				101A3AD128109E43008D72B1 /* code.db-shm */,
-			);
-			path = "Kodeks Database";
 			sourceTree = "<group>";
 		};
 		101A3AD228109E43008D72B1 /* View */ = {
@@ -498,14 +484,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				101A3B0328109E43008D72B1 /* NardepyLaw.realm in Resources */,
+				101A3B3828132DA5008D72B1 /* ElectoralCode.realm in Resources */,
 				101A3A8328108BFE008D72B1 /* Preview Assets.xcassets in Resources */,
-				101A3B0B28109E43008D72B1 /* code.db-wal in Resources */,
 				101A3B0128109E43008D72B1 /* PartiesLaw.realm in Resources */,
 				101A3A8028108BFE008D72B1 /* Assets.xcassets in Resources */,
 				101A3B2C281160ED008D72B1 /* LawsTab.strings in Resources */,
 				101A3B0428109E43008D72B1 /* ReferendumLaw.realm in Resources */,
-				101A3B3128118C8E008D72B1 /* ElectoralCode.realm in Resources */,
-				101A3B0C28109E43008D72B1 /* code.db-shm in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

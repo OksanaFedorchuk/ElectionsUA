@@ -74,7 +74,6 @@
 		103B88BC2819A2AA0046EB3B /* ClearButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103B88BB2819A2AA0046EB3B /* ClearButtonModifier.swift */; };
 		103B88BE2819A5FB0046EB3B /* HTagCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103B88BD2819A5FB0046EB3B /* HTagCollection.swift */; };
 		103DCE4D283D347C00F9605A /* TextTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103DCE4C283D347C00F9605A /* TextTag.swift */; };
-		10BD8B2628135D8D00A38F20 /* MediaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BD8B2528135D8D00A38F20 /* MediaButton.swift */; };
 		10BD8B292813635D00A38F20 /* AboutOporaText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BD8B282813635D00A38F20 /* AboutOporaText.swift */; };
 		10BD8B2B281363B100A38F20 /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BD8B2A281363B100A38F20 /* FontExtensions.swift */; };
 		10F5352F283FB03C0061D6FE /* SearchHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F5352E283FB03C0061D6FE /* SearchHistoryView.swift */; };
@@ -90,6 +89,7 @@
 		10F535482842312A0061D6FE /* View+readSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F535472842312A0061D6FE /* View+readSize.swift */; };
 		10F5354A284237750061D6FE /* PopularSearchVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F53549284237750061D6FE /* PopularSearchVM.swift */; };
 		10F5354D28423C930061D6FE /* SearchPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F5354C28423C930061D6FE /* SearchPlaceholder.swift */; };
+		10F5354F28427D580061D6FE /* MediaButtonsCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F5354E28427D580061D6FE /* MediaButtonsCollection.swift */; };
 		9AD90AC5991E1A1DBF977626 /* Pods_ElectionsUA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E9F66AEE9206B782BCD35A /* Pods_ElectionsUA.framework */; };
 /* End PBXBuildFile section */
 
@@ -161,7 +161,6 @@
 		103B88BD2819A5FB0046EB3B /* HTagCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTagCollection.swift; sourceTree = "<group>"; };
 		103DCE4C283D347C00F9605A /* TextTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTag.swift; sourceTree = "<group>"; };
 		10BD8B2428135B3900A38F20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		10BD8B2528135D8D00A38F20 /* MediaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaButton.swift; sourceTree = "<group>"; };
 		10BD8B282813635D00A38F20 /* AboutOporaText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutOporaText.swift; sourceTree = "<group>"; };
 		10BD8B2A281363B100A38F20 /* FontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
 		10F5352E283FB03C0061D6FE /* SearchHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryView.swift; sourceTree = "<group>"; };
@@ -177,6 +176,7 @@
 		10F535472842312A0061D6FE /* View+readSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+readSize.swift"; sourceTree = "<group>"; };
 		10F53549284237750061D6FE /* PopularSearchVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularSearchVM.swift; sourceTree = "<group>"; };
 		10F5354C28423C930061D6FE /* SearchPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceholder.swift; sourceTree = "<group>"; };
+		10F5354E28427D580061D6FE /* MediaButtonsCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaButtonsCollection.swift; sourceTree = "<group>"; };
 		2B364FF6B4A5D3626246E4E2 /* Pods-ElectionsUA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElectionsUA.release.xcconfig"; path = "Target Support Files/Pods-ElectionsUA/Pods-ElectionsUA.release.xcconfig"; sourceTree = "<group>"; };
 		4B363CCD891EDAFF5C28343A /* Pods-ElectionsUA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElectionsUA.debug.xcconfig"; path = "Target Support Files/Pods-ElectionsUA/Pods-ElectionsUA.debug.xcconfig"; sourceTree = "<group>"; };
 		73E9F66AEE9206B782BCD35A /* Pods_ElectionsUA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElectionsUA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -574,9 +574,9 @@
 			isa = PBXGroup;
 			children = (
 				10BD8B282813635D00A38F20 /* AboutOporaText.swift */,
-				10BD8B2528135D8D00A38F20 /* MediaButton.swift */,
 				103B88A52815C7CB0046EB3B /* MediaButtonText.swift */,
 				103B88A72815C7E40046EB3B /* MediaButtonImg.swift */,
+				10F5354E28427D580061D6FE /* MediaButtonsCollection.swift */,
 			);
 			path = "Info subviews";
 			sourceTree = "<group>";
@@ -858,7 +858,6 @@
 				101A3AFE28109E43008D72B1 /* View+CornerRadius.swift in Sources */,
 				103B88BA28199D870046EB3B /* View+Placeholder.swift in Sources */,
 				101A3B0828109E43008D72B1 /* PartiesDB.swift in Sources */,
-				10BD8B2628135D8D00A38F20 /* MediaButton.swift in Sources */,
 				10F5354028413C5E0061D6FE /* LawGridItem.swift in Sources */,
 				101A3A7C28108BFC008D72B1 /* ElectionsUAApp.swift in Sources */,
 				101A3B1728109E43008D72B1 /* ArticleVM.swift in Sources */,
@@ -879,6 +878,7 @@
 				101A3B2628109E43008D72B1 /* ReferendumLaw.swift in Sources */,
 				103B88A62815C7CB0046EB3B /* MediaButtonText.swift in Sources */,
 				103B88BC2819A2AA0046EB3B /* ClearButtonModifier.swift in Sources */,
+				10F5354F28427D580061D6FE /* MediaButtonsCollection.swift in Sources */,
 				101A3B0728109E43008D72B1 /* ReferendumDB.swift in Sources */,
 				103B88B728199D4D0046EB3B /* SearchTextFieldModifier.swift in Sources */,
 				10F53546284230100061D6FE /* TagItemView.swift in Sources */,

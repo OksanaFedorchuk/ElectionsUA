@@ -18,6 +18,11 @@ struct InfoView: View {
         ScrollView {
             
             VStack {
+                // OPORA's logo
+                Image(uiImage: R.image.oporA()!)
+                    .resizable()
+                    .scaledToFill()
+
                 // Text about opora
                 AboutOporaText()
                 
@@ -26,19 +31,22 @@ struct InfoView: View {
                 // scrollview with media buttons opening social media
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 20) {
-                        MediaButton(mediaType: .facebook) {
+                        WebsiteButton {
+                            openURL(URL(string: R.string.lawsTab.websiteLink())!)
+                        }
+                        FacebookButton {
                             openURL(URL(string: R.string.lawsTab.facebookLink())!)
                         }
-                        MediaButton(mediaType: .twitter) {
+                        TwitterButton {
                             openURL(URL(string: R.string.lawsTab.twitterLink())!)
                         }
-                        MediaButton(mediaType: .telegram) {
+                        TelegramButton {
                             openURL(URL(string: R.string.lawsTab.telegramLink())!)
                         }
-                        MediaButton(mediaType: .instagram) {
+                        InstagramButton {
                             openURL(URL(string: R.string.lawsTab.instagramLink())!)
                         }
-                        MediaButton(mediaType: .youtube) {
+                        YouTubeButton {
                             openURL(URL(string: R.string.lawsTab.youTubeLink())!)
                         }
                     }
@@ -47,6 +55,8 @@ struct InfoView: View {
             }
             .padding(.horizontal, 24)
         }
+        .navigationViewStyle(.stack)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

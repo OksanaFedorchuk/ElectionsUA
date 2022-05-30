@@ -50,22 +50,19 @@
 "Nothing.Found" = "НІЧОГО НЕ ЗНАЙДЕНО";
 
 // Mark: - About OPORA
-
+"website" = "Website";
 "facebook" = "Facebook";
 "twitter" = "Twitter";
 "telegram" = "Telegram";
 "instagram" = "Instagram";
 "youtube" = "YouTube";
 
+"Website.Link" = "https://oporaua.org/";
 "Facebook.Link" = "https://www.facebook.com/cn.opora";
 "Twitter.Link" = "https://twitter.com/opora";
 "Telegram.Link" = "https://t.me/opora_news";
 "Instagram.Link" = "https://www.instagram.com/cn.opora/";
 "YouTube.Link" = "https://www.youtube.com/user/oporavideo";
-"Website.Link" = "https://oporaua.org/";
-"Map.Link" = "https://oporaua.org/map-reports";
-"Dani.Link" = "https://danivyboriv.net/";
-"Analizator.Link" = "https://fb.oporaua.org/";
 
 "WebsiteLinkString" = "Вебсайт \n";
 "MapLinkString" = "Мапа порушень \n";

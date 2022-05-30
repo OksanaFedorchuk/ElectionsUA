@@ -8,31 +8,35 @@
 import SwiftUI
 
 struct SearchTab: View {
-
+    
     @ObservedObject var vm: SearchTabVM
     @Environment(\.colorScheme) var colorScheme
-
+    
     var body: some View {
         ScrollView {
             VStack {
                 CustomSearchTextField(searchText: $vm.searchText,
                                       colorScheme: colorScheme)
                 .padding(.vertical)
+                
                 switch vm.state {
+                    
                 case .start:
                     SearchHistoryView()
                     PopularSearchView()
-
+                    
                 case .hasResults:
                     HTagCollection(selectedTag: $vm.selectedTag, tags: vm.tags)
+                        .padding(.bottom, 5)
                     Spacer()
                     LazyVStack(alignment: .leading) {
                         ForEach(vm.searchResults) { article in
-                            ListItem(textMain: "\(article.number)",
-                                     textSecondary: "\(article.title)")
+                            SearchListItem(textMain: "\(article.number)",
+                                           textSecondary: "\(article.title)\n\(article.content)",
+                                           searchText: $vm.searchText)
                         }
                     }
-
+                    
                 case .noResults:
                     // TODO: Show placeholder
                     Text("No results")

@@ -63,6 +63,8 @@
 		101A3B63281357EE008D72B1 /* Gilroy-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 101A3B4F281357EE008D72B1 /* Gilroy-SemiBold.ttf */; };
 		101A3B64281357EE008D72B1 /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 101A3B50281357EE008D72B1 /* Gilroy-Bold.ttf */; };
 		101A3B88281357F9008D72B1 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 101A3B76281357F9008D72B1 /* Roboto-Bold.ttf */; };
+		103B88A62815C7CB0046EB3B /* MediaButtonText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103B88A52815C7CB0046EB3B /* MediaButtonText.swift */; };
+		103B88A82815C7E40046EB3B /* MediaButtonImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103B88A72815C7E40046EB3B /* MediaButtonImg.swift */; };
 		10BD8B2628135D8D00A38F20 /* MediaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BD8B2528135D8D00A38F20 /* MediaButton.swift */; };
 		10BD8B292813635D00A38F20 /* AboutOporaText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BD8B282813635D00A38F20 /* AboutOporaText.swift */; };
 		10BD8B2B281363B100A38F20 /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BD8B2A281363B100A38F20 /* FontExtensions.swift */; };
@@ -125,6 +127,8 @@
 		101A3B4F281357EE008D72B1 /* Gilroy-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-SemiBold.ttf"; sourceTree = "<group>"; };
 		101A3B50281357EE008D72B1 /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
 		101A3B76281357F9008D72B1 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		103B88A52815C7CB0046EB3B /* MediaButtonText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaButtonText.swift; sourceTree = "<group>"; };
+		103B88A72815C7E40046EB3B /* MediaButtonImg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaButtonImg.swift; sourceTree = "<group>"; };
 		10BD8B2428135B3900A38F20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		10BD8B2528135D8D00A38F20 /* MediaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaButton.swift; sourceTree = "<group>"; };
 		10BD8B282813635D00A38F20 /* AboutOporaText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutOporaText.swift; sourceTree = "<group>"; };
@@ -458,6 +462,8 @@
 			children = (
 				10BD8B282813635D00A38F20 /* AboutOporaText.swift */,
 				10BD8B2528135D8D00A38F20 /* MediaButton.swift */,
+				103B88A52815C7CB0046EB3B /* MediaButtonText.swift */,
+				103B88A72815C7E40046EB3B /* MediaButtonImg.swift */,
 			);
 			path = "Info subviews";
 			sourceTree = "<group>";
@@ -700,12 +706,14 @@
 				101A3B3628121081008D72B1 /* TabButton.swift in Sources */,
 				101A3B2F2811671B008D72B1 /* R.generated.swift in Sources */,
 				101A3B1D28109E43008D72B1 /* BindedListItem.swift in Sources */,
+				103B88A82815C7E40046EB3B /* MediaButtonImg.swift in Sources */,
 				101A3B1F28109E43008D72B1 /* MyBottomNavLine.swift in Sources */,
 				101A3B2028109E43008D72B1 /* BackGradient.swift in Sources */,
 				101A3B2328109E43008D72B1 /* ElectoralCode.swift in Sources */,
 				101A3B342812105C008D72B1 /* TabGradient.swift in Sources */,
 				101A3B1B28109E43008D72B1 /* ProtocolsTab.swift in Sources */,
 				101A3B2628109E43008D72B1 /* ReferendumLaw.swift in Sources */,
+				103B88A62815C7CB0046EB3B /* MediaButtonText.swift in Sources */,
 				101A3B0728109E43008D72B1 /* ReferendumDB.swift in Sources */,
 				101A3B1828109E43008D72B1 /* LawsVM.swift in Sources */,
 				101A3B0028109E43008D72B1 /* RoundedCorners.swift in Sources */,

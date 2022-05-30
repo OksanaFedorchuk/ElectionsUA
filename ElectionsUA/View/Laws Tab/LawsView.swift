@@ -42,7 +42,7 @@ struct LawsView: View {
                             .environmentObject(stateManager)
                     } label: {
                         LawGridItem(image: R.image.lawTwo()!,
-                                    textMain: R.string.lawsTab.lawOfUkraine(),
+                                    textMain: R .string.lawsTab.lawOfUkraine(),
                                     textSecondary: R.string.lawsTab.onDeputies())
                         .onTapGesture {
                             stateManager.selection = "2"

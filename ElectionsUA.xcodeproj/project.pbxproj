@@ -76,6 +76,9 @@
 		103DCE4D283D347C00F9605A /* TextTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103DCE4C283D347C00F9605A /* TextTag.swift */; };
 		10BD8B292813635D00A38F20 /* AboutOporaText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BD8B282813635D00A38F20 /* AboutOporaText.swift */; };
 		10BD8B2B281363B100A38F20 /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BD8B2A281363B100A38F20 /* FontExtensions.swift */; };
+		10C8980C2845463D0077659B /* ProtocolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C8980B2845463D0077659B /* ProtocolsView.swift */; };
+		10C8980E2845494D0077659B /* ProtocolVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C8980D2845494D0077659B /* ProtocolVM.swift */; };
+		10C8981028455B900077659B /* ProtocolTab.strings in Resources */ = {isa = PBXBuildFile; fileRef = 10C8980F28455B900077659B /* ProtocolTab.strings */; };
 		10F5352F283FB03C0061D6FE /* SearchHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F5352E283FB03C0061D6FE /* SearchHistoryView.swift */; };
 		10F53531283FB05A0061D6FE /* PopularSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F53530283FB05A0061D6FE /* PopularSearchView.swift */; };
 		10F53533283FB15B0061D6FE /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F53532283FB15B0061D6FE /* UserData.swift */; };
@@ -163,6 +166,9 @@
 		10BD8B2428135B3900A38F20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		10BD8B282813635D00A38F20 /* AboutOporaText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutOporaText.swift; sourceTree = "<group>"; };
 		10BD8B2A281363B100A38F20 /* FontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
+		10C8980B2845463D0077659B /* ProtocolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsView.swift; sourceTree = "<group>"; };
+		10C8980D2845494D0077659B /* ProtocolVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolVM.swift; sourceTree = "<group>"; };
+		10C8980F28455B900077659B /* ProtocolTab.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = ProtocolTab.strings; sourceTree = "<group>"; };
 		10F5352E283FB03C0061D6FE /* SearchHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryView.swift; sourceTree = "<group>"; };
 		10F53530283FB05A0061D6FE /* PopularSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularSearchView.swift; sourceTree = "<group>"; };
 		10F53532283FB15B0061D6FE /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
@@ -394,6 +400,8 @@
 			isa = PBXGroup;
 			children = (
 				101A3AEB28109E43008D72B1 /* ProtocolsTab.swift */,
+				10C8980B2845463D0077659B /* ProtocolsView.swift */,
+				10C8980D2845494D0077659B /* ProtocolVM.swift */,
 			);
 			path = "Protocols Tab";
 			sourceTree = "<group>";
@@ -463,6 +471,7 @@
 			children = (
 				101A3ABE28109E42008D72B1 /* K.swift */,
 				101A3B2B281160ED008D72B1 /* LawsTab.strings */,
+				10C8980F28455B900077659B /* ProtocolTab.strings */,
 			);
 			path = Strings;
 			sourceTree = "<group>";
@@ -722,6 +731,7 @@
 				101A3B63281357EE008D72B1 /* Gilroy-SemiBold.ttf in Resources */,
 				101A3B0328109E43008D72B1 /* NardepyLaw.realm in Resources */,
 				101A3B3828132DA5008D72B1 /* ElectoralCode.realm in Resources */,
+				10C8981028455B900077659B /* ProtocolTab.strings in Resources */,
 				101A3A8328108BFE008D72B1 /* Preview Assets.xcassets in Resources */,
 				101A3B64281357EE008D72B1 /* Gilroy-Bold.ttf in Resources */,
 				101A3B0128109E43008D72B1 /* PartiesLaw.realm in Resources */,
@@ -821,6 +831,7 @@
 			files = (
 				103B88AD2816F8DD0046EB3B /* ArticleDetailsVM.swift in Sources */,
 				101A3B0928109E43008D72B1 /* CodeDB.swift in Sources */,
+				10C8980C2845463D0077659B /* ProtocolsView.swift in Sources */,
 				101A3B2128109E43008D72B1 /* Chapter.swift in Sources */,
 				101A3B1228109E43008D72B1 /* ArticlesListVM.swift in Sources */,
 				101A3B1428109E43008D72B1 /* BooksListView.swift in Sources */,
@@ -888,6 +899,7 @@
 				10BD8B2B281363B100A38F20 /* FontExtensions.swift in Sources */,
 				10F535482842312A0061D6FE /* View+readSize.swift in Sources */,
 				101A3B1328109E43008D72B1 /* ArticlesListView.swift in Sources */,
+				10C8980E2845494D0077659B /* ProtocolVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

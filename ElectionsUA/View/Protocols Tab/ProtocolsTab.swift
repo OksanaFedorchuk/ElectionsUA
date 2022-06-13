@@ -10,11 +10,7 @@ import SwiftUI
 struct ProtocolsTab: View {
     
     var body: some View {
-        VStack {
-            Spacer()
-            Text("Protocols")
-            Spacer()
-        }
+        ProtocolsView()
     }
 }
 

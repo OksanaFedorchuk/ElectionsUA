@@ -224,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				10BD8B2428135B3900A38F20 /* Info.plist */,
+				101A3B2E2811671B008D72B1 /* R.generated.swift */,
 				101A3A7B28108BFC008D72B1 /* ElectionsUAApp.swift */,
 				101A3A8928108C65008D72B1 /* StateManager.swift */,
 				101A3AF428109E43008D72B1 /* Model */,
@@ -253,7 +254,6 @@
 				10BD8B2D281363EC00A38F20 /* Shapes */,
 				10BD8B2C281363C000A38F20 /* Extensions */,
 				101A3B2A281160B2008D72B1 /* Strings */,
-				101A3B2E2811671B008D72B1 /* R.generated.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -665,12 +665,12 @@
 			buildConfigurationList = 101A3A8628108BFE008D72B1 /* Build configuration list for PBXNativeTarget "ElectionsUA" */;
 			buildPhases = (
 				6DEBEFD92EAC65AD16E14109 /* [CP] Check Pods Manifest.lock */,
+				101A3B2D28116426008D72B1 /* RSwift */,
 				101A3A7428108BFC008D72B1 /* Sources */,
 				101A3A7528108BFC008D72B1 /* Frameworks */,
 				101A3A7628108BFC008D72B1 /* Resources */,
 				00961B51278F5968CBF59E0A /* [CP] Embed Pods Frameworks */,
 				101A3B292810A656008D72B1 /* SwiftLint */,
-				101A3B2D28116426008D72B1 /* RSwift */,
 			);
 			buildRules = (
 			);
@@ -794,11 +794,11 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$SRCROOT/ElectionsUA/Helpers/R.generated.swift\"",
+				"$SRCROOT/R.generated.swift\"",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/ElectionsUA/Helpers/R.generated.swift\"\n";
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
 		};
 		6DEBEFD92EAC65AD16E14109 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

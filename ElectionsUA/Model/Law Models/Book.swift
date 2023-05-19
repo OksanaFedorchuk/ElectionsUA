@@ -29,4 +29,5 @@ class Book: Hashable {
     static func == (lhs: Book, rhs: Book) -> Bool {
         return lhs.number == rhs.number && lhs.title == rhs.title
     }
+    
 }

@@ -15,10 +15,10 @@ struct SearchPlaceholder: View {
             Image(systemName: "binoculars")
                 .font(.system(size: 50))
             Text("Не знаходжу результатів")
-                .font(Font(uiFont: R.font.gilroyRegular(size: 18)
-                           ?? .systemFont(ofSize: 18)))
+//                .font(Font(uiFont: R.font.gilroyRegular(size: 18)
+//                           ?? .systemFont(ofSize: 18)))
         }
-        .foregroundColor(Color(R.color.navBarColor()!).opacity(0.4))
+//        .foregroundColor(Color(R.color.navBarColor()!).opacity(0.4))
     }
 }
 

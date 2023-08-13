@@ -25,7 +25,7 @@ final class ReferendumDB: DBReadableWriteable {
     // MARK: - Open DB
     
     private func openReferendumLaw() {
-        let realmPath: String = "\(path)/\(R.string.lawsTab.referendumLawRealm())"
+        let realmPath: String = "\(path)/ReferendumLaw.realm" // "\(path)/\(R.string.lawsTab.referendumLawRealm())"
         do {
             let config = Realm.Configuration(fileURL: URL(string: realmPath), schemaVersion: 1)
             referendumRealm = try Realm(configuration: config)
@@ -45,7 +45,7 @@ extension ReferendumDB: DBReadable {
     }
 
     var name: String? {
-        return R.string.lawsTab.referendum()
+        return "Референдум" //R.string.lawsTab.referendum()
     }
     
     func getAllObjects() -> [UniversalDBModel] {

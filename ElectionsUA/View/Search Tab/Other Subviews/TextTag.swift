@@ -16,15 +16,15 @@ struct TextTag: View {
                 Text(tag)
                     .padding(.vertical, 8)
                     .padding(.horizontal, 12)
-                    .background(Color(R.color.myYellow() ?? .yellow))
+//                    .background(Color(R.color.myYellow() ?? .yellow))
             } else {
                 Text(tag)
                     .padding(.vertical, 9)
                     .padding(.horizontal, 12)
-                    .background(Color(R.color.tagColor()!))
+//                    .background(Color(R.color.tagColor()!))
             }
         }
-        .font(Font(uiFont: R.font.gilroyBold(size: 15) ?? .systemFont(ofSize: 15)))
+//        .font(Font(uiFont: R.font.gilroyBold(size: 15) ?? .systemFont(ofSize: 15)))
         .foregroundColor(.white)
         .cornerRadius(12)
     }

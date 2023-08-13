@@ -16,8 +16,8 @@ struct PopularSearchView: View {
         GeometryReader { reader in
             VStack(alignment: .leading) {
                 Text("Популярні пошуки")
-                    .font(Font(uiFont: R.font.gilroyBold(size: 22)
-                               ?? .systemFont(ofSize: 22)))
+//                    .font(Font(uiFont: R.font.gilroyBold(size: 22)
+//                               ?? .systemFont(ofSize: 22)))
                     .foregroundColor(.primary)
                 
                 TagsView(availableWidth: reader.size.width,

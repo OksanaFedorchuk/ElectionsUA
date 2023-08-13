@@ -17,10 +17,10 @@ struct CustomSearchTextField: View {
 
     var body: some View {
         HStack(alignment: .center) {
-            Image(uiImage: R.image.search()
-                  ?? UIImage(systemName: "magnifyingglass")
-                  ?? UIImage())
-                .opacity(searchText.isEmpty ? 0.3 : 1)
+//            Image(uiImage: R.image.search()
+//                  ?? UIImage(systemName: "magnifyingglass")
+//                  ?? UIImage())
+//                .opacity(searchText.isEmpty ? 0.3 : 1)
             TextField("", text: $searchText)
                 .placeholder(when: searchText.isEmpty) {
                     Text("Search...")

@@ -19,8 +19,8 @@ final class DBCopyAssistant {
     private let fileManager = FileManager.default
     private let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
     // all names of databases used in the app
-    private let dbNames = [R.string.lawsTab.electoralCodeRealm(), R.string.lawsTab.nardepyLawRealm(),
-                           R.string.lawsTab.referendumLawRealm(), R.string.lawsTab.partiesLawRealm()]
+    private let dbNames = ["ElectoralCode.realm", "NardepyLaw.realm", "ReferendumLaw.realm", "PartiesLaw.realm"]//[R.string.lawsTab.electoralCodeRealm(), R.string.lawsTab.nardepyLawRealm(),
+//                           R.string.lawsTab.referendumLawRealm(), R.string.lawsTab.partiesLawRealm()]
     private var dbPaths = [String]()
     
     // MARK: - Initialization
@@ -32,22 +32,26 @@ final class DBCopyAssistant {
     // MARK: - Private methods
 
     private func makeDBPaths() {
-        guard let codePath = Bundle.main.path(forResource: R.string.lawsTab.electoralCode(),
-                                              ofType: R.string.lawsTab.realm()) else {
-            return
-        }
-        guard let nardepyPath = Bundle.main.path(forResource: R.string.lawsTab.nardepyLaw(),
-                                                 ofType: R.string.lawsTab.realm()) else {
-            return
-        }
-        guard let referendumPath = Bundle.main.path(forResource: R.string.lawsTab.referendumLaw(),
-                                                    ofType: R.string.lawsTab.realm()) else {
-            return
-        }
-        guard let presidentPath = Bundle.main.path(forResource: R.string.lawsTab.partiesLaw(),
-                                                   ofType: R.string.lawsTab.realm()) else {
-            return
-        }
+//        guard let codePath = Bundle.main.path(forResource: R.string.lawsTab.electoralCode(),
+//                                              ofType: R.string.lawsTab.realm()) else {
+//            return
+//        }
+//        guard let nardepyPath = Bundle.main.path(forResource: R.string.lawsTab.nardepyLaw(),
+//                                                 ofType: R.string.lawsTab.realm()) else {
+//            return
+//        }
+//        guard let referendumPath = Bundle.main.path(forResource: R.string.lawsTab.referendumLaw(),
+//                                                    ofType: R.string.lawsTab.realm()) else {
+//            return
+//        }
+//        guard let presidentPath = Bundle.main.path(forResource: R.string.lawsTab.partiesLaw(),
+//                                                   ofType: R.string.lawsTab.realm()) else {
+//            return
+//        }
+        guard let codePath = Bundle.main.path(forResource: "ElectoralCode", ofType: "realm") else {return}
+        guard let nardepyPath = Bundle.main.path(forResource: "NardepyLaw", ofType: "realm") else {return}
+        guard let referendumPath = Bundle.main.path(forResource: "ReferendumLaw", ofType: "realm") else {return}
+        guard let presidentPath = Bundle.main.path(forResource: "PartiesLaw", ofType: "realm") else {return}
         
         var paths = [String]()
         paths.append(contentsOf: [codePath, nardepyPath, referendumPath, presidentPath])

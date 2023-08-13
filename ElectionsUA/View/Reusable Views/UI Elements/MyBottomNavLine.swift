@@ -12,9 +12,9 @@ struct MyBottomNavLine: View {
     var body: some View {
         Rectangle()
             .frame(height: 0.6)
-            .foregroundColor(colorScheme == .light
-                             ? Color(R.color.tabGradientStart() ?? .gray).opacity(0.3)
-                             : .white.opacity(0.3))
+//            .foregroundColor(colorScheme == .light
+//                             ? Color(R.color.tabGradientStart() ?? .gray).opacity(0.3)
+//                             : .white.opacity(0.3))
     }
 }
 

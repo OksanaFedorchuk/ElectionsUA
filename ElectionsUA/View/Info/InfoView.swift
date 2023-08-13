@@ -18,40 +18,40 @@ struct InfoView: View {
         ScrollView {
             
             VStack {
-                // OPORA's logo
-                Image(uiImage: R.image.oporA()!)
-                    .resizable()
-                    .scaledToFill()
-
-                // Text about opora
-                AboutOporaText()
-                
-                MyDashLine(colorScheme: colorScheme,
-                           isHorisontal: true)
-                // scrollview with media buttons opening social media
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 20) {
-                        WebsiteButton {
-                            openURL(URL(string: R.string.lawsTab.websiteLink())!)
-                        }
-                        FacebookButton {
-                            openURL(URL(string: R.string.lawsTab.facebookLink())!)
-                        }
-                        TwitterButton {
-                            openURL(URL(string: R.string.lawsTab.twitterLink())!)
-                        }
-                        TelegramButton {
-                            openURL(URL(string: R.string.lawsTab.telegramLink())!)
-                        }
-                        InstagramButton {
-                            openURL(URL(string: R.string.lawsTab.instagramLink())!)
-                        }
-                        YouTubeButton {
-                            openURL(URL(string: R.string.lawsTab.youTubeLink())!)
-                        }
-                    }
-                }
-                .padding(.top, 30)
+//                // OPORA's logo
+//                Image(uiImage: R.image.oporA()!)
+//                    .resizable()
+//                    .scaledToFill()
+//
+//                // Text about opora
+//                AboutOporaText()
+//
+//                MyDashLine(colorScheme: colorScheme,
+//                           isHorisontal: true)
+//                // scrollview with media buttons opening social media
+//                ScrollView(.horizontal, showsIndicators: false) {
+//                    HStack(spacing: 20) {
+//                        WebsiteButton {
+//                            openURL(URL(string: R.string.lawsTab.websiteLink())!)
+//                        }
+//                        FacebookButton {
+//                            openURL(URL(string: R.string.lawsTab.facebookLink())!)
+//                        }
+//                        TwitterButton {
+//                            openURL(URL(string: R.string.lawsTab.twitterLink())!)
+//                        }
+//                        TelegramButton {
+//                            openURL(URL(string: R.string.lawsTab.telegramLink())!)
+//                        }
+//                        InstagramButton {
+//                            openURL(URL(string: R.string.lawsTab.instagramLink())!)
+//                        }
+//                        YouTubeButton {
+//                            openURL(URL(string: R.string.lawsTab.youTubeLink())!)
+//                        }
+//                    }
+//                }
+//                .padding(.top, 30)
             }
             .padding(.horizontal, 24)
         }

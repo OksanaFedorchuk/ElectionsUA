@@ -25,7 +25,7 @@ class NardepyDB: DBReadableWriteable {
     // MARK: - Open DB
 
     private func openNardepyLaw() {
-        let realmPath: String = "\(path)/\(R.string.lawsTab.nardepyLawRealm())"
+        let realmPath = "\(path)/NardepyLaw.realm" // String = "\(path)/\(R.string.lawsTab.nardepyLawRealm())"
         do {
             let config = Realm.Configuration(fileURL: URL(string: realmPath), schemaVersion: 1)
             nardepyRealm = try Realm(configuration: config)
@@ -41,7 +41,7 @@ class NardepyDB: DBReadableWriteable {
 
 extension NardepyDB: DBReadable {
     var name: String? {
-        return R.string.lawsTab.deputies()
+        return "Депутати" // R.string.lawsTab.deputies()
     }
 
     // MARK: - get all objects

@@ -12,8 +12,9 @@ struct BackGradient: View {
 
     var body: some View {
         LinearGradient(colors: colorScheme == .dark
-                       ? [Color(R.color.tabGradientStart() ?? .gray),
-                          Color(R.color.tabGradientEnd() ?? .gray)]
+//                       ? [Color(R.color.tabGradientStart() ?? .gray),
+//                          Color(R.color.tabGradientEnd() ?? .gray)]
+                       ? [.gray]
                        : [.white],
                        startPoint: .leading,
                        endPoint: .trailing)

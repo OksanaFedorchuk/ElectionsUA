@@ -35,18 +35,19 @@ class ProtocolVM: ObservableObject {
 
     private func loadData() {
         
-        let titles = [R.string.protocolTab.totalBallotsReceived(),
-                      R.string.protocolTab.totalBallotsUnused(),
-                      R.string.protocolTab.totalVotersEnlisted(),
-                      R.string.protocolTab.totalVotersAtHome(),
-                      R.string.protocolTab.totalVotersReceivedBallotsAtPrecinct(),
-                      R.string.protocolTab.totalVotersReceivedBallotsAtHome(),
-                      R.string.protocolTab.totalVotersReceivedBallots(),
-                      R.string.protocolTab.totalBallotsNotIncluded(),
-                      R.string.protocolTab.totalVotersVotedAtPrecincts(),
-                      R.string.protocolTab.totalBallotsUnvalid(),
-                      R.string.protocolTab.candidate1(),
-                      R.string.protocolTab.candidate2()]
+        let titles = [""]
+//        [R.string.protocolTab.totalBallotsReceived(),
+//                      R.string.protocolTab.totalBallotsUnused(),
+//                      R.string.protocolTab.totalVotersEnlisted(),
+//                      R.string.protocolTab.totalVotersAtHome(),
+//                      R.string.protocolTab.totalVotersReceivedBallotsAtPrecinct(),
+//                      R.string.protocolTab.totalVotersReceivedBallotsAtHome(),
+//                      R.string.protocolTab.totalVotersReceivedBallots(),
+//                      R.string.protocolTab.totalBallotsNotIncluded(),
+//                      R.string.protocolTab.totalVotersVotedAtPrecincts(),
+//                      R.string.protocolTab.totalBallotsUnvalid(),
+//                      R.string.protocolTab.candidate1(),
+//                      R.string.protocolTab.candidate2()]
 
         for num in titles.indices {
             let field = Field(id: num, title: titles[num], input: "", error: "No")

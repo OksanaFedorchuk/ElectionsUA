@@ -15,8 +15,9 @@ struct TabGradient: View {
         // Background color for dark/light scheme,
         // made separately to ignore safe area on bottom behind the custom tab bar
         LinearGradient(colors: colorScheme == .light
-                       ? [Color(R.color.tabGradientStart() ?? .gray),
-                          Color(R.color.tabGradientEnd() ?? .gray)]
+//                       ? [Color(R.color.tabGradientStart() ?? .gray),
+//                          Color(R.color.tabGradientEnd() ?? .gray)]
+                       ? [.gray]
                        : [.white],
                        startPoint: .leading,
                        endPoint: .trailing)

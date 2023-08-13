@@ -19,14 +19,14 @@ struct SearchTextFieldModifier: ViewModifier {
             .padding()
             .padding(.vertical, 5)
             .cornerRadius(12)
-            .foregroundColor(Color(R.color.tabGradientStart()
-                                   ?? .blue))
-            .overlay(RoundedRectangle(cornerRadius: 12)
-                .stroke(colorScheme == .light
-                        ? Color(R.color.tabGradientStart()
-                                ?? .gray).opacity(0.3)
-                        : .clear, lineWidth: 0.6))
-            .font(Font(uiFont: R.font.gilroyMedium(size: 18)
-                       ?? .systemFont(ofSize: 18)))
+//            .foregroundColor(Color(R.color.tabGradientStart()
+//                                   ?? .blue))
+//            .overlay(RoundedRectangle(cornerRadius: 12)
+//                .stroke(colorScheme == .light
+//                        ? Color(R.color.tabGradientStart()
+//                                ?? .gray).opacity(0.3)
+//                        : .clear, lineWidth: 0.6))
+//            .font(Font(uiFont: R.font.gilroyMedium(size: 18)
+//                       ?? .systemFont(ofSize: 18)))
     }
 }

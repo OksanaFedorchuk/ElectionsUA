@@ -23,13 +23,13 @@ struct LawsView: View {
                         BooksListView(vm: BooksListVM(db: CodeDB()))
                             .environmentObject(stateManager)
                     } label: {
-                        LawGridItem(image: R.image.lawOne()!,
-                                    textMain: R.string.lawsTab.electoral(),
-                                    textSecondary: R.string.lawsTab.codeOfUkraine())
-                        .onTapGesture {
-                            stateManager.selection = "1"
-                        }
-                        .frame(width: proxy.size.width / 2.5)
+//                        LawGridItem(image: R.image.lawOne()!,
+//                                    textMain: R.string.lawsTab.electoral(),
+//                                    textSecondary: R.string.lawsTab.codeOfUkraine())
+//                        .onTapGesture {
+//                            stateManager.selection = "1"
+//                        }
+//                        .frame(width: proxy.size.width / 2.5)
                     }
                     .isDetailLink(false)
 
@@ -41,13 +41,13 @@ struct LawsView: View {
                         ChaptersListView(vm: ChaptersListVM(db: NardepyDB(), book: nil))
                             .environmentObject(stateManager)
                     } label: {
-                        LawGridItem(image: R.image.lawTwo()!,
-                                    textMain: R .string.lawsTab.lawOfUkraine(),
-                                    textSecondary: R.string.lawsTab.onDeputies())
-                        .onTapGesture {
-                            stateManager.selection = "2"
-                        }
-                        .frame(width: proxy.size.width / 2.5)
+//                        LawGridItem(image: R.image.lawTwo()!,
+//                                    textMain: R .string.lawsTab.lawOfUkraine(),
+//                                    textSecondary: R.string.lawsTab.onDeputies())
+//                        .onTapGesture {
+//                            stateManager.selection = "2"
+//                        }
+//                        .frame(width: proxy.size.width / 2.5)
                     }
                     .isDetailLink(false)
                     Spacer()
@@ -63,13 +63,13 @@ struct LawsView: View {
                         ChaptersListView(vm: ChaptersListVM(db: ReferendumDB(), book: nil))
                             .environmentObject(stateManager)
                     } label: {
-                        LawGridItem(image: R.image.lawThree()!,
-                                    textMain: R.string.lawsTab.lawOfUkraine(),
-                                    textSecondary: R.string.lawsTab.onReferendum())
-                        .onTapGesture {
-                            stateManager.selection = "3"
-                        }
-                        .frame(width: proxy.size.width / 2.5)
+//                        LawGridItem(image: R.image.lawThree()!,
+//                                    textMain: R.string.lawsTab.lawOfUkraine(),
+//                                    textSecondary: R.string.lawsTab.onReferendum())
+//                        .onTapGesture {
+//                            stateManager.selection = "3"
+//                        }
+//                        .frame(width: proxy.size.width / 2.5)
                     }
                     .isDetailLink(false)
 
@@ -81,13 +81,13 @@ struct LawsView: View {
                         ChaptersListView(vm: ChaptersListVM(db: PartiesDB(), book: nil))
                             .environmentObject(stateManager)
                     } label: {
-                        LawGridItem(image: R.image.lawFour()!,
-                                    textMain: R.string.lawsTab.lawOfUkraine(),
-                                    textSecondary: R.string.lawsTab.onParties())
-                        .onTapGesture {
-                            stateManager.selection = "4"
-                        }
-                        .frame(width: proxy.size.width / 2.5)
+//                        LawGridItem(image: R.image.lawFour()!,
+//                                    textMain: R.string.lawsTab.lawOfUkraine(),
+//                                    textSecondary: R.string.lawsTab.onParties())
+//                        .onTapGesture {
+//                            stateManager.selection = "4"
+//                        }
+//                        .frame(width: proxy.size.width / 2.5)
                     }
                     .isDetailLink(false)
                     Spacer()

@@ -25,7 +25,7 @@ final class PartiesDB: DBReadableWriteable {
     // MARK: - Open DB
     
     private func openReferendumLaw() {
-        let realmPath: String = "\(path)/\(R.string.lawsTab.partiesLawRealm())"
+        let realmPath = "\(path)/PartiesLaw.realm" // String = "\(path)/\(R.string.lawsTab.partiesLawRealm())"
         do {
             let config = Realm.Configuration(fileURL: URL(string: realmPath), schemaVersion: 2)
             partiesRealm = try Realm(configuration: config)
@@ -46,7 +46,7 @@ extension PartiesDB: DBReadable {
 
     
     var name: String? {
-        return R.string.lawsTab.parties()
+        return "Партії" // R.string.lawsTab.parties()
     }
     
     func getAllObjects() -> [UniversalDBModel] {

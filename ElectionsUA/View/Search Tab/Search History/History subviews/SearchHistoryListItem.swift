@@ -15,11 +15,11 @@ struct SearchHistoryListItem: View {
         
         HStack(alignment: .center, spacing: 15) {
             
-            Image(uiImage: R.image.myClock()!)
-            Text(text)
-                .font(Font(uiFont: R.font.gilroyRegular(size: 18)
-                           ?? .systemFont(ofSize: 18)))
-                .foregroundColor(.secondary)
+//            Image(uiImage: R.image.myClock()!)
+//            Text(text)
+//                .font(Font(uiFont: R.font.gilroyRegular(size: 18)
+//                           ?? .systemFont(ofSize: 18)))
+//                .foregroundColor(.secondary)
             Spacer()
         }
         .padding(.vertical, 5)

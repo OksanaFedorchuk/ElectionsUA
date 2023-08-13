@@ -25,7 +25,7 @@ final class CodeDB: DBReadableWriteable {
     // MARK: - Open DB
 
     private func openElectoralCode() {
-        let realmPath: String = "\(path)/\(R.string.lawsTab.electoralCodeRealm())"
+        let realmPath: String = "\(path)/ElectoralCode.realm" //\(path)/\(R.string.lawsTab.electoralCodeRealm())"
         do {
             let config = Realm.Configuration(fileURL: URL(string: realmPath), schemaVersion: 2)
             codeRealm = try Realm(configuration: config)

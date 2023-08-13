@@ -16,9 +16,9 @@ struct MyDashLine: View {
             .stroke(style: StrokeStyle(lineWidth: 1, dash: [5]))
             .frame(width: isHorisontal ? nil : 1)
             .frame(height: isHorisontal ? 1 : nil)
-            .foregroundColor(colorScheme == .dark
-                             ? .white.opacity(0.3)
-                             : Color(R.color.tabGradientStart() ?? .gray).opacity(0.3))
+//            .foregroundColor(colorScheme == .dark
+//                             ? .white.opacity(0.3)
+//                             : Color(R.color.tabGradientStart() ?? .gray).opacity(0.3))
     }
 }
 

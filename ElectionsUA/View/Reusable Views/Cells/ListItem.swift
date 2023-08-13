@@ -17,14 +17,14 @@ struct ListItem: View {
         VStack(alignment: .leading) {
             VStack(alignment: .leading) {
                 Text(textMain)
-                    .font(Font(uiFont: R.font.gilroyBold(size: 20)
-                               ?? .systemFont(ofSize: 20)))
+//                    .font(Font(uiFont: R.font.gilroyBold(size: 20)
+//                               ?? .systemFont(ofSize: 20)))
                     .foregroundColor(.primary)
                     .lineSpacing(8)
                     .padding(.bottom, 2)
                 Text(textSecondary)
-                    .font(Font(uiFont: R.font.gilroyRegular(size: 18)
-                               ?? .systemFont(ofSize: 18)))
+//                    .font(Font(uiFont: R.font.gilroyRegular(size: 18)
+//                               ?? .systemFont(ofSize: 18)))
                     .foregroundColor(.secondary)
                     .lineSpacing(10)
             }

@@ -12,7 +12,7 @@ struct SavedTab: View {
     var body: some View {
         VStack {
             Spacer()
-            Text(R.string.lawsTab.savedTabTitle())
+//            Text(R.string.lawsTab.savedTabTitle())
             Spacer()
         }
     }

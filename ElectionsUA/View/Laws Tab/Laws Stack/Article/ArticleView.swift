@@ -66,7 +66,7 @@ struct ArticleView: View {
                     // toggles the given article's saved state in db
                     vm.isSaved.toggle()
                 } label: {
-                    Image(uiImage: vm.isSaved ? R.image.flagSelected()! : R.image.flag()!)
+//                    Image(uiImage: vm.isSaved ? R.image.flagSelected()! : R.image.flag()!)
                 }
             }
         }

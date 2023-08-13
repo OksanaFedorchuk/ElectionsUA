@@ -36,15 +36,17 @@ class ArticleDetailsVM: ObservableObject {
     //    make an attributed string containing title and content of an article
     func generateAttributedArticleText(titleText: String, contentText: String) -> NSAttributedString {
         
-        let title = NSAttributedString(string: titleText, attributes: [.font: R.font.gilroySemiBold(size: 20)
-                                                                       ?? .systemFont(ofSize: 20)])
-        let content = NSAttributedString(string: contentText, attributes: [.font: R.font.gilroyRegular(size: 18)
-                                                                           ?? .systemFont(ofSize: 18)])
+        let title = ""
+//        NSAttributedString(string: titleText, attributes: [.font: R.font.gilroySemiBold(size: 20)
+//                                                                       ?? .systemFont(ofSize: 20)])
+        let content = ""
+//        NSAttributedString(string: contentText, attributes: [.font: R.font.gilroyRegular(size: 18)
+//                                                                           ?? .systemFont(ofSize: 18)])
         let attributedArticle = NSMutableAttributedString()
         
-        attributedArticle.append(title)
-        attributedArticle.append(NSAttributedString(string: " \n \n"))
-        attributedArticle.append(content)
+//        attributedArticle.append(title)
+//        attributedArticle.append(NSAttributedString(string: " \n \n"))
+//        attributedArticle.append(content)
         
         return attributedArticle
     }

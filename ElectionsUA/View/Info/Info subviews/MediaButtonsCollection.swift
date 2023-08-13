@@ -16,8 +16,8 @@ struct WebsiteButton: View {
             action()
         } label: {
             VStack(spacing: 15) {
-                MediaButtonImg(image: R.image.logo()!)
-                MediaButtonText(text: R.string.lawsTab.website())
+//                MediaButtonImg(image: R.image.logo()!)
+//                MediaButtonText(text: R.string.lawsTab.website())
             }
         }
     }
@@ -32,8 +32,8 @@ struct TwitterButton: View {
             action()
         } label: {
             VStack(spacing: 15) {
-                MediaButtonImg(image: R.image.twitterIcon()!)
-                MediaButtonText(text: R.string.lawsTab.twitter())
+//                MediaButtonImg(image: R.image.twitterIcon()!)
+//                MediaButtonText(text: R.string.lawsTab.twitter())
             }
         }
     }
@@ -48,8 +48,8 @@ struct FacebookButton: View {
             action()
         } label: {
             VStack(spacing: 15) {
-                MediaButtonImg(image: R.image.fbIcon()!)
-                MediaButtonText(text: R.string.lawsTab.facebook())
+//                MediaButtonImg(image: R.image.fbIcon()!)
+//                MediaButtonText(text: R.string.lawsTab.facebook())
             }
         }
     }
@@ -64,8 +64,8 @@ struct TelegramButton: View {
             action()
         } label: {
             VStack(spacing: 15) {
-                MediaButtonImg(image: R.image.telegramIcon()!)
-                MediaButtonText(text: R.string.lawsTab.telegram())
+//                MediaButtonImg(image: R.image.telegramIcon()!)
+//                MediaButtonText(text: R.string.lawsTab.telegram())
             }
         }
     }
@@ -80,8 +80,8 @@ struct InstagramButton: View {
             action()
         } label: {
             VStack(spacing: 15) {
-                MediaButtonImg(image: R.image.instaIcon()!)
-                MediaButtonText(text: R.string.lawsTab.instagram())
+//                MediaButtonImg(image: R.image.instaIcon()!)
+//                MediaButtonText(text: R.string.lawsTab.instagram())
             }
         }
     }
@@ -96,8 +96,8 @@ struct YouTubeButton: View {
             action()
         } label: {
             VStack(spacing: 15) {
-                MediaButtonImg(image: R.image.youTubeIcon()!)
-                MediaButtonText(text: R.string.lawsTab.youtube())
+//                MediaButtonImg(image: R.image.youTubeIcon()!)
+//                MediaButtonText(text: R.string.lawsTab.youtube())
             }
         }
     }

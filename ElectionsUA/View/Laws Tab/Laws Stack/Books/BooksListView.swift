@@ -42,7 +42,7 @@ struct BooksListView: View {
         .background(BackGradient(colorScheme: colorScheme))
         .navigationViewStyle(.stack)
         .navigationBarTitleDisplayMode(.inline)
-        .navigationTitle(R.string.lawsTab.code())
+//        .navigationTitle(R.string.lawsTab.code())
         .onAppear {
             print("LIFE: Books onappear")
         }

@@ -14,13 +14,13 @@ struct AboutOporaText: View {
     var body: some View {
         
         VStack {
-            Text(R.string.lawsTab.aboutOPORA())
-                .font(Font(uiFont: R.font.gilroyBold(size: 20)
-                           ?? .systemFont(ofSize: 20)))
-            +
-            Text(R.string.lawsTab.aboutOPORAText())
-                .font(Font(uiFont: R.font.gilroyRegular(size: 20)
-                           ?? .systemFont(ofSize: 18)))
+//            Text(R.string.lawsTab.aboutOPORA())
+//                .font(Font(uiFont: R.font.gilroyBold(size: 20)
+//                           ?? .systemFont(ofSize: 20)))
+//            +
+//            Text(R.string.lawsTab.aboutOPORAText())
+//                .font(Font(uiFont: R.font.gilroyRegular(size: 20)
+//                           ?? .systemFont(ofSize: 18)))
         }
     }
 }

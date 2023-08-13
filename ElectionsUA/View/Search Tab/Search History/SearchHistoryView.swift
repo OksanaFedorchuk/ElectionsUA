@@ -14,8 +14,8 @@ struct SearchHistoryView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text("Історія пошуку")
-                .font(Font(uiFont: R.font.gilroyBold(size: 22)
-                           ?? .systemFont(ofSize: 22)))
+//                .font(Font(uiFont: R.font.gilroyBold(size: 22)
+//                           ?? .systemFont(ofSize: 22)))
                 .foregroundColor(.primary)
             ForEach(vm.searchedItems, id: \.self) { text in
                 SearchHistoryListItem(text: text)

@@ -13,8 +13,8 @@ struct MediaButtonText: View {
     
     var body: some View {
         Text(text)
-            .font(Font(uiFont: R.font.gilroyRegular(size: 14)
-                       ?? .systemFont(ofSize: 14)))
+//            .font(Font(uiFont: R.font.gilroyRegular(size: 14)
+//                       ?? .systemFont(ofSize: 14)))
             .foregroundColor(.black.opacity(0.6))
     }
 }

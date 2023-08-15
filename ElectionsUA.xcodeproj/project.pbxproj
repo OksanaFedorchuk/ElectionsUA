@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		022C09622A8C18210094C00C /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022C09612A8C18210094C00C /* Strings+Generated.swift */; };
+		022C09642A8C1A000094C00C /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022C09632A8C1A000094C00C /* XCAssets+Generated.swift */; };
 		023D9F642A8C0E4200BB83F8 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 023D9F632A8C0E4200BB83F8 /* swiftgen.yml */; };
 		023D9F662A8C17E700BB83F8 /* uk.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 023D9F652A8C17E700BB83F8 /* uk.lproj */; };
 		101A3A7C28108BFC008D72B1 /* ElectionsUAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3A7B28108BFC008D72B1 /* ElectionsUAApp.swift */; };
@@ -98,6 +99,7 @@
 
 /* Begin PBXFileReference section */
 		022C09612A8C18210094C00C /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
+		022C09632A8C1A000094C00C /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
 		023D9F632A8C0E4200BB83F8 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = SOURCE_ROOT; };
 		023D9F652A8C17E700BB83F8 /* uk.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = uk.lproj; sourceTree = "<group>"; };
 		101A3A7828108BFC008D72B1 /* ElectionsUA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElectionsUA.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -480,6 +482,7 @@
 			isa = PBXGroup;
 			children = (
 				022C09612A8C18210094C00C /* Strings+Generated.swift */,
+				022C09632A8C1A000094C00C /* XCAssets+Generated.swift */,
 			);
 			path = Generated;
 			sourceTree = "<group>";
@@ -825,6 +828,7 @@
 				10F5353B284125CA0061D6FE /* HighlitedText.swift in Sources */,
 				10F53533283FB15B0061D6FE /* UserData.swift in Sources */,
 				10F53531283FB05A0061D6FE /* PopularSearchView.swift in Sources */,
+				022C09642A8C1A000094C00C /* XCAssets+Generated.swift in Sources */,
 				101A3AFD28109E43008D72B1 /* K.swift in Sources */,
 				022C09622A8C18210094C00C /* Strings+Generated.swift in Sources */,
 				101A3B2228109E43008D72B1 /* Article.swift in Sources */,

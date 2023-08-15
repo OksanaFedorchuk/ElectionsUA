@@ -207,8 +207,8 @@
 		023D9F5E2A8C082E00BB83F8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				023D9F652A8C17E700BB83F8 /* uk.lproj */,
 				101A3B2A281160B2008D72B1 /* Generated */,
+				023D9F652A8C17E700BB83F8 /* uk.lproj */,
 				101A3A7F28108BFE008D72B1 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -714,8 +714,8 @@
 			developmentRegion = uk;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				Base,
 				uk,
+				Base,
 			);
 			mainGroup = 101A3A6F28108BFC008D72B1;
 			packageReferences = (

@@ -11,158 +11,122 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 public enum Strings {
   public enum LawsTab {
-    /// Аналізатор політичної реклами 
-    ///  
-    /// 
-    public static let analizatorLinkString = Strings.tr("LawsTab", "AnalizatorLinkString", fallback: "Аналізатор політичної реклами \n \n")
-    /// Кодекс
-    public static let code = Strings.tr("LawsTab", "Code", fallback: "Кодекс")
-    /// Все про виборчі дані та соцмережі 
-    /// 
-    public static let daniLinkString = Strings.tr("LawsTab", "DaniLinkString", fallback: "Все про виборчі дані та соцмережі \n")
-    /// Депутати
-    public static let deputies = Strings.tr("LawsTab", "Deputies", fallback: "Депутати")
-    /// Виборчий
-    public static let electoral = Strings.tr("LawsTab", "Electoral", fallback: "Виборчий")
-    /// ElectoralCode
-    public static let electoralCode = Strings.tr("LawsTab", "ElectoralCode", fallback: "ElectoralCode")
-    /// Facebook
-    public static let facebook = Strings.tr("LawsTab", "facebook", fallback: "Facebook")
-    /// Обране
-    public static let favourite = Strings.tr("LawsTab", "Favourite", fallback: "Обране")
-    /// Instagram
-    public static let instagram = Strings.tr("LawsTab", "instagram", fallback: "Instagram")
-    /// Закони
-    public static let laws = Strings.tr("LawsTab", "Laws", fallback: "Закони")
-    /// Мапа порушень 
-    /// 
-    public static let mapLinkString = Strings.tr("LawsTab", "MapLinkString", fallback: "Мапа порушень \n")
-    /// NardepyLaw
-    public static let nardepyLaw = Strings.tr("LawsTab", "NardepyLaw", fallback: "NardepyLaw")
-    /// Партії
-    public static let parties = Strings.tr("LawsTab", "Parties", fallback: "Партії")
-    /// PartiesLaw
-    public static let partiesLaw = Strings.tr("LawsTab", "PartiesLaw", fallback: "PartiesLaw")
-    /// Протокол
-    public static let `protocol` = Strings.tr("LawsTab", "Protocol", fallback: "Протокол")
-    /// realm
-    public static let realm = Strings.tr("LawsTab", "realm", fallback: "realm")
-    /// Референдум
-    public static let referendum = Strings.tr("LawsTab", "Referendum", fallback: "Референдум")
-    /// ReferendumLaw
-    public static let referendumLaw = Strings.tr("LawsTab", "ReferendumLaw", fallback: "ReferendumLaw")
-    /// Пошук
-    public static let search = Strings.tr("LawsTab", "Search", fallback: "Пошук")
-    /// Telegram
-    public static let telegram = Strings.tr("LawsTab", "telegram", fallback: "Telegram")
-    /// Twitter
-    public static let twitter = Strings.tr("LawsTab", "twitter", fallback: "Twitter")
-    /// Website
-    public static let website = Strings.tr("LawsTab", "website", fallback: "Website")
-    /// Вебсайт 
-    /// 
-    public static let websiteLinkString = Strings.tr("LawsTab", "WebsiteLinkString", fallback: "Вебсайт \n")
-    /// YouTube
-    public static let youtube = Strings.tr("LawsTab", "youtube", fallback: "YouTube")
     public enum About {
+      /// одна з провідних неурядових та позапартійних всеукраїнських організацій громадського контролю у сфері виборів. З 2007 року ОПОРА аналізує виборчий процес, проводить спостереження за всіма його етапами, працює над удосконаленням виборчого законодавства відповідно до міжнародних стандартів. Загалом за цей час до моніторингу виборів було залучено понад 20 тисяч кваліфікованих спостерігачів. 
+      /// 
+      ///  Для своїх спостерігачів, та усіх інших учасників виборчого процесу ми розробили цей мобільний додаток із виборчим кодексом та верифікатором протоколу, який знадобиться вам у ніч підрахунку голосів. Тепер виборчий кодекс буде завжди із вами, а зручний пошук дозволить швидко знайти необхідну статтю. Отримати усю оперативну інформацію про перебіг виборів в Україні Ви можете тут: 
+      /// 
+      public static let body = Strings.tr("LawsTab", "about.Body", fallback: "одна з провідних неурядових та позапартійних всеукраїнських організацій громадського контролю у сфері виборів. З 2007 року ОПОРА аналізує виборчий процес, проводить спостереження за всіма його етапами, працює над удосконаленням виборчого законодавства відповідно до міжнародних стандартів. Загалом за цей час до моніторингу виборів було залучено понад 20 тисяч кваліфікованих спостерігачів. \n\n Для своїх спостерігачів, та усіх інших учасників виборчого процесу ми розробили цей мобільний додаток із виборчим кодексом та верифікатором протоколу, який знадобиться вам у ніч підрахунку голосів. Тепер виборчий кодекс буде завжди із вами, а зручний пошук дозволить швидко знайти необхідну статтю. Отримати усю оперативну інформацію про перебіг виборів в Україні Ви можете тут: \n")
+      /// І не забувайте стежити за нами в соціальних мережах:
+      public static let end = Strings.tr("LawsTab", "about.End", fallback: "І не забувайте стежити за нами в соціальних мережах:")
+      /// Facebook
+      public static let facebook = Strings.tr("LawsTab", "about.facebook", fallback: "Facebook")
+      /// Instagram
+      public static let instagram = Strings.tr("LawsTab", "about.instagram", fallback: "Instagram")
+      /// Telegram
+      public static let telegram = Strings.tr("LawsTab", "about.telegram", fallback: "Telegram")
       /// Громадянська мережа ОПОРА – 
       /// 
       /// 
-      public static let opora = Strings.tr("LawsTab", "About.OPORA", fallback: "Громадянська мережа ОПОРА – \n\n")
-      public enum Opora {
-        /// одна з провідних неурядових та позапартійних всеукраїнських організацій громадського контролю у сфері виборів. З 2007 року ОПОРА аналізує виборчий процес, проводить спостереження за всіма його етапами, працює над удосконаленням виборчого законодавства відповідно до міжнародних стандартів. Загалом за цей час до моніторингу виборів було залучено понад 20 тисяч кваліфікованих спостерігачів. 
-        /// 
-        ///  Для своїх спостерігачів, та усіх інших учасників виборчого процесу ми розробили цей мобільний додаток із виборчим кодексом та верифікатором протоколу, який знадобиться вам у ніч підрахунку голосів. Тепер виборчий кодекс буде завжди із вами, а зручний пошук дозволить швидко знайти необхідну статтю. Отримати усю оперативну інформацію про перебіг виборів в Україні Ви можете тут: 
-        /// 
-        public static let text = Strings.tr("LawsTab", "About.OPORA.Text", fallback: "одна з провідних неурядових та позапартійних всеукраїнських організацій громадського контролю у сфері виборів. З 2007 року ОПОРА аналізує виборчий процес, проводить спостереження за всіма його етапами, працює над удосконаленням виборчого законодавства відповідно до міжнародних стандартів. Загалом за цей час до моніторингу виборів було залучено понад 20 тисяч кваліфікованих спостерігачів. \n\n Для своїх спостерігачів, та усіх інших учасників виборчого процесу ми розробили цей мобільний додаток із виборчим кодексом та верифікатором протоколу, який знадобиться вам у ніч підрахунку голосів. Тепер виборчий кодекс буде завжди із вами, а зручний пошук дозволить швидко знайти необхідну статтю. Отримати усю оперативну інформацію про перебіг виборів в Україні Ви можете тут: \n")
-        public enum Text {
-          /// І не забувайте стежити за нами в соціальних мережах:
-          public static let end = Strings.tr("LawsTab", "About.OPORA.Text.End", fallback: "І не забувайте стежити за нами в соціальних мережах:")
-        }
-      }
-    }
-    public enum Code {
-      public enum Of {
-        /// Кодекс України
-        public static let ukraine = Strings.tr("LawsTab", "Code.Of.Ukraine", fallback: "Кодекс України")
-      }
-    }
-    public enum ElectoralCode {
-      /// ElectoralCode.realm
-      public static let realm = Strings.tr("LawsTab", "ElectoralCode.Realm", fallback: "ElectoralCode.realm")
-    }
-    public enum Facebook {
-      /// https://www.facebook.com/cn.opora
-      public static let link = Strings.tr("LawsTab", "Facebook.Link", fallback: "https://www.facebook.com/cn.opora")
-    }
-    public enum Find {
-      /// ЩОСЬ ЗНАЙТИ?
-      public static let something = Strings.tr("LawsTab", "Find.Something", fallback: "ЩОСЬ ЗНАЙТИ?")
-    }
-    public enum Instagram {
-      /// https://www.instagram.com/cn.opora/
-      public static let link = Strings.tr("LawsTab", "Instagram.Link", fallback: "https://www.instagram.com/cn.opora/")
+      public static let title = Strings.tr("LawsTab", "about.Title", fallback: "Громадянська мережа ОПОРА – \n\n")
+      /// Twitter
+      public static let twitter = Strings.tr("LawsTab", "about.twitter", fallback: "Twitter")
+      /// Website
+      public static let website = Strings.tr("LawsTab", "about.website", fallback: "Website")
+      /// YouTube
+      public static let youtube = Strings.tr("LawsTab", "about.youtube", fallback: "YouTube")
     }
     public enum Law {
-      public enum Of {
-        /// Закон України
-        public static let ukraine = Strings.tr("LawsTab", "Law.Of.Ukraine", fallback: "Закон України")
-      }
-    }
-    public enum NardepyLaw {
-      /// NardepyLaw.realm
-      public static let realm = Strings.tr("LawsTab", "NardepyLaw.Realm", fallback: "NardepyLaw.realm")
-    }
-    public enum Nothing {
-      /// НІЧОГО НЕ ЗНАЙДЕНО
-      public static let found = Strings.tr("LawsTab", "Nothing.Found", fallback: "НІЧОГО НЕ ЗНАЙДЕНО")
-    }
-    public enum On {
+      /// Кодекс України
+      public static let codeOfUkraine = Strings.tr("LawsTab", "law.CodeOfUkraine", fallback: "Кодекс України")
+      /// Виборчий
+      public static let electoral = Strings.tr("LawsTab", "law.Electoral", fallback: "Виборчий")
+      /// Закон України
+      public static let lawOfUkraine = Strings.tr("LawsTab", "law.LawOfUkraine", fallback: "Закон України")
       /// Про вибори народних депутатів України
-      public static let deputies = Strings.tr("LawsTab", "On.Deputies", fallback: "Про вибори народних депутатів України")
+      public static let onDeputies = Strings.tr("LawsTab", "law.OnDeputies", fallback: "Про вибори народних депутатів України")
       /// Про політичні партії
-      public static let parties = Strings.tr("LawsTab", "On.Parties", fallback: "Про політичні партії")
+      public static let onParties = Strings.tr("LawsTab", "law.OnParties", fallback: "Про політичні партії")
       /// Про всеукраїнський референдум
-      public static let referendum = Strings.tr("LawsTab", "On.Referendum", fallback: "Про всеукраїнський референдум")
+      public static let onReferendum = Strings.tr("LawsTab", "law.OnReferendum", fallback: "Про всеукраїнський референдум")
     }
-    public enum PartiesLaw {
-      /// PartiesLaw.realm
-      public static let realm = Strings.tr("LawsTab", "PartiesLaw.Realm", fallback: "PartiesLaw.realm")
-    }
-    public enum ReferendumLaw {
-      /// ReferendumLaw.realm
-      public static let realm = Strings.tr("LawsTab", "ReferendumLaw.Realm", fallback: "ReferendumLaw.realm")
-    }
-    public enum Saved {
-      public enum Tab {
-        /// Saved tab
-        public static let title = Strings.tr("LawsTab", "Saved.Tab.Title", fallback: "Saved tab")
-      }
-    }
-    public enum Search {
-      public enum Tab {
-        /// LawsTab.strings
-        ///   ElectionsUA
-        /// 
-        ///   Created by Oksana Fedorchuk on 21.04.2022.
-        public static let title = Strings.tr("LawsTab", "Search.Tab.Title", fallback: "Search tab")
-      }
-    }
-    public enum Telegram {
+    public enum Link {
+      /// https://www.facebook.com/cn.opora
+      public static let facebook = Strings.tr("LawsTab", "link.facebook", fallback: "https://www.facebook.com/cn.opora")
+      /// https://www.instagram.com/cn.opora/
+      public static let instagram = Strings.tr("LawsTab", "link.instagram", fallback: "https://www.instagram.com/cn.opora/")
       /// https://t.me/opora_news
-      public static let link = Strings.tr("LawsTab", "Telegram.Link", fallback: "https://t.me/opora_news")
-    }
-    public enum Twitter {
+      public static let telegram = Strings.tr("LawsTab", "link.telegram", fallback: "https://t.me/opora_news")
       /// https://twitter.com/opora
-      public static let link = Strings.tr("LawsTab", "Twitter.Link", fallback: "https://twitter.com/opora")
-    }
-    public enum Website {
+      public static let twitter = Strings.tr("LawsTab", "link.twitter", fallback: "https://twitter.com/opora")
       /// https://oporaua.org/
-      public static let link = Strings.tr("LawsTab", "Website.Link", fallback: "https://oporaua.org/")
-    }
-    public enum YouTube {
+      public static let website = Strings.tr("LawsTab", "link.website", fallback: "https://oporaua.org/")
       /// https://www.youtube.com/user/oporavideo
-      public static let link = Strings.tr("LawsTab", "YouTube.Link", fallback: "https://www.youtube.com/user/oporavideo")
+      public static let youTube = Strings.tr("LawsTab", "link.youTube", fallback: "https://www.youtube.com/user/oporavideo")
+    }
+    public enum LinkText {
+      /// Аналізатор політичної реклами 
+      ///  
+      /// 
+      public static let analizatorString = Strings.tr("LawsTab", "linkText.AnalizatorString", fallback: "Аналізатор політичної реклами \n \n")
+      /// Все про виборчі дані та соцмережі 
+      /// 
+      public static let daniString = Strings.tr("LawsTab", "linkText.DaniString", fallback: "Все про виборчі дані та соцмережі \n")
+      /// Мапа порушень 
+      /// 
+      public static let mapString = Strings.tr("LawsTab", "linkText.MapString", fallback: "Мапа порушень \n")
+      /// Вебсайт 
+      /// 
+      public static let websiteString = Strings.tr("LawsTab", "linkText.WebsiteString", fallback: "Вебсайт \n")
+    }
+    public enum NavTitle {
+      /// Кодекс
+      public static let code = Strings.tr("LawsTab", "navTitle.Code", fallback: "Кодекс")
+      /// Депутати
+      public static let deputies = Strings.tr("LawsTab", "navTitle.Deputies", fallback: "Депутати")
+      /// Партії
+      public static let parties = Strings.tr("LawsTab", "navTitle.Parties", fallback: "Партії")
+      /// Референдум
+      public static let referendum = Strings.tr("LawsTab", "navTitle.Referendum", fallback: "Референдум")
+    }
+    public enum Placeholder {
+      /// ЩОСЬ ЗНАЙТИ?
+      public static let findSomething = Strings.tr("LawsTab", "placeholder.FindSomething", fallback: "ЩОСЬ ЗНАЙТИ?")
+      /// НІЧОГО НЕ ЗНАЙДЕНО
+      public static let nothingFound = Strings.tr("LawsTab", "placeholder.NothingFound", fallback: "НІЧОГО НЕ ЗНАЙДЕНО")
+    }
+    public enum Realm {
+      /// ElectoralCode.realm
+      public static let electoralCode = Strings.tr("LawsTab", "realm.ElectoralCode", fallback: "ElectoralCode.realm")
+      /// ElectoralCode
+      public static let electoralCodeTitle = Strings.tr("LawsTab", "realm.ElectoralCodeTitle", fallback: "ElectoralCode")
+      /// NardepyLaw.realm
+      public static let nardepyLaw = Strings.tr("LawsTab", "realm.NardepyLaw", fallback: "NardepyLaw.realm")
+      /// NardepyLaw
+      public static let nardepyLawTitle = Strings.tr("LawsTab", "realm.NardepyLawTitle", fallback: "NardepyLaw")
+      /// PartiesLaw.realm
+      public static let partiesLaw = Strings.tr("LawsTab", "realm.PartiesLaw", fallback: "PartiesLaw.realm")
+      /// PartiesLaw
+      public static let partiesLawTitle = Strings.tr("LawsTab", "realm.PartiesLawTitle", fallback: "PartiesLaw")
+      /// realm
+      public static let realm = Strings.tr("LawsTab", "realm.realm", fallback: "realm")
+      /// ReferendumLaw.realm
+      public static let referendumLaw = Strings.tr("LawsTab", "realm.ReferendumLaw", fallback: "ReferendumLaw.realm")
+      /// ReferendumLaw
+      public static let referendumLawTitle = Strings.tr("LawsTab", "realm.ReferendumLawTitle", fallback: "ReferendumLaw")
+    }
+    public enum Tab {
+      /// Обране
+      public static let favourite = Strings.tr("LawsTab", "tab.Favourite", fallback: "Обране")
+      /// LawsTab.strings
+      ///   ElectionsUA
+      /// 
+      ///   Created by Oksana Fedorchuk on 21.04.2022.
+      public static let laws = Strings.tr("LawsTab", "tab.Laws", fallback: "Закони")
+      /// Протокол
+      public static let `protocol` = Strings.tr("LawsTab", "tab.Protocol", fallback: "Протокол")
+      /// Пошук
+      public static let search = Strings.tr("LawsTab", "tab.Search", fallback: "Пошук")
     }
   }
   public enum ProtocolTab {

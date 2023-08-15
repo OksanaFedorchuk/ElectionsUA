@@ -26,24 +26,27 @@ internal typealias AssetImageTypeAlias = ImageAsset.Image
 internal enum Asset {
   internal enum Assets {
     internal static let accentColor = ColorAsset(name: "AccentColor")
-    internal enum BackgroungsForLaws {
-      internal static let lawFour = ImageAsset(name: "lawFour")
-      internal static let lawOne = ImageAsset(name: "lawOne")
-      internal static let lawThree = ImageAsset(name: "lawThree")
-      internal static let lawTwo = ImageAsset(name: "lawTwo")
-    }
-    internal enum DogPic {
-      internal static let dogCry = ImageAsset(name: "dogCry")
-      internal static let dogThink = ImageAsset(name: "dogThink")
-    }
-    internal enum Icons {
-      internal static let search = ImageAsset(name: "Search")
-      internal static let myClock = ImageAsset(name: "myClock")
-    }
-    internal enum Logos {
-      internal static let opora = ImageAsset(name: "OPORA")
-      internal static let logoElections = ImageAsset(name: "logo-elections")
-    }
+    internal static let bglawFour = ImageAsset(name: "bglawFour")
+    internal static let bglawOne = ImageAsset(name: "bglawOne")
+    internal static let bglawThree = ImageAsset(name: "bglawThree")
+    internal static let bglawTwo = ImageAsset(name: "bglawTwo")
+    internal static let iconFb = ImageAsset(name: "iconFb")
+    internal static let iconFlag = ImageAsset(name: "iconFlag")
+    internal static let iconFlagSelected = ImageAsset(name: "iconFlagSelected")
+    internal static let iconInfo = ImageAsset(name: "iconInfo")
+    internal static let iconInsta = ImageAsset(name: "iconInsta")
+    internal static let iconMyClock = ImageAsset(name: "iconMyClock")
+    internal static let iconSearch = ImageAsset(name: "iconSearch")
+    internal static let iconTabFlag = ImageAsset(name: "iconTabFlag")
+    internal static let iconTabLaw = ImageAsset(name: "iconTabLaw")
+    internal static let iconTabProtocol = ImageAsset(name: "iconTabProtocol")
+    internal static let iconTabSearch = ImageAsset(name: "iconTabSearch")
+    internal static let iconTelegram = ImageAsset(name: "iconTelegram")
+    internal static let iconTwitter = ImageAsset(name: "iconTwitter")
+    internal static let iconYoutube = ImageAsset(name: "iconYoutube")
+    internal static let logoElections = ImageAsset(name: "logoElections")
+    internal static let logoOPORA = ImageAsset(name: "logoOPORA")
+    internal static let logoOPORASmall = ImageAsset(name: "logoOPORASmall")
     internal enum MyColors {
       internal static let myBackground = ColorAsset(name: "myBackground")
       internal static let myGray = ColorAsset(name: "myGray")
@@ -53,26 +56,9 @@ internal enum Asset {
       internal static let tabGradientStart = ColorAsset(name: "tabGradientStart")
       internal static let tagColor = ColorAsset(name: "tagColor")
     }
-    internal enum NavBarIcons {
-      internal static let flag = ImageAsset(name: "flag")
-      internal static let flagSelected = ImageAsset(name: "flagSelected")
-      internal static let info = ImageAsset(name: "info")
-    }
-    internal enum SocialMediaIcons {
-      internal static let fbIcon = ImageAsset(name: "fbIcon")
-      internal static let instaIcon = ImageAsset(name: "instaIcon")
-      internal static let logo = ImageAsset(name: "logo")
-      internal static let telegramIcon = ImageAsset(name: "telegramIcon")
-      internal static let twitterIcon = ImageAsset(name: "twitterIcon")
-      internal static let youTubeIcon = ImageAsset(name: "youTubeIcon")
-    }
+    internal static let placeholderDogCry = ImageAsset(name: "placeholderDogCry")
+    internal static let placeholderGogThink = ImageAsset(name: "placeholderGogThink")
     internal static let splashBackground = ImageAsset(name: "splashBackground")
-    internal enum TabBarIcons {
-      internal static let flagTab = ImageAsset(name: "flagTab")
-      internal static let lawTab = ImageAsset(name: "lawTab")
-      internal static let protocolTab = ImageAsset(name: "protocolTab")
-      internal static let searchTab = ImageAsset(name: "searchTab")
-    }
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name

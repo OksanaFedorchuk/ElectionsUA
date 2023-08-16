@@ -34,7 +34,7 @@ xcassets:
   inputs:
     - Assets.xcassets
   outputs:
-    templateName: swift5
+    templatePath: Templates/xcassets/assets_swift5_swiftui.stencil
     # 1
     params:
        # 2
@@ -47,7 +47,7 @@ fonts:
   inputs:
     Fonts
   outputs:
-    templateName: swift4
+    templatePath: Templates/fonts/fonts_swift5_swiftui.stencil
     output: Fonts+Generated.swift
 
 

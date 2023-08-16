@@ -78,7 +78,6 @@
 		103B88BC2819A2AA0046EB3B /* ClearButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103B88BB2819A2AA0046EB3B /* ClearButtonModifier.swift */; };
 		103B88BE2819A5FB0046EB3B /* HTagCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103B88BD2819A5FB0046EB3B /* HTagCollection.swift */; };
 		103DCE4D283D347C00F9605A /* TextTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103DCE4C283D347C00F9605A /* TextTag.swift */; };
-		10BD8B292813635D00A38F20 /* AboutOporaText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BD8B282813635D00A38F20 /* AboutOporaText.swift */; };
 		10C8980C2845463D0077659B /* ProtocolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C8980B2845463D0077659B /* ProtocolsView.swift */; };
 		10C8980E2845494D0077659B /* ProtocolVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C8980D2845494D0077659B /* ProtocolVM.swift */; };
 		10F5352F283FB03C0061D6FE /* SearchHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F5352E283FB03C0061D6FE /* SearchHistoryView.swift */; };
@@ -170,7 +169,6 @@
 		103B88BD2819A5FB0046EB3B /* HTagCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTagCollection.swift; sourceTree = "<group>"; };
 		103DCE4C283D347C00F9605A /* TextTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTag.swift; sourceTree = "<group>"; };
 		10BD8B2428135B3900A38F20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		10BD8B282813635D00A38F20 /* AboutOporaText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutOporaText.swift; sourceTree = "<group>"; };
 		10C8980B2845463D0077659B /* ProtocolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsView.swift; sourceTree = "<group>"; };
 		10C8980D2845494D0077659B /* ProtocolVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolVM.swift; sourceTree = "<group>"; };
 		10F5352E283FB03C0061D6FE /* SearchHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryView.swift; sourceTree = "<group>"; };
@@ -581,7 +579,6 @@
 		10BD8B272813634600A38F20 /* Info subviews */ = {
 			isa = PBXGroup;
 			children = (
-				10BD8B282813635D00A38F20 /* AboutOporaText.swift */,
 				103B88A52815C7CB0046EB3B /* MediaButtonText.swift */,
 				103B88A72815C7E40046EB3B /* MediaButtonImg.swift */,
 				10F5354E28427D580061D6FE /* MediaButtonsCollection.swift */,
@@ -805,7 +802,6 @@
 				101A3B1A28109E43008D72B1 /* HomeTab.swift in Sources */,
 				10F5354A284237750061D6FE /* PopularSearchVM.swift in Sources */,
 				101A3B2828109E6A008D72B1 /* Book.swift in Sources */,
-				10BD8B292813635D00A38F20 /* AboutOporaText.swift in Sources */,
 				101A3B1628109E43008D72B1 /* ArticleView.swift in Sources */,
 				101A3B2528109E43008D72B1 /* PartiesLaw.swift in Sources */,
 				10F5354D28423C930061D6FE /* SearchPlaceholder.swift in Sources */,

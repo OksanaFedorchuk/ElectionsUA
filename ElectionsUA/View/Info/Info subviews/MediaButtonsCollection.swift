@@ -17,7 +17,7 @@ struct WebsiteButton: View {
         } label: {
             VStack(spacing: 15) {
 //                MediaButtonImg(image: R.image.logo()!)
-//                MediaButtonText(text: R.string.lawsTab.website())
+                MediaButtonText(text: Strings.LawsTab.LinkText.websiteString)
             }
         }
     }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		022C09622A8C18210094C00C /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022C09612A8C18210094C00C /* Strings+Generated.swift */; };
 		022C09642A8C1A000094C00C /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022C09632A8C1A000094C00C /* XCAssets+Generated.swift */; };
+		022C09662A8C97C10094C00C /* Fonts+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022C09652A8C97C10094C00C /* Fonts+Generated.swift */; };
 		023D9F642A8C0E4200BB83F8 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 023D9F632A8C0E4200BB83F8 /* swiftgen.yml */; };
 		023D9F662A8C17E700BB83F8 /* uk.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 023D9F652A8C17E700BB83F8 /* uk.lproj */; };
 		101A3A7C28108BFC008D72B1 /* ElectionsUAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3A7B28108BFC008D72B1 /* ElectionsUAApp.swift */; };
@@ -100,6 +101,7 @@
 /* Begin PBXFileReference section */
 		022C09612A8C18210094C00C /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
 		022C09632A8C1A000094C00C /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
+		022C09652A8C97C10094C00C /* Fonts+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fonts+Generated.swift"; sourceTree = "<group>"; };
 		023D9F632A8C0E4200BB83F8 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = SOURCE_ROOT; };
 		023D9F652A8C17E700BB83F8 /* uk.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = uk.lproj; sourceTree = "<group>"; };
 		101A3A7828108BFC008D72B1 /* ElectionsUA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElectionsUA.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -207,6 +209,7 @@
 		023D9F5E2A8C082E00BB83F8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				101A3B3C2813577E008D72B1 /* Fonts */,
 				101A3B2A281160B2008D72B1 /* Generated */,
 				023D9F652A8C17E700BB83F8 /* uk.lproj */,
 				101A3A7F28108BFE008D72B1 /* Assets.xcassets */,
@@ -246,7 +249,6 @@
 				101A3ABD28109E42008D72B1 /* Helpers */,
 				101A3ABE28109E42008D72B1 /* K.swift */,
 				101A3AC228109E43008D72B1 /* Database Files */,
-				101A3B3C2813577E008D72B1 /* Fonts */,
 				101A3A8128108BFE008D72B1 /* Preview Content */,
 			);
 			path = ElectionsUA;
@@ -483,6 +485,7 @@
 			children = (
 				022C09612A8C18210094C00C /* Strings+Generated.swift */,
 				022C09632A8C1A000094C00C /* XCAssets+Generated.swift */,
+				022C09652A8C97C10094C00C /* Fonts+Generated.swift */,
 			);
 			path = Generated;
 			sourceTree = "<group>";
@@ -508,29 +511,13 @@
 		101A3B3C2813577E008D72B1 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				101A3B66281357F9008D72B1 /* Roboto */,
-				101A3B3D281357EE008D72B1 /* Gilroy */,
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
-		101A3B3D281357EE008D72B1 /* Gilroy */ = {
-			isa = PBXGroup;
-			children = (
 				101A3B3F281357EE008D72B1 /* Gilroy-Medium.ttf */,
 				101A3B47281357EE008D72B1 /* Gilroy-Regular.ttf */,
 				101A3B4F281357EE008D72B1 /* Gilroy-SemiBold.ttf */,
 				101A3B50281357EE008D72B1 /* Gilroy-Bold.ttf */,
-			);
-			path = Gilroy;
-			sourceTree = "<group>";
-		};
-		101A3B66281357F9008D72B1 /* Roboto */ = {
-			isa = PBXGroup;
-			children = (
 				101A3B76281357F9008D72B1 /* Roboto-Bold.ttf */,
 			);
-			path = Roboto;
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		103B88A92815F8310046EB3B /* View Representables */ = {
@@ -810,6 +797,7 @@
 				10F5353D28413BBE0061D6FE /* SearchHistoryListItem.swift in Sources */,
 				10F5354328413F7E0061D6FE /* TagsView.swift in Sources */,
 				103B88B228195CFF0046EB3B /* CustomSearchTextField.swift in Sources */,
+				022C09662A8C97C10094C00C /* Fonts+Generated.swift in Sources */,
 				101A3B0628109E43008D72B1 /* NardepyDB.swift in Sources */,
 				101A3A8A28108C65008D72B1 /* StateManager.swift in Sources */,
 				101A3B1928109E43008D72B1 /* CustomTabView.swift in Sources */,
